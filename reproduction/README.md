@@ -52,7 +52,8 @@ DSH setting and relies on the outer Seatbelt wrapper. Use the generated
 `start-harness.sh` to keep that outer wrapper active.
 
 1. Go to `$SCRATCH/output/deepseek-$CASE-clean-api` and run
-   `./start-harness.sh`. Open its loopback UI in a browser. Appetizer uses
+   `./start-harness.sh`. Open the full loopback URL printed by the harness,
+   including its local login token. Appetizer uses
    UI/meter ports 3086/3087 and Chapter 1 uses 3084/3085.
 2. From another terminal in the same directory run
    `./experiment.sh start "hdp-$CASE" --phase setup`.

@@ -173,8 +173,9 @@ def prepare_deepseek(args, base, work):
     profile.mkdir(parents=True)
     for name in ("agents", "cache", "tmp"):
         (private / "home" / name).mkdir()
-    (private / "home/.credentials.yaml").write_text(
-        "version: 1\nrefs:\n  OPENROUTER_API_KEY: " + secrets.token_hex(32) + "\n")
+    local_credential = private / "home/.credentials.yaml"
+    with os.fdopen(os.open(local_credential, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600), "w") as file:
+        file.write("version: 1\nrefs:\n  OPENROUTER_API_KEY: " + secrets.token_hex(32) + "\n")
     (profile / "cordis.yml").write_text("[]\n")
     (base / "logs").mkdir()
     replacements = {
