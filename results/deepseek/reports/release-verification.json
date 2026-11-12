@@ -1,0 +1,38 @@
+{
+  "verified_at_athens": "2026-11-02T20:04:24.077688+02:00",
+  "projects": [
+    {
+      "project": "appetizer",
+      "build": "PASS",
+      "axiom_check": "PASS",
+      "declarations_checked": 37,
+      "source_hash_check": "PASS",
+      "source_semantic_audit": "Not performed by this script"
+    },
+    {
+      "project": "chapter01",
+      "build": "PASS",
+      "axiom_check": "PASS",
+      "declarations_checked": 113,
+      "source_hash_check": "PASS",
+      "source_semantic_audit": "Not performed by this script"
+    }
+  ],
+  "total_declarations_axiom_checked": 150,
+  "accepted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "fresh_project_build_directories": true,
+  "experiment_project_build_outputs_copied": false,
+  "dependency_cache": "Pinned existing Mathlib and standard dependency checkout/build cache reused locally through ignored package symlinks. These dependencies are not committed.",
+  "network_fresh_dependency_download_tested": false,
+  "lean_source_edits_during_packaging": false,
+  "semantic_audit": "A complete independent PDF-to-statement audit remains pending.",
+  "model_api_requests_during_release_preparation": 0,
+  "security_check": {
+    "staged_content_pattern_scan": "PASS: no provider keys, GitHub tokens, private keys, login token URLs or absolute user-directory paths found",
+    "excluded": "Runtime homes, credentials, raw replay, hidden reasoning, book PDFs/extracted text, vendored dependencies and build outputs"
+  }
+}

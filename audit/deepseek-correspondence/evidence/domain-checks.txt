@@ -1,0 +1,12 @@
+'IndependentAudit.expectation_default' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentAudit.mgf_default' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentAudit.variance_default' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentAudit.extended_variance_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/output/hdp-independent-correspondence-audit/evidence/Chapter01DomainChecks.lean:32:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+<workspace>/output/hdp-independent-correspondence-audit/evidence/Chapter01DomainChecks.lean:32:52: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'IndependentAudit.negative_third_power_convention' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentAudit.constant_negative_moment' depends on axioms: [propext, Classical.choice, Quot.sound]

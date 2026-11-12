@@ -1,0 +1,217 @@
+{
+  "schema": "fresh-appetizer-formalization-report-1",
+  "recorded_at_utc": "2026-11-03T00:02:31.077398+00:00",
+  "state": "blocked",
+  "blocker_type": "SOURCE_SPECIFICATION_UNAVAILABLE",
+  "whole_pdf_resolved": false,
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "skill": {
+    "name": "book-formalization",
+    "version": "8.1.70"
+  },
+  "product_entry": "lean/HDP.lean",
+  "source_wrappers": "lean/HDP/Source.lean",
+  "source_package": "reports/source-package.json",
+  "inventory": "reports/inventory.json",
+  "retained_coverage_inventory": "reports/inventory-reviewed.json",
+  "source_review": {
+    "all_four_pages_text_and_rendered_formulas_read": true,
+    "independent_source": "reports/reviews/source-independent.json",
+    "independent_final_coverage": "reports/reviews/inventory-coverage-final.json",
+    "all_source_items_accounted_for": true,
+    "currently_actionable_coverage_omissions": [],
+    "full_denominator_sealed": false,
+    "completeness_percentage": "N/A"
+  },
+  "numbered_results": [
+    {
+      "label": "Theorem 0.0.1",
+      "declarations": [
+        "HDP.caratheodory"
+      ]
+    },
+    {
+      "label": "Theorem 0.0.2",
+      "declarations": [
+        "HDP.Source.theorem_0_0_2"
+      ]
+    },
+    {
+      "label": "Exercise 0.0.3(a,b)",
+      "declarations": [
+        "HDP.independent_mean_zero_sum_sq",
+        "HDP.centered_sq_integral"
+      ]
+    },
+    {
+      "label": "Corollary 0.0.4",
+      "declarations": [
+        "HDP.Source.corollary_0_0_4"
+      ]
+    },
+    {
+      "label": "Exercise 0.0.5",
+      "declarations": [
+        "HDP.exercise_0_0_5"
+      ]
+    },
+    {
+      "label": "Exercise 0.0.6",
+      "declarations": [
+        "HDP.Source.exercise_0_0_6"
+      ]
+    }
+  ],
+  "local_verification": {
+    "passed": true,
+    "public_theorems_and_lemmas": 51,
+    "all_public_declarations": 55,
+    "exact_reviewed_statement_checks": 51,
+    "full_lake_build_exit_code": 0,
+    "build_jobs": 8058,
+    "fresh_product_file_compilations": 9,
+    "all_fresh_compilation_exit_codes_zero": true,
+    "only_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forbidden_local_placeholder_or_unsafe_matches": [],
+    "report": "reports/reviews/verification.json",
+    "actual_logs": [
+      "reports/verification-build.log",
+      "reports/verification-axioms.log"
+    ],
+    "kernel_checker": "reports/KernelCheck.lean"
+  },
+  "independent_roles": {
+    "source_and_coverage": "/root/source_review",
+    "faithfulness": [
+      "/root/faithfulness_batch1",
+      "/root/faithfulness_batch2",
+      "/root/faithfulness_helpers"
+    ],
+    "verification": "/root/verification",
+    "structure": "/root/structure",
+    "generation": [
+      "/root",
+      "/root/variance_generator",
+      "/root/combinatorics_generator",
+      "/root/covering_generator"
+    ],
+    "fresh_review_contexts": "Review agents started with fork_turns=none; no inherited generator transcript. Statement/source reviewers received full source/context, effective definitions and proof-free targets; no generator proof files.",
+    "native_identity_records": [
+      "reports/reviews/source-independent.json",
+      "reports/reviews/faithfulness-batch1-provenance.json",
+      "reports/reviews/faithfulness-batch2-provenance.json",
+      "reports/reviews/faithfulness-helpers.json",
+      "reports/reviews/verification.json",
+      "reports/reviews/structure-provenance.json"
+    ],
+    "identity_limit": "Native environment/thread observations and actual collaboration task identities are retained; no provider-signed model attestation or inaccessible rollout capture is claimed."
+  },
+  "statement_reviews": [
+    "reports/reviews/faithfulness-batch1.json",
+    "reports/reviews/faithfulness-batch2.json",
+    "reports/reviews/faithfulness-batch3.json",
+    "reports/reviews/faithfulness-helpers.json"
+  ],
+  "structure": {
+    "report": "reports/reviews/structure.json",
+    "material_blockers": 0
+  },
+  "proof_account": "Approximation uses a separately developed deterministic greedy inner-product proof. The source probabilistic account is also formalized as concrete finite sampling, iid construction, expectation/variance identities, strong law and favorable-realization statements; no claim that the deterministic proof itself executes the source probabilistic construction.",
+  "source_corrections": [
+    {
+      "row": "T002",
+      "printed": "every integer k",
+      "formalized": "positive natural k",
+      "reason": "Average and sqrt denominator require positive sample count; repetitions allowed."
+    },
+    {
+      "row": "U04",
+      "printed": "P{Z=zi}=lambda_i",
+      "formalized": "Index singleton has mass lambda_i; repeated vector values have sum of their index masses.",
+      "reason": "Literal point event equation needs injective zi; indexed finite law always represents the convex combination correctly."
+    },
+    {
+      "rows": [
+        "E003a",
+        "E003b"
+      ],
+      "printed": "variance expectations without moment hypotheses",
+      "formalized": "Measurable L2 vectors on probability space",
+      "reason": "Finite second moments make all source expected values genuine finite Bochner expectations; finite supported empirical vectors satisfy this automatically."
+    },
+    {
+      "rows": [
+        "C004",
+        "E006"
+      ],
+      "printed": "balls",
+      "formalized": "closed balls",
+      "reason": "Source obtains non-strict distance bound \u2264epsilon, including equality."
+    },
+    {
+      "row": "U16",
+      "printed": "stronger for small epsilon",
+      "formalized": "qualified base comparison when N>e",
+      "reason": "Unqualified statement cannot hold for all vertex counts, e.g. N=1."
+    }
+  ],
+  "remaining_source_item": {
+    "id": "U17",
+    "page": 4,
+    "quote": "The bound in Exercise 0.0.6 is sharp [49, 50].",
+    "status": "unresolved_source_specification",
+    "evidence": "reports/BLOCKERS.json",
+    "proof_or_target_invented": false,
+    "silently_excluded": false
+  },
+  "canonical_status": {
+    "source_admission": false,
+    "proof_receipts_obtained": false,
+    "chapter_pass": false,
+    "published": false,
+    "limitations": [
+      "Explicit Codex-only override replaces unavailable Claude source review with actual independent Codex review; no receipt relabeling.",
+      "Existing active frontdoor denied access to workflow books directory; exact failure retained.",
+      "claim_contract.py cannot import jsonschema in either permitted Python runtime; actual failure retained."
+    ],
+    "evidence": [
+      "AGENTS.md",
+      "reports/frontdoor-attempt.json",
+      "reports/frontdoor-retry.json",
+      "reports/frontdoor-active-route.json",
+      "reports/canonical-route-blocker.json"
+    ]
+  },
+  "commands_and_execution": {
+    "all_shell_commands_login": false,
+    "pdf_text": "pdftotext -layout source/Appetizer.pdf reports/source.txt",
+    "pdf_render": "pdftoppm -scale-to 1500 -png source/Appetizer.pdf reports/page",
+    "pdf_metadata": "pdfinfo source/Appetizer.pdf",
+    "build": {
+      "cwd": "lean/",
+      "command": "lake build",
+      "exit_code": 0
+    },
+    "exact_commands_outputs_and_failures": [
+      "reports/frontdoor-attempt.json",
+      "reports/frontdoor-retry.json",
+      "reports/frontdoor-active-route.json",
+      "reports/canonical-route-blocker.json",
+      "reports/verification-build.log",
+      "reports/verification-axioms.log",
+      "reports/reviews/verification.json"
+    ],
+    "approval_requested": false,
+    "network_access_or_external_source_consultation": false,
+    "profile_bypass": false,
+    "pins_or_dependency_sources_modified": false,
+    "upstream_skill_modified": false,
+    "remote_mutation": false
+  },
+  "next_action": "Supply a precise source statement for Notes sharpness U17, including lower-bound quantifiers, parameter regime, dimensions and constants, or the cited theorem text. Independently review the newly supplied contract and then formalize it. No currently actionable proof row remains."
+}

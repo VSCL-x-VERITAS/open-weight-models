@@ -1,0 +1,59 @@
+{
+  "schema": "formalization-result-local-codex-1",
+  "recorded_at_utc": "2026-11-03T00:37:18.888693+00:00",
+  "state": "blocked",
+  "blocker_type": "SOURCE_SPECIFICATION_UNRESOLVED",
+  "blocker_id": "SIGNED_NONINTEGER_RAW_MOMENT",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "skill_version": "8.1.70",
+  "source_accounting_complete": true,
+  "source_pdf_pages": 7,
+  "all_well_defined_reviewed_source_targets_locally_verified": true,
+  "all_source_resolved": false,
+  "remaining_local_actionable_math_or_required_review": [],
+  "result_modules": [
+    "lean/HDP/Basic.lean",
+    "lean/HDP/Tails.lean",
+    "lean/HDP/LimitTheorems.lean",
+    "lean/HDP/PoissonLimit.lean"
+  ],
+  "major_results": [
+    "Banach/Hilbert Lp structure and full source norm inequalities, including all-p<1 counterexample and extended Jensen",
+    "Nonnegative/signed/moment tail identities, Markov/Chebyshev and all source exercises",
+    "Finite variance formulas, SLLN, finite-L2 iid CLT with weak/CDF/closed-tail conclusions, de Moivre-Laplace",
+    "Exact binomial sum law and full triangular-array Poisson limit, including actual real variables and rate0"
+  ],
+  "local_product_declarations_checked": {
+    "Basic": 42,
+    "Tails": 30,
+    "LimitTheorems": 59,
+    "PoissonLimit": 49,
+    "total": 180,
+    "includes_helper_lemmas_and_defs_not_source_completion_counts": true
+  },
+  "build": "reports/final-build.json",
+  "source_inventory": "reports/source-inventory-final.json",
+  "source_discrepancy": "reports/SOURCE_DISCREPANCIES.json",
+  "canonical_claude_admission": false,
+  "canonical_proof_receipts": false,
+  "canonical_chapter_pass": false,
+  "published": false,
+  "protocol_adaptation": "reports/PROTOCOL_ADAPTATION.json",
+  "nonlocal_action_needed": "Supply a source-authoritative convention/domain correction for signed X raised to arbitrary positive noninteger real powers, or an explicit operator semantic amendment. Preserve all completed source reviews/proofs; only the affected specification/target needs prospective work.",
+  "evidence_sha256": {
+    "reports/final-build.json": "a06ad83c31c3d12dc6676a0ad9d9b6557f832e7110b23dd89c6d2bf6c0535744",
+    "reports/source-inventory-final.json": "fd489d8d65f47cf6ee5896fac5f8d98587788e31e9a32227558bade92cf279b4",
+    "reports/SOURCE_DISCREPANCIES.json": "69450a7d37a2872516e8ccbbd0d4dab72495580c9babc092cd65d33b66fb0b96",
+    "reports/PROTOCOL_ADAPTATION.json": "7db890b1bb24524336acd60d51fe7c2c5a75016cffc3398feef6783eb847bd18",
+    "reports/reviews/final-source-crosswalk-review.json": "73f991ba6ba0fa6b02d104944f773722a1d8dd5f9aded389af865dbd26b64204",
+    "reports/reviews/inventory-v2-coverage.json": "77649dde3c212418720325492f5de89527f62575061a969e091d3845245fe8ba",
+    "reports/reviews/structure-final.json": "1467e80b4424724bad789ffd8836b425acabfd33fd5155372f6ead0606008c2a",
+    "reports/reviews/basic-verification.json": "65c1fb31523c979073c429a9cd352aac341cce00905f8a31de70ed855b0defb8",
+    "reports/reviews/tails-verification.json": "410a495a99ff804c6fcd398cc39c3f583271e1ad4ec0907dfb5dc7ec2604ac67",
+    "reports/reviews/tails-verification-completion.json": "14a675f00f81ff67d6f40cbb272808c7204a602f741c9f462ac47bf2ca8b6b87",
+    "reports/reviews/limits-verification.json": "54d0edc9ef9d21961ea021ad8826eadc45c6fa009be62b5ba6f0bba2c21a49a8",
+    "reports/reviews/poisson-verification-base.json": "4364a1cb26b3cc49bb8f52a32da210a4d61a08e23c5402df9acc92099a2e94ca",
+    "reports/reviews/poisson-verification-final.json": "e20860c59935802de2d1b22ad7b54c8fcc4fd2acbccd81d969aa935cc02e9318"
+  }
+}

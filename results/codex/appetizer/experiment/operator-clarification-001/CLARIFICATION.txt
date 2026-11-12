@@ -1,0 +1,68 @@
+Operator clarification 001 — Appetizer Notes U17
+
+Authority: the user explicitly asked the operator to independently review the
+blocker, provide the needed clarification as appropriate, and resume the run.
+This is an operator-supplied mathematical target backed by primary literature.
+It changes this continuation to an assisted experiment. It does not add Lean
+solutions, permit access to any prior project, or remove any source item.
+
+INDEPENDENT REVIEW
+I visually checked the original PDF page 4, the precise Exercise 0.0.6 bound,
+the final Notes sentence and your blocker. A uniform matching lower bound over
+every polytope and every positive radius would be false. The cited sharpness is
+worst-case and up to absolute constants in a nontrivial entropy range. Your
+request for explicit quantifiers and range was justified.
+
+PRIMARY-SOURCE SUPPORT (paraphrase, not a copied proof)
+The book's reference [50] is Carl–Pajor (1988), pp. 479–504. On pp. 491–492,
+Corollary 2.4 and the following discussion identify the sharp entropy scale for
+the identity from finite-dimensional l1 to l2. Equation (2.14) supplies a positive
+universal lower constant multiplying min(1,sqrt(log(1+n/k)/k)), for 1<=k<=n.
+The image of the l1 unit ball is the symmetric convex hull of the coordinate
+unit vectors. Scaling this body by 1/2 makes its diameter at most one.
+Source URL: https://www.math.uci.edu/~rvershyn/teaching/hdp/carl-pajor.pdf
+Paper: B. Carl and A. Pajor, Gelfand numbers of operators with values in a Hilbert
+space, Inventiones mathematicae 94 (1988), 479–504; equation (2.14), printed p.492.
+Bibliographic binding: author-hosted first-edition book, bibliography [49–50],
+https://webapps.math.uci.edu/~rvershyn/papers/HDP-book/HDP-1.pdf (printed p.286).
+Only the bibliography was used from the additional book, not later proofs.
+
+PRECISE TARGET TO INDEPENDENTLY REVIEW AND THEN PROVE
+For every natural n>=1, in Euclidean real n-space let
+  V_n = { +(1/2)e_i, -(1/2)e_i : i=1,...,n },
+  K_n = convexHull(V_n).
+Verify V_n has exactly 2n elements and diameter at most 1.
+There exists a real absolute constant c with 0<c<1, independent of n,k, such that
+for every n>=1, integer 1<=k<=n, and real epsilon>0 with
+  epsilon < c * min(1, sqrt(log(1 + (n:real)/(k:real)) / (k:real))),
+EVERY finite set C of centers in the ambient Euclidean n-space whose closed
+epsilon-balls cover K_n satisfies
+  2^(k-1) < card(C).
+Log is natural logarithm. Exponents and divisions have their indicated real or
+natural meanings. The conclusion concerns arbitrary centers, not just centers
+chosen in V_n or empirical averages. No assumption granting the desired packing
+or entropy lower bound may be inserted into the final theorem.
+
+WHY THIS ADDRESSES THE BOOK
+This is a dyadic entropy formulation of a worst-case matching lower bound. It
+selects a concrete family of polytopes with N=2n vertices in the book's diameter
+normalization, with a single universal constant and a stated intermediate
+entropy range. Explain the connection to Exercise 0.0.6's upper bound and the
+limitations of the range; do not claim equality of constants or sharpness at
+arbitrarily small radii in fixed dimension. An isolated vertex-separation bound,
+a theorem about empirical centers only, or optimality of approximate convex
+combinations is not enough to establish this covering-number sharpness target.
+
+ACCEPTANCE AND SCOPE
+Record this source supplementation as an intervention, retain the original
+unresolved row and original reports, and obtain a fresh independent Codex review
+of this proof-free target and its literature correspondence. If a reviewer finds
+a substantive mismatch, repair the target transparently and retain both versions.
+Then prove the reviewed target from Lean/Mathlib and this trial's own code. The
+paper's mathematical assertion is source material, not an axiom or a supplied
+Lean theorem. No sorry, custom axiom or assumed lower-bound hypothesis is allowed.
+Keep all previously completed work/reviews unless a concrete defect is found.
+Continue independently through proof, review, integration, build and axiom checks.
+If this remaining proof is difficult, persist with mathematical work rather than
+reporting the now-specified source as a nonlocal blocker. Do not silently defer it
+or mark the whole source complete from the upper bound alone.

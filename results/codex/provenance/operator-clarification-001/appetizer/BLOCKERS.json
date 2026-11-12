@@ -1,0 +1,53 @@
+{
+  "schema": "formalization-typed-blockers-1",
+  "recorded_at_utc": "2026-11-03T00:00:33.747260+00:00",
+  "source_blockers": [
+    {
+      "id": "U17",
+      "type": "SOURCE_SPECIFICATION_UNAVAILABLE",
+      "source": {
+        "path": "source/Appetizer.pdf",
+        "page": 4,
+        "section": "0.0.1 Notes",
+        "exact_passage": "The bound in Exercise 0.0.6 is sharp [49, 50]."
+      },
+      "missing_specification": [
+        "Whether the lower bound is existential worst-case, asymptotic, or universal",
+        "Allowed dimensions, vertex counts and epsilon regime",
+        "Meaning of sharpness up to constants, exponent factors, and fixed absolute constants",
+        "Cited lower-bound theorem/reference contents, not supplied in the four-page PDF"
+      ],
+      "evidence": [
+        "reports/reviews/source-independent.json",
+        "reports/reviews/inventory-coverage.json",
+        "reports/reviews/inventory-coverage-final.json"
+      ],
+      "why_nonlocal": "The supplied source does not determine a unique exact lower-bound contract; its citations are not included and network/remote consultation is forbidden. Choosing a plausible entropy lower bound would add unsupported source meaning. This is not a proof difficulty or tool transport failure.",
+      "reason_against_literal_universal_reading": "For epsilon at least one, every nonempty diameter-at-most-one set is covered by one radius-epsilon closed ball, so a universal matching lower bound growing with N cannot hold across the displayed full domain.",
+      "action_needed": "Supply the cited precise sharpness theorem or an explicit intended lower-bound contract including quantifiers, regime and constants. New source/contract needs independent review; no broader profile access is requested.",
+      "target_created": false,
+      "proof_claimed": false,
+      "scope_excluded": false
+    }
+  ],
+  "canonical_acceptance_limitations": [
+    {
+      "type": "CANONICAL_SOURCE_ADMISSION_UNAVAILABLE_UNDER_AUTHORIZED_PROTOCOL",
+      "evidence": "AGENTS.md",
+      "detail": "Claude provenance is mandatory for canonical admission but forbidden by authorized Codex-only override; no canonical admission or Chapter PASS is claimed."
+    },
+    {
+      "type": "CANONICAL_HELPER_RUNTIME_DEPENDENCY_MISSING",
+      "evidence": "reports/canonical-route-blocker.json",
+      "detail": "claim_contract.py cannot import jsonschema in either allowed Python runtime; no install, shim, or upstream modification."
+    },
+    {
+      "type": "CANONICAL_FRONTDOOR_PROFILE_BOUNDARY",
+      "evidence": "reports/frontdoor-active-route.json",
+      "detail": "Existing active frontdoor attempted inaccessible workflow books directory; explicit override permits direct four-role work without bypass."
+    }
+  ],
+  "actionable_mathematical_proofs_blocked_by_canonical_tools": false,
+  "completion_denominator_sealed": false,
+  "completeness_percentage": "N/A"
+}

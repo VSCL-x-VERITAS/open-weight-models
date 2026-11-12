@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "prepared_at": "2026-11-02T01:18:36.442074+02:00",
+  "experiment": "hdp-appetizer-clean-single-deepseek",
+  "protocol": "pdf-to-lean-mathlib-only-v1",
+  "scope": "complete assigned Appetizer PDF, including all precise exercises and operative mathematical content",
+  "source_pdf": "source/Appetizer.pdf",
+  "source_pages": 4,
+  "source_sha256": "164189f2c6e5d39c6b8aa96f3a3c18d02f42194b890be3610aaa44d7c487ca7f",
+  "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+  "mathlib_revision": "e8ea1afc32790ce1d4e1a4e45cc412ba9388716b",
+  "harness": "@deepseek-ai/dsh@0.2.1-rc.5",
+  "provider": "openrouter-custom",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "reasoning": "high",
+  "initial_lean_files": {
+    "HDP.lean": "import Mathlib\n"
+  },
+  "existing_formalizations_supplied": false,
+  "workflow_package_supplied": false,
+  "book_specific_inventory_targets_or_hints_supplied": false,
+  "source_text_or_images_preextracted": false,
+  "review": "single-agent self-review plus kernel checks; no independent semantic review claimed",
+  "process_isolation": "macOS Seatbelt applied to the entire Harness process and descendants; deny user/project/temp data except clean workspace and approved runtimes; outbound TCP limited to the local fixed-model proxy",
+  "network_allowed": "local model meter and local Harness UI only",
+  "credentials": "upstream key remains in observer-side private store; Harness receives only a distinct local proxy credential",
+  "formalization_started": false,
+  "paid_requests_during_preparation": 0,
+  "measurement": {
+    "provider_endpoint": "http://127.0.0.1:3087/api/v1",
+    "meter_sha256": "494d4f3ba269300c34ea7f1ab12a1c5ecf59d3346ee543d76b5761eba1b27c2b",
+    "primary_time_metric": "measured_elapsed_seconds",
+    "phases": [
+      "setup",
+      "formalization"
+    ],
+    "cost_basis": "actual returned OpenRouter usage with missing values reconciled, not estimates",
+    "setup_phase": "warm protocol and environment readiness, excluding this local preparation and prior installations"
+  },
+  "limitations": [
+    "Pretraining exposure is not assessed by local file isolation.",
+    "This is a new custom generic protocol, not the full upstream book-formalization skill or its canonical acceptance process.",
+    "Operating-system/Harness and generic tool runtimes are infrastructure; the only supplied mathematical library beyond Lean core is pinned Mathlib and its dependencies."
+  ],
+  "initial_test": true,
+  "session_policy": "fresh Appetizer-only state; no previous Appetizer or Chapter 1 session history imported",
+  "inner_shell_policy": "DSH danger-full-access inside unchanged outer OS read/write/network confinement; avoids unsupported nested Seatbelt"
+}

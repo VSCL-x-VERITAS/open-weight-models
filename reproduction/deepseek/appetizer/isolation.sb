@@ -1,0 +1,22 @@
+(version 1)
+(allow default)
+(deny file-read* (subpath "/Users") (subpath "/Volumes") (subpath "/private/tmp") (subpath "/private/var/folders") (subpath "/cores"))
+(allow file-read-metadata)
+(allow file-read* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/.tools/deepseek-appetizer-clean/home") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/.tools/deepseek-harness") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/.tools/elan") (subpath "/Users/gspyrou/.nvm/versions/node/v24.19.0") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/logs"))
+(deny file-write*)
+(allow file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/.tools/deepseek-appetizer-clean/home") (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/logs") (literal "/dev/null") (literal "/dev/tty") (literal "/dev/ptmx") (regex #"^/dev/ttys[0-9]+$"))
+(deny network*)
+(allow network-outbound (remote ip "localhost:3087"))
+(allow network-inbound (local ip "localhost:3086"))
+(allow network-bind (local ip "localhost:3086"))
+
+; Frozen source, protocol and mathematical dependency inputs.
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/source"))
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/run"))
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/AGENTS.md"))
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/lean/lean-toolchain"))
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/lean/lake-manifest.json"))
+(deny file-write* (subpath "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/lean/.lake/packages"))
+
+; Lake may refresh checksum/trace bookkeeping, never library source or proof objects.
+(allow file-write* (regex #"^/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-appetizer-clean-api/workspace/lean/[.]lake/packages/[^/]+/[.]lake/build/.*[.](hash|trace)$"))

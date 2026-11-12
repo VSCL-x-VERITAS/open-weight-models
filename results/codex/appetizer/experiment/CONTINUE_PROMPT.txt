@@ -1,0 +1,6 @@
+Continue the same clean formalization experiment from persisted files and
+review evidence. Read AGENTS.md, reports/STATUS.json and the source inventory.
+Continue every actionable source, target, proof, independent review, build and
+coverage item. Do not repeat valid completed reviews, weaken source targets or
+stop at another checkpoint. No new mathematical hint is supplied by this
+automatic continuation. Write reports/STATUS.json with the honest final state.

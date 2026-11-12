@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "source": "source/Chapter01.pdf",
+  "source_sha256": "855fdaf6870f664f1e470d47641b6d72758afdb9b87649a6494b027cecc02b17",
+  "independent_source_evidence": "reports/reviews/source-review.json",
+  "independent_coverage_evidence": "reports/reviews/inventory-v2-coverage.json",
+  "items": [
+    {
+      "type": "SOURCE_SPECIFICATION_UNRESOLVED",
+      "id": "SIGNED_NONINTEGER_RAW_MOMENT",
+      "inventory_row": "D-moment",
+      "printed_page": 5,
+      "exact_source": "For p > 0, the p-th moment of X is defined as E X^p, and the p-th absolute moment is E |X|^p.",
+      "issue": "The chapter's random variables are real-valued, but no negative-base convention or restriction is supplied for X^p when p is a noninteger positive real. A constant X=-1 with p=1/2 already has no real algebraic square-root value. Choosing Mathlib Real.rpow on negative arguments or replacing by absolute powers would silently select semantics not specified in this PDF.",
+      "authorized_source_research": "Complete seven-page source text and rendered formulas inspected; no operative definition or convention resolves negative-base noninteger powers. Pinned Mathlib's negative-base Real.rpow convention was inspected only as a candidate library meaning, not as source authority. External source consultation is explicitly forbidden.",
+      "implemented_supported_domains": [
+        "Signed natural moments, including partial signed-extended expectation and exact infinity-minus-infinity undefinedness",
+        "All real positive powers of nonnegative random variables, with extended nonnegative expectations",
+        "Absolute moments for every real p>0, including all finite/infinite layercake identities"
+      ],
+      "independent_assessment": "Source-only and statement reviewers agree the supported domains are legitimate, but do not identify the full printed arbitrary signed/noninteger semantics.",
+      "status": "unresolved_source_specification",
+      "blocks_complete_source_faithfulness": true,
+      "does_not_block_other_actionable_work": true,
+      "required_nonlocal_resolution": "A source-authoritative convention/domain correction or explicit operator-authorized semantic amendment; no new proof can determine missing source meaning.",
+      "no_unrestricted_raw_real_p_claim": true
+    },
+    {
+      "type": "SOURCE_ENDPOINT_CORRECTION",
+      "id": "LP_ZERO_ENDPOINT",
+      "printed_page": 6,
+      "issue": "Printed (1.3) permits p=0 although preceding definition only gives p>0.",
+      "handling": "Keep 0<p≤q≤∞, retain infinite norms and infinity endpoint.",
+      "status": "independently_reviewed_correction"
+    },
+    {
+      "type": "SOURCE_DEGENERACY_CORRECTION",
+      "id": "CLT_POSITIVE_VARIANCE",
+      "printed_page": 9,
+      "issue": "Normalized CLT divides by standard deviation without excluding zero variance; constant iid variables are a counterexample to a standard Gaussian limit.",
+      "handling": "Explicit finite positive variance; all zero-variance-meaningful results (SLLN, finite sample mean rate, variance formulas) retain zero variance.",
+      "status": "independently_reviewed_correction"
+    },
+    {
+      "type": "DEFINED_EXPECTATION_CONVENTION",
+      "id": "SIGNED_TAIL_UNDEFINED_CASE",
+      "printed_page": 7,
+      "issue": "Exercise1.2.2's subtraction is undefined if both tails integrate to infinity.",
+      "handling": "Option EReal marks exactly infinity-minus-infinity as none; every defined extended case retained, plus separate integrable real identity.",
+      "status": "independently_reviewed_correction"
+    },
+    {
+      "type": "STANDARD_DOMAIN_CONVENTIONS",
+      "id": "AE_QUOTIENT_FINITE_REAL_QUANTITIES",
+      "handling": "Lp Banach/Hilbert use a.e. quotient; real finite expectations and variance use actual integrability/square integrability. Nonnegative extended MGF/moments and explicitly infinite source identities use ENNReal. Jensen includes infinite positive RHS with proved finite negative part. Finite-sum variance is explicitly within the finite-variance domain; no totalized divergent real integral is counted as source coverage.",
+      "status": "independently_reviewed_conventions"
+    },
+    {
+      "type": "SOURCE_SCOPE_INTERPRETATIONS",
+      "id": "GENERAL_FAILURE_AND_LIMIT_CDF",
+      "handling": "Triangle inequality for p<1 fails in general, witnessed on fair Bool for every positive p<1; no claim of failure on all probability spaces. CDF convergence at every real point is used for continuous Gaussian limit; Poisson limit uses genuine weak convergence. Rare-event O(1) prose is motivation governed by exact subsequent triangular-array hypotheses.",
+      "status": "independently_reviewed_interpretations"
+    }
+  ]
+}

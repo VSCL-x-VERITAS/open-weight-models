@@ -1,0 +1,47 @@
+{
+  "operator_preparation_duration_seconds": null,
+  "operator_duration_reason": "No exact start boundary was recorded for operator investigation/install attempts. Do not substitute model setup duration or fabricate an installation time.",
+  "installer_failures": [
+    {
+      "stage": "full POSIX installer qualification",
+      "reason": "Temporary directory /var traversed a symlink; retried with TMPDIR=/private/tmp."
+    },
+    {
+      "stage": "full POSIX installer qualification",
+      "reason": "Python base executable traversed a symlink; staged a regular-file runtime."
+    },
+    {
+      "stage": "runtime copy",
+      "reason": "Three dangling documentation/pkgconfig links could not be copied; no mathematical input affected."
+    },
+    {
+      "stage": "full POSIX installer qualification",
+      "reason": "macOS Python lacks os.listxattr required by upstream immutable-file metadata checks. Full installer and doctor did not pass."
+    }
+  ],
+  "actual_installation": {
+    "method": "standard Codex skill-installer helper, git transport, exact v8.1.70 tag",
+    "skills": 4,
+    "upstream_modified": false,
+    "registered_in_private_codex_homes": true
+  },
+  "native_launch_failures": [
+    {
+      "reason": "--ignore-rules is not an app-server flag; removed before successful native launch. No thread or model call started in that failed process."
+    }
+  ],
+  "model_setup_runtime_issue": {
+    "reason": "zsh here-document attempted a denied temporary path",
+    "resolution": "Model used python3 -c and workspace report files without expanding permissions",
+    "included_in_model_setup_metrics": true
+  },
+  "trial_order": [
+    "appetizer",
+    "chapter01"
+  ],
+  "worker_source_or_target_hints_supplied_by_operator": false,
+  "initial_project_modules": [
+    "HDP.lean: import Mathlib only"
+  ],
+  "credentials": "Native ChatGPT sign-in symlink outside permitted tool reads. No credential-bearing files copied to this repository."
+}

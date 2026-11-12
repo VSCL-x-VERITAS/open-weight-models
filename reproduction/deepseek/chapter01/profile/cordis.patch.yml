@@ -1,0 +1,62 @@
+# No API key is stored here. Credentials live in DSH's private credential store.
+# The loopback meter forwards unchanged requests to https://openrouter.ai/api/v1.
+- id: llm-pi-ai
+  config:
+    providers:
+      openrouter-custom:
+        displayName: OpenRouter
+        apiKeyEnv: OPENROUTER_API_KEY
+        api: openai-completions
+        baseURL: http://127.0.0.1:3085/api/v1
+        reasoning: high
+        compat:
+          thinkingFormat: openrouter
+          supportsDeveloperRole: false
+          maxTokensField: max_tokens
+        models:
+          - id: deepseek/deepseek-v4.1-flash-1017
+            name: DeepSeek V4.1 Flash 1017
+            contextWindow: 1048576
+            maxTokens: 32768
+            input: [ text, image ]
+            reasoningEfforts:
+              off:
+              high: high
+- id: ui-settings-general
+  name: "@deepseek-ai/dsh-client-ui-settings-general"
+  config:
+    welcomeNoticeVersion: 2026-09-28.1
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: openrouter-custom
+    model: deepseek/deepseek-v4.1-flash-1017
+    reasoningEffort: high
+
+- id: preset-standard
+  config: {"id": "standard", "order": 1, "plugins": [{"id": "persona", "name": "@deepseek-ai/dsh-persona", "config": {"prefix": "You are a coding agent powered by the {{model}} model."}}, {"id": "agent-instructions", "name": "@deepseek-ai/dsh-agent-instructions", "config": {"maxBytes": 65536}}, {"id": "time-context", "name": "@deepseek-ai/dsh-time-context"}, {"id": "tool-bash", "name": "@deepseek-ai/dsh-tool-bash"}, {"id": "tool-fs", "name": "@deepseek-ai/dsh-tool-fs"}, {"id": "tool-fs-search", "name": "@deepseek-ai/dsh-tool-fs-search", "config": {"sampleOverCapGlobResults": false}}, {"id": "tool-jobs", "name": "@deepseek-ai/dsh-tool-jobs"}, {"id": "tool-todo", "name": "@deepseek-ai/dsh-tool-todo", "config": {"allowParallelInProgress": true}}, {"id": "compaction", "name": "cordis:group", "group": true, "isolate": {"compaction": true, "toolResultPruner": true}, "config": [{"id": "compaction-basic", "name": "@deepseek-ai/dsh-compaction-basic"}, {"id": "command-compact", "name": "@deepseek-ai/dsh-command-compact"}, {"id": "tool-result-pruner", "name": "@deepseek-ai/dsh-compaction-tool-result-pruner", "config": {"thresholdChars": 8192, "headChars": 4096, "tailChars": 1024}}]}]}
+
+- id: preset-minimal
+  disabled: true
+
+- id: preset-cordis
+  disabled: true
+
+- id: preset-ptc
+  disabled: true
+
+- id: sandbox-policy
+  config:
+    mode: danger-full-access
+    workspaceRoot: "/Users/gspyrou/Documents/ChatGPT/George S/output/deepseek-chapter01-clean-api/workspace"
+- id: approval
+  config:
+    policy: never
+
+- id: permission
+  config:
+    defaultPreset: clean-autonomous
+    presets:
+      clean-autonomous:
+        sandbox: danger-full-access
+        approval: never

@@ -1,0 +1,905 @@
+{
+  "schema": "operator-adapted-independent-source-audit-v1",
+  "reviewer": {
+    "role": "independent source correspondence reviewer",
+    "session": "/root/audit_appetizer",
+    "model_identity": "Codex; exact underlying model string not separately exposed",
+    "independence": "Fresh child session separate from native proof generators. Source PDF pages and amendment read before product declarations; no completion inventory, prior review verdict, old audit report, or generator conversation was read. Identity of the generating system (Codex) was known, so this is not blinded or cross-model review. Parent supplied scope/instructions; this is not an independence receipt from the canonical workflow."
+  },
+  "scope": {
+    "base": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace",
+    "source_pdf": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/source/Appetizer.pdf",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "amendment": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/source/operator-clarification-001/CLARIFICATION.txt",
+    "entrypoint": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP.lean",
+    "modules_reviewed": 13,
+    "workflow_guidance": "/Users/gspyrou/Documents/ChatGPT/George S/.tools/codex-hdp-operator/workflow-latest/skills/book-formalization/references/four-role-workflow.md",
+    "mode": "Direct read-only operator audit using four-role independent-faithfulness criteria; not canonical versioned claim/gate/source_admission acceptance.",
+    "product_edits": false,
+    "kernel_verification": "Deferred to parent; this review does not claim a successful build or axiom audit."
+  },
+  "method": {
+    "source_first_inventory": true,
+    "visual_pages_inspected": [
+      "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/reports/page-1.png",
+      "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/reports/page-2.png",
+      "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/reports/page-3.png",
+      "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/reports/page-4.png"
+    ],
+    "text_companion": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/reports/source.txt",
+    "definition_boundaries_checked": [
+      "convexHull finite-combination equivalence",
+      "EuclideanSpace ℝ (Fin n), its norm, coordinate embeddings and signed half-coordinate vertices",
+      "BallCover as forall x∈P exists c∈C dist(x,c)≤epsilon",
+      "MemLp as a.e. strong measurability plus finite L2 seminorm",
+      "Bochner integral totalization (zero outside integrable functions) and where MemLp/Integrable hypotheses prevent misuse",
+      "finiteIndexLaw on indices and aggregation of duplicate vector values",
+      "actual polytope extreme-point count rather than arbitrary generating-set count",
+      "natural ceiling, natural k-1, natural powers, real division and natural logarithm"
+    ],
+    "post_judgment_additional_read": "After deriving preliminary judgment, inspected only two generator mathematical exposition files (parameters-mathematics.md and packing-mathematics.md) by focused rg to assess explanation; no inventory or review verdict was consumed."
+  },
+  "snapshot_sha256": {
+    "source/Appetizer.pdf": "164189f2c6e5d39c6b8aa96f3a3c18d02f42194b890be3610aaa44d7c487ca7f",
+    "source/operator-clarification-001/CLARIFICATION.txt": "257a5cf9e264e07b982ca8c335222bd27b191177ee8df898067bbd7dfd594498",
+    "lean/HDP.lean": "bd19ff9690929c59cb34810f33472eea7b04a573ab3f922e4b8add78afed5830",
+    "lean/HDP/Approximation.lean": "8f48640413f5303dad1a316ae8e8165ad6403eed306a5349878adbbeb444a77f",
+    "lean/HDP/Combinatorics.lean": "a3494116bfb668d3049a7167ebd2512e060db0f338aefdc4a51967beb6feb341",
+    "lean/HDP/ConvexBasics.lean": "e7a9742554caea898cccb4fb62fbc5f4e9699d27c6a5861a6eec36bfe12392a1",
+    "lean/HDP/Covering.lean": "5d45c5145f45dec85d81be05ec22312afb6bf688fe330915254d49e1c264ddd5",
+    "lean/HDP/Crosspolytope.lean": "8622eb4eb3a843bb0bf3ee6334f7d4bc95bdf55b175d292e006edd67885e40bc",
+    "lean/HDP/Empirical.lean": "888232a772cfc7f8dc7064c174f8cf3f2df0aa8d3481d7c89b38085ce88a4bb9",
+    "lean/HDP/EntropyEmbedding.lean": "883d29b90d286dfb5d2d211c83cd443aea3b73fcfaf87cb57806a8962482ff44",
+    "lean/HDP/EntropyPacking.lean": "334676660ba1bfabcf44a1aa57cd6d908c930cb47e9a7bff1a26f2ffec485ec6",
+    "lean/HDP/EntropyParameters.lean": "0274d870fdd466b7bc79fe8c1c9e63c272d498b28aa71b0c8d4de1c6df291161",
+    "lean/HDP/Sharpness.lean": "9782a6c78a64e8b515459cdd94ec4e27de544f0d85ae6e9e7b884f2efbb6541c",
+    "lean/HDP/Source.lean": "82f669e8b52fa01d78d1bb458910a10309eca993454f2c8e1020275773c4a046",
+    "lean/HDP/Supplemental.lean": "a34873f5537fe7344fc0032545f0a8cedaebe312aca84c1807bdd8fce679f20e",
+    "lean/HDP/Variance.lean": "c0877129d0da212543108c803bd3b571108a7b208bce11a2edbe885c62de76a7"
+  },
+  "verdict": {
+    "blocking_source_correspondence_findings": 0,
+    "amended_mathematical_scope": "covered under ordinary finite-real-expectation and positive-sample-size conventions",
+    "unqualified_source_complete_claim_supported": false,
+    "reason": "All operative mathematical claims in the supplied four pages have corresponding declarations or explicit compositional coverage, including Notes sharpness as clarified. This does not certify canonical acceptance, proof-method reproduction, historical/bibliographic assertions, extended-valued infinite-moment probability variants, or full fixed-dimension small-radius asymptotics."
+  },
+  "source_coverage": [
+    {
+      "id": "A01",
+      "page": 1,
+      "label": "(0.1), convex combinations and convex hull",
+      "independently_extracted_source_meaning": "Finite nonnegative real weights summing to one; hull membership is precisely a finite weighted sum.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/ConvexBasics.lean",
+          "line": 9,
+          "declaration": "HDP.mem_convexHull_iff_finite_combination"
+        }
+      ],
+      "status": "covered",
+      "notes": "Finset support merges repeated points; equivalent to source's indexed finite collections."
+    },
+    {
+      "id": "A02",
+      "page": 1,
+      "label": "Theorem 0.0.1",
+      "independently_extracted_source_meaning": "Every hull point in real Euclidean n-space has a convex representation on at most n+1 points of T.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/ConvexBasics.lean",
+          "line": 24,
+          "declaration": "HDP.caratheodory"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A03",
+      "page": 1,
+      "label": "unnumbered simplex sharpness",
+      "independently_extracted_source_meaning": "The n+1 bound is attained by a simplex in every dimension.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/ConvexBasics.lean",
+          "line": 42,
+          "declaration": "HDP.positive_simplex_combination_requires_all_vertices"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/ConvexBasics.lean",
+          "line": 69,
+          "declaration": "HDP.caratheodory_sharp"
+        }
+      ],
+      "status": "covered",
+      "notes": "A real n-dimensional simplex of n+1 vertices and a point requiring all of them are existentially provided, rather than sharpness being assumed."
+    },
+    {
+      "id": "A04",
+      "page": 2,
+      "label": "Theorem 0.0.2; dimension independence, equal weights, repetitions",
+      "independently_extracted_source_meaning": "For diameter at most one, every hull point and positive integer k admit a k-term mean from T with Euclidean error at most 1/sqrt(k), independently of n.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 12,
+          "declaration": "HDP.Source.theorem_0_0_2"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Approximation.lean",
+          "line": 70,
+          "declaration": "HDP.approximate_caratheodory"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "Source's 'every integer k' must mean positive k. Fin k permits repetitions. The more general Hilbert-space D-bound specializes exactly."
+    },
+    {
+      "id": "A05",
+      "page": 2,
+      "label": "translation before (0.2)",
+      "independently_extracted_source_meaning": "Translate by an element of T to bound the radius by its diameter, preserving hull membership and empirical mean error.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 11,
+          "declaration": "HDP.translate_radius_bound"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 17,
+          "declaration": "HDP.translation_preserves_distance"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 22,
+          "declaration": "HDP.translate_mem_convexHull"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 32,
+          "declaration": "HDP.translation_preserves_mean_error"
+        }
+      ],
+      "status": "covered",
+      "notes": "Translation requires a∈T, available whenever the hull contains x; emptiness does not create a missing case."
+    },
+    {
+      "id": "A06",
+      "page": 2,
+      "label": "finite random vector construction",
+      "independently_extracted_source_meaning": "Nonnegative weights summing to one give a probability law whose indexed outcomes have those weights.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 9,
+          "declaration": "HDP.finiteIndexLaw"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 13,
+          "declaration": "HDP.finiteIndexLaw_singleton"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 18,
+          "declaration": "HDP.finiteIndexLaw_value_probability"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "Weights are NNReal. This is equivalent to nonnegative real weights, not an extra mathematical restriction. When geometric outcomes coincide, their probabilities add; literal P(Z=zi)=lambda_i in the source requires distinct zi or index interpretation."
+    },
+    {
+      "id": "A07",
+      "page": 2,
+      "label": "EZ = sum lambda_i zi = x",
+      "independently_extracted_source_meaning": "The finite weighted vector law has the prescribed expectation.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 27,
+          "declaration": "HDP.finiteIndexLaw_expectation"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 33,
+          "declaration": "HDP.finiteIndexLaw_memLp"
+        }
+      ],
+      "status": "covered",
+      "notes": "The final equality to x is substitution of the convex representation; there is no single theorem assembling that substitution from arbitrary hull membership."
+    },
+    {
+      "id": "A08",
+      "page": 2,
+      "label": "independent copies Z1,Z2,...",
+      "independently_extracted_source_meaning": "Countably many independent identically distributed copies of the finite geometric law exist, with correct expectations and finite second moments.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 38,
+          "declaration": "HDP.exists_finite_law_independent_copies"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 68,
+          "declaration": "HDP.exists_independent_copies"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A09",
+      "page": 2,
+      "label": "displayed strong law",
+      "independently_extracted_source_meaning": "Empirical averages converge almost surely to the mean for iid finite-support vectors.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 107,
+          "declaration": "HDP.empirical_strong_law"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "The declaration assumes MemLp 2 rather than the weaker possible L1; finite source law satisfies it by lines 33–35 and 38–47. The source's k-point means use the same 0..k-1 indexing."
+    },
+    {
+      "id": "A10",
+      "page": "2–3",
+      "label": "centering mean and error scaling identity",
+      "independently_extracted_source_meaning": "Each centered variable has mean zero; squared error of the average equals k^-2 times the expected squared centered sum.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 78,
+          "declaration": "HDP.integral_centered_eq_zero"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 117,
+          "declaration": "HDP.empirical_mean_sq_integral_eq"
+        }
+      ],
+      "status": "covered",
+      "notes": "The latter theorem composes scaling with the variance-of-sum identity; intermediate algebra is present in its proof at lines 124–139."
+    },
+    {
+      "id": "A11",
+      "page": 3,
+      "label": "variance chain, same distribution",
+      "independently_extracted_source_meaning": "Independent-copy centered second moments equal the original centered second moment.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 100,
+          "declaration": "HDP.identDistrib_centered_sq_integral"
+        }
+      ],
+      "status": "covered",
+      "notes": "Used with the explicit IdentDistrib outputs from the finite-law copy construction."
+    },
+    {
+      "id": "A12",
+      "page": 3,
+      "label": "variance chain and Exercise 0.0.3(b)",
+      "independently_extracted_source_meaning": "E||Z-EZ||² = E||Z||² - ||EZ||², hence at most E||Z||².",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Variance.lean",
+          "line": 68,
+          "declaration": "HDP.centered_sq_integral"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 94,
+          "declaration": "HDP.centered_sq_integral_le"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "Real finite-second-moment version; no extended-valued infinity identity is claimed."
+    },
+    {
+      "id": "A13",
+      "page": 3,
+      "label": "variance chain bound from (0.2)",
+      "independently_extracted_source_meaning": "A random vector with norm at most D almost surely has E||Z||² at most D².",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 84,
+          "declaration": "HDP.integral_norm_sq_le_of_bound"
+        }
+      ],
+      "status": "covered",
+      "notes": "At D=1 this is the source's E||Z||²≤1; a.e. support suffices."
+    },
+    {
+      "id": "A14",
+      "page": 3,
+      "label": "expected empirical squared error ≤1/k",
+      "independently_extracted_source_meaning": "Independent mean-x copies with second moments at most D² have mean squared empirical error at most D²/k.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 141,
+          "declaration": "HDP.empirical_mean_sq_integral_le"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A15",
+      "page": 3,
+      "label": "existence of a good realization",
+      "independently_extracted_source_meaning": "There is an outcome at most the expected error bound, simultaneously preserving all finitely many membership conditions.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 161,
+          "declaration": "HDP.exists_realization_le"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 166,
+          "declaration": "HDP.exists_realization_mem_le"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 172,
+          "declaration": "HDP.exists_empirical_realization"
+        }
+      ],
+      "status": "covered",
+      "notes": "Integrability is explicit, and probability-measure assumptions prevent an empty sample space from making existence vacuous."
+    },
+    {
+      "id": "A16",
+      "page": 2,
+      "label": "footnote 1, diameter definition and generalization",
+      "independently_extracted_source_meaning": "For bounded T, diameter is sup pairwise Euclidean distances; error scales as diam(T)/sqrt(k).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 41,
+          "declaration": "HDP.approximate_caratheodory_diam"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 50,
+          "declaration": "HDP.diameter_eq_sup"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "Boundedness is explicit because Mathlib's real diameter is totalized on unbounded sets. Source's finite real diameter convention is the meaningful one here; arbitrary unbounded extended diameter was not formalized."
+    },
+    {
+      "id": "A17",
+      "page": 3,
+      "label": "Exercise 0.0.3(a)",
+      "independently_extracted_source_meaning": "For independent mean-zero real Euclidean random vectors, expected squared norm of the sum is the sum of expected squared norms.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Variance.lean",
+          "line": 28,
+          "declaration": "HDP.independent_mean_zero_sum_sq"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "MemLp 2 gives the finite-expectation interpretation. k=0 and n=0 are also permitted and harmless."
+    },
+    {
+      "id": "A18",
+      "page": 4,
+      "label": "polytope is convex hull of actual vertices",
+      "independently_extracted_source_meaning": "A finite real Euclidean convex hull has finitely many extreme points and equals their convex hull.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 73,
+          "declaration": "HDP.polytope_vertices"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A19",
+      "page": 4,
+      "label": "Corollary 0.0.4",
+      "independently_extracted_source_meaning": "A diameter-one polytope with N actual vertices has a cover by at most N^ceil(1/epsilon²) radius-epsilon balls.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 21,
+          "declaration": "HDP.Source.corollary_0_0_4"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 10,
+          "declaration": "HDP.BallCover"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 82,
+          "declaration": "HDP.covering_polytopes"
+        }
+      ],
+      "status": "covered",
+      "notes": "P is any finite convex hull; N is ncard of its extremePoints, whose finiteness is separately proved. Closed balls match the source's non-strict distance bound."
+    },
+    {
+      "id": "A20",
+      "page": 4,
+      "label": "Corollary proof centers and sample size",
+      "independently_extracted_source_meaning": "Centers are all k-point means from vertices, k=ceil(1/epsilon²), and 1/sqrt(k)≤epsilon.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 14,
+          "declaration": "HDP.orderedCenters"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 48,
+          "declaration": "HDP.ceiling_sample_size"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 65,
+          "declaration": "HDP.orderedCenters_cover"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A21",
+      "page": 4,
+      "label": "Corollary proof counting",
+      "independently_extracted_source_meaning": "N^k ordered choices with repetitions yield at most N^k distinct centers.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 24,
+          "declaration": "HDP.orderedCenters_card"
+        }
+      ],
+      "status": "covered",
+      "notes": "Cardinality is an upper bound because different samples may share a mean."
+    },
+    {
+      "id": "A22",
+      "page": 4,
+      "label": "Exercise 0.0.5 lower inequality",
+      "independently_extracted_source_meaning": "For 1≤m≤n, (n/m)^m≤choose(n,m).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 8,
+          "declaration": "HDP.pow_div_le_choose"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 89,
+          "declaration": "HDP.exercise_0_0_5"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A23",
+      "page": 4,
+      "label": "Exercise 0.0.5 middle inequality",
+      "independently_extracted_source_meaning": "choose(n,m)≤sum_{j=0}^m choose(n,j).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 41,
+          "declaration": "HDP.choose_le_sum_choose"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 89,
+          "declaration": "HDP.exercise_0_0_5"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A24",
+      "page": 4,
+      "label": "Exercise 0.0.5 upper inequality and hint",
+      "independently_extracted_source_meaning": "For 1≤m≤n, sum_{j=0}^m choose(n,j)≤(en/m)^m.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 46,
+          "declaration": "HDP.sum_choose_le_exp"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 89,
+          "declaration": "HDP.exercise_0_0_5"
+        }
+      ],
+      "status": "covered",
+      "notes": "Uses the source's weighted binomial-sum argument at lines 50–86, with e=Real.exp 1."
+    },
+    {
+      "id": "A25",
+      "page": 4,
+      "label": "Exercise 0.0.6 hint, unordered samples",
+      "independently_extracted_source_meaning": "The number of unordered k-selections with repetition from N points is choose(N+k-1,k).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 96,
+          "declaration": "HDP.unordered_selection_count"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 19,
+          "declaration": "HDP.unorderedCenters"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 31,
+          "declaration": "HDP.unorderedCenters_card"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 38,
+          "declaration": "HDP.orderedCenters_subset_unorderedCenters"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A26",
+      "page": 4,
+      "label": "Exercise 0.0.6",
+      "independently_extracted_source_meaning": "An absolute C suffices for a cover with cardinality at most (C+C epsilon² N)^ceil(1/epsilon²).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 40,
+          "declaration": "HDP.Source.exercise_0_0_6"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 90,
+          "declaration": "HDP.improved_covering"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Combinatorics.lean",
+          "line": 116,
+          "declaration": "HDP.unordered_selection_epsilon_bound"
+        }
+      ],
+      "status": "covered",
+      "notes": "One fixed C=exp(1), independent of n,N,epsilon; actual vertex count is used by the source wrapper."
+    },
+    {
+      "id": "A27",
+      "page": 4,
+      "label": "Exercise 0.0.6 parenthetical comparison",
+      "independently_extracted_source_meaning": "The improved base is smaller than N for sufficiently small epsilon when N exceeds the absolute constant.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 87,
+          "declaration": "HDP.improved_base_eventually_smaller"
+        }
+      ],
+      "status": "covered_with_convention",
+      "notes": "The source's qualitative comparison requires this qualification for the chosen C; the formal lemma explicitly assumes exp(1)<N. No uniform strict improvement for every N is claimed."
+    },
+    {
+      "id": "A28",
+      "page": 4,
+      "label": "Notes sharpness, amended concrete family",
+      "independently_extracted_source_meaning": "V_n consists of exactly the 2n signed half-coordinate vectors, K_n its convex hull, with diameter at most one and these actual vertices.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 9,
+          "declaration": "HDP.Crosspolytope.vertex"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 12,
+          "declaration": "HDP.Crosspolytope.vertices"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 16,
+          "declaration": "HDP.Crosspolytope.body"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 43,
+          "declaration": "HDP.Crosspolytope.card_vertices"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 56,
+          "declaration": "HDP.Crosspolytope.dist_vertices_le_one"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 69,
+          "declaration": "HDP.Crosspolytope.dist_body_le_one"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 161,
+          "declaration": "HDP.Crosspolytope.extremePoints_body"
+        }
+      ],
+      "status": "covered",
+      "notes": ""
+    },
+    {
+      "id": "A29",
+      "page": 4,
+      "label": "Notes sharpness, clarification lines 35–44",
+      "independently_extracted_source_meaning": "There is one c∈(0,1) such that every n≥1, 1≤k≤n, positive epsilon below c min(1,sqrt(log(1+n/k)/k)), and every arbitrary ambient finite-center closed-ball cover satisfy 2^(k-1)<card(C).",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Sharpness.lean",
+          "line": 9,
+          "declaration": "HDP.Sharpness.entropy_lower_bound"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyParameters.lean",
+          "line": 9,
+          "declaration": "HDP.Sharpness.radiusConstant"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyParameters.lean",
+          "line": 154,
+          "declaration": "HDP.Sharpness.parameter_dichotomy"
+        }
+      ],
+      "status": "covered",
+      "notes": "Exact quantifier order and strict inequalities; c=10^-6. No final assumed packing, coding, or entropy bound. Packing conditions in intermediate lemmas are discharged via proved Hamming-code existence and parameter dichotomy."
+    },
+    {
+      "id": "A30",
+      "page": 4,
+      "label": "Notes sharpness connection to Exercise 0.0.6",
+      "independently_extracted_source_meaning": "The same crosspolytopes have the Exercise 0.0.6 upper bound with N=2n.",
+      "targets": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Sharpness.lean",
+          "line": 31,
+          "declaration": "HDP.Sharpness.crosspolytope_upper_bound"
+        }
+      ],
+      "status": "covered",
+      "notes": "Together with A29 this supplies the selected worst-case dyadic entropy sharpness meaning. The inversion/comparison between covering cardinality and entropy scale is mathematical explanatory correspondence, not an additional named Lean equivalence theorem."
+    },
+    {
+      "id": "A31",
+      "page": "1,3,4",
+      "label": "illustrations, historical attributions and forward references",
+      "independently_extracted_source_meaning": "Figures illustrate convex hulls/coverings; Notes attribute the empirical method and bounds and cite literature; later-section references advertise future material.",
+      "targets": [],
+      "status": "contextual_non_target",
+      "notes": "No numerical or theorem claim is silently dropped here. Geography in Figure 0.1, bibliographic authorship, and future chapter contents are not Lean propositions required for the geometric theorems; the actual Notes sharpness claim is retained in A28–A30."
+    }
+  ],
+  "confirmed_findings": [
+    {
+      "id": "F01",
+      "severity": "nonblocking_scope_limit",
+      "title": "The source probability argument is formalized in separate pieces; the exported approximation theorem uses a deterministic proof.",
+      "evidence": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 18,
+          "declaration": "HDP.Source.theorem_0_0_2"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Approximation.lean",
+          "line": 43,
+          "declaration": "HDP.empirical_sum_bound"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Approximation.lean",
+          "line": 53,
+          "declaration": "HDP.exists_nonpos_inner"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 38,
+          "declaration": "HDP.exists_finite_law_independent_copies"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 172,
+          "declaration": "HDP.exists_empirical_realization"
+        }
+      ],
+      "assessment": "No change in mathematical statement strength. The deterministic argument uses a supporting-functional choice and induction, not random sampling. Separate law, iid, strong-law, variance, and good-realization claims faithfully cover the source assertions, but there is no assembled probabilistic derivation from arbitrary x∈conv(T) to the approximation conclusion. A claim to have reproduced the source proof end-to-end would overstate the product.",
+      "refutation_evidence": "A product declaration whose actual proof composes a finite convex representation, finite law, independent copies, translated radius bound, expected-error estimate, and good realization into the source theorem would refute the absence-of-assembly observation."
+    },
+    {
+      "id": "F02",
+      "severity": "nonblocking_convention",
+      "title": "Variance statements are finite-second-moment versions.",
+      "evidence": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Variance.lean",
+          "line": 30,
+          "declaration": "HDP.independent_mean_zero_sum_sq"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Variance.lean",
+          "line": 69,
+          "declaration": "HDP.centered_sq_integral"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 108,
+          "declaration": "HDP.empirical_strong_law"
+        }
+      ],
+      "assessment": "These MemLp 2 assumptions are sufficient and automatically true for the finite-support construction; they prevent totalized Bochner integrals from spuriously expressing divergent expectations. They are standard necessary scope clarification for the displayed real variance identities. The product does not cover infinite second moments by extended nonnegative expectations, and its SLLN theorem is not the most general integrable version.",
+      "refutation_evidence": "An operator decision that the source exercise explicitly includes extended-valued expectations would create an uncovered scope item; a separate extended-integral declaration or L1 SLLN wrapper would broaden this coverage."
+    },
+    {
+      "id": "F03",
+      "severity": "nonblocking_source_precision",
+      "title": "Duplicate outcomes require aggregate probability, and k must be positive.",
+      "evidence": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 18,
+          "declaration": "HDP.finiteIndexLaw_value_probability"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 15,
+          "declaration": "HDP.Source.theorem_0_0_2"
+        }
+      ],
+      "assessment": "Both changes repair textbook shorthand without weakening the meaningful theorem. Exact individual value probabilities require distinct support points, obtainable by combining duplicate coefficients. k=0 and negative k are not meaningful for the source display.",
+      "refutation_evidence": "A stated requirement to preserve the literal ill-defined k=0 formula or duplicate-outcome atom equality would require a source clarification, not evidence of an equivalent intended mathematical theorem."
+    },
+    {
+      "id": "F04",
+      "severity": "positive_substantive",
+      "title": "Amended sharpness is genuinely about arbitrary covering centers.",
+      "evidence": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 10,
+          "declaration": "HDP.BallCover"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Sharpness.lean",
+          "line": 9,
+          "declaration": "HDP.Sharpness.entropy_lower_bound"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyEmbedding.lean",
+          "line": 9,
+          "declaration": "HDP.packing_card_le_cover_card"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyPacking.lean",
+          "line": 118,
+          "declaration": "HDP.exists_hamming_code"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyParameters.lean",
+          "line": 154,
+          "declaration": "HDP.Sharpness.parameter_dichotomy"
+        }
+      ],
+      "assessment": "No center-in-body or empirical-center restriction and no desired lower-bound hypothesis survives in the final theorem. The proof constructs codes internally, embeds them into the concrete half-l1 ball, and uses the triangle inequality to constrain every cover.",
+      "refutation_evidence": "A different elaborated type than the inspected source, a hidden local instance redefining Metric.closedBall or Euclidean norm, an extra final assumed entropy hypothesis, or a failed kernel check would defeat this conclusion."
+    },
+    {
+      "id": "F05",
+      "severity": "positive_substantive",
+      "title": "The amended scope is nonvacuous.",
+      "evidence": [
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 43,
+          "declaration": "HDP.Crosspolytope.card_vertices"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 107,
+          "declaration": "HDP.Crosspolytope.vertex_mem_body"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 110,
+          "declaration": "HDP.Crosspolytope.zero_mem_body"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 156,
+          "declaration": "HDP.Crosspolytope.body_eq_l1Ball"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyParameters.lean",
+          "line": 13,
+          "declaration": "HDP.Sharpness.radiusConstant_pos"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyParameters.lean",
+          "line": 17,
+          "declaration": "HDP.Sharpness.logScale_pos"
+        },
+        {
+          "file": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Sharpness.lean",
+          "line": 31,
+          "declaration": "HDP.Sharpness.crosspolytope_upper_bound"
+        }
+      ],
+      "assessment": "For n≥1 the body is nonempty and has 2n actual extreme vertices. For 1≤k≤n the log/sqrt factor and constant are positive, so positive admissible epsilon exist. Finite covers exist via the upper theorem; the lower implication does not gain truth through impossible covering assumptions.",
+      "refutation_evidence": "A concrete admissible n,k for which the radius threshold is nonpositive, or a proof that the defined body is empty despite vertex membership, would refute this; neither is compatible with the inspected declarations."
+    }
+  ],
+  "literature_correspondence": {
+    "primary_url": "https://www.math.uci.edu/~rvershyn/teaching/hdp/carl-pajor.pdf",
+    "checked_locations": [
+      "Printed p.480 definition of dyadic entropy numbers: ambient centers and 2^(k-1) closed translates of unit balls",
+      "Printed p.491 Corollary 2.4 and sharpness discussion",
+      "Printed p.492 equation (2.14): universal lower constant and 1≤k≤n"
+    ],
+    "assessment": "The dyadic threshold and universal quantifiers match. Halving the l1 unit ball halves its entropy radius and yields the product's normalization. Constants may be decreased to lie in (0,1). Strict epsilon below the lower entropy radius forbids a cover by at most 2^(k-1) balls. This supports the amendment as a worst-case absolute-constant sharpness meaning.",
+    "range_connection": "On the family N=2n, Exercise 0.0.6 gives log cover cardinality bounded by ceil(epsilon^-2) log(e+e epsilon²·2n). Its intermediate-entropy inversion has scale sqrt(log(1+n/k)/k), capped at constant radius. The lower theorem matches this scale for 1≤k≤n. It makes no assertion for k>n or a complete epsilon→0 asymptotic at fixed n.",
+    "bibliographic_limit": "Did not independently verify the additional book's bibliography binding [49–50], original Maurey priority, or the source's other historical attributions. The directly consulted primary paper suffices to verify the mathematical amendment.",
+    "retrieval_note": "Initial direct fetch returned 502; search-indexed primary PDF open succeeded. No external source content was written into the experiment."
+  },
+  "structure_review": {
+    "assessment": "Entrypoint imports Source and Sharpness, transitively covering all 13 modules. Reusable geometry, combinatorics, approximation and probability results precede source wrappers; Sharpness composes concrete lower-level modules. No disconnected unimported source theorem was found.",
+    "entrypoint_lines": [
+      1,
+      2
+    ],
+    "limitation": "No compile, import-cycle, or compiled-artifact freshness claim is made here; parent owns kernel verification."
+  },
+  "uncertainties": [
+    {
+      "issue": "The source does not explicitly state moment-existence hypotheses in Exercise 0.0.3.",
+      "impact": "Finite-real-expectation reading is covered; an extended-valued reading remains outside this product.",
+      "resolution": "Record the finite-expectation convention explicitly, or request/provide appropriate extended-integral targets if that broader scope is intended."
+    },
+    {
+      "issue": "There is no named theorem formalizing the algebraic inversion from Exercise 0.0.6's covering bound to a matching dyadic entropy upper bound.",
+      "impact": "The amendment's actual lower-bound contract and same-family upper bound are covered. A requirement for a formally checked entropy-equivalence statement would add work.",
+      "resolution": "Separate and specify an entropy-number equivalence theorem if formal verification of that explanatory comparison is required."
+    }
+  ],
+  "limitations": [
+    "Read-only statement/definition audit, not an independent kernel proof check.",
+    "Same-family independent Codex review; model identity was known and there was no cross-model or blinded review.",
+    "No canonical proof receipt, source admission, gate, Chapter PASS, publication, or release acceptance is issued.",
+    "No product repair or formalization continuation performed.",
+    "Historical provenance and illustrations are retained as explicit contextual non-targets.",
+    "Only the mathematical content and the amendment were audited; retention of all historical experiment reports and procedural reviewer authenticity were not audited."
+  ],
+  "concrete_global_refuters": [
+    "A parent kernel or axiom audit failure for any mapped declaration would invalidate proof-backed coverage despite correct-looking statement correspondence.",
+    "An elaborated #check/#print type inconsistent with any mapped source signature would reopen that row.",
+    "An explicit operator demand for literal source proof reproduction, infinite-moment expectation identities, or k>n fixed-dimension sharpness would change the completeness judgment.",
+    "Evidence that any operative mathematical claim on the four rendered pages is absent from A01–A31 would defeat the claimed independent inventory coverage."
+  ]
+}

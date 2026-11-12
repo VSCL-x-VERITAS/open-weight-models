@@ -1,0 +1,22 @@
+{
+  "completed_at_utc": "2026-11-03T11:07:26.675777+00:00",
+  "verdict": "QUALIFIED_COMPLETION: kernel checks pass and no blocking mismatch found within the reviewed amended scope. Not unqualified verbatim or unrestricted extended-valued completion of the original PDFs.",
+  "fresh_builds": "PASS both",
+  "all_local_kernel_constants": 447,
+  "standard_axioms_only": true,
+  "original_codex_inputs_unchanged": true,
+  "deepseek_release_source_unchanged": true,
+  "source_pages": 11,
+  "independent_source_units": 78,
+  "source_review_tasks": [
+    "/root/audit_appetizer",
+    "/root/audit_chapter01",
+    "/root/compare_lean"
+  ],
+  "report_pages": 8,
+  "report_visual_QA": "All 8 rendered pages inspected; no clipping, overlap or missing mathematical glyphs found.",
+  "report_sha256": "f2a48dd68fde5243dfb2564b180701ea893be29d3f88b9b37ed7fe8019223116",
+  "product_export_byte_identical": true,
+  "post_run_audit_usage_in_native_experiment_metrics": false,
+  "no_automatic_formalization_resume_required_for_recorded_scope": true
+}

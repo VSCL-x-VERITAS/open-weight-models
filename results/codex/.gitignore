@@ -1,0 +1,15 @@
+**/.lake/
+**/__pycache__/
+*.pyc
+*.pdf
+.DS_Store
+**/auth.json
+**/*credentials*
+**/.env
+**/.env.*
+**/sessions/
+**/app-server-private.jsonl
+**/app-server-stderr.log
+**/failure.txt
+.verification/
+!reports/*.pdf

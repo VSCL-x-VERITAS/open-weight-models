@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-02T17:57:44.314338+00:00",
+  "new_repository_no_parent_history": true,
+  "mathematical_source_edits": false,
+  "configuration_edits": [
+    "lake-manifest.json root name normalized from numStability to hdpExperiment; all dependency URLs and revisions unchanged"
+  ],
+  "excluded": [
+    "API keys and credentials",
+    "Harness home and caches",
+    "raw session replay and hidden reasoning",
+    "copyrighted book PDF and extracted text",
+    "earlier nonclean pilot",
+    "vendored Mathlib or Lean binaries"
+  ],
+  "license": "No project-wide license selected; dependency licenses remain with upstream."
+}

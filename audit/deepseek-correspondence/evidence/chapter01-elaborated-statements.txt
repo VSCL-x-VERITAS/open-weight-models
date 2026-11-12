@@ -1,0 +1,341 @@
+HDP.expectation.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) : ℝ
+HDP.sampleMean.{u_1} {Ω : Type u_1} (X : ℕ → Ω → ℝ) (N : ℕ) : Ω → ℝ
+HDP.LpNorm.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (p : ENNReal) (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) : ENNReal
+HDP.LpSpace.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (p : ENNReal) (μ : MeasureTheory.Measure Ω) : Set (Ω → ℝ)
+HDP.l2Inner.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X Y : Ω → ℝ) : ℝ
+HDP.stdDev.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) : ℝ
+HDP.absMoment.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (p : ℝ) (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) : ℝ
+HDP.moment.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (p : ℝ) (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) : ℝ
+HDP.cdfOf.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) (t : ℝ) : ℝ
+HDP.tail.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) (t : ℝ) : ℝ
+HDP.ConvergesInDistribution.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω)
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (Z : Ω → ℝ) : Prop
+HDP.covariance_eq_l2Inner.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X Y : Ω → ℝ} :
+  ProbabilityTheory.covariance X Y μ = HDP.l2Inner μ (fun ω => X ω - ∫ (x : Ω), X x ∂μ) fun ω => Y ω - ∫ (x : Ω), Y x ∂μ
+HDP.l2Inner_self.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} (X : Ω → ℝ) :
+  HDP.l2Inner μ X X = ∫ (ω : Ω), X ω ^ 2 ∂μ
+HDP.stdDev_eq_lpNorm.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.MemLp X 2 μ) :
+  HDP.stdDev μ X = MeasureTheory.lpNorm (fun ω => X ω - ∫ (x : Ω), X x ∂μ) 2 μ
+HDP.mgfOf.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) (t : ℝ) : ℝ
+HDP.mgfOf_eq_integral.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) (X : Ω → ℝ) (t : ℝ) :
+  HDP.mgfOf μ X t = ∫ (ω : Ω), Real.exp (t * X ω) ∂μ
+HDP.Lp_complete.{u_1} {α✝ : Type u_1} {inst✝ : MeasurableSpace α✝} {μ : MeasureTheory.Measure α✝}
+  [MeasureTheory.IsFiniteMeasure μ] (p : ENNReal) [Fact (1 ≤ p)] : CompleteSpace ↥(MeasureTheory.Lp ℝ p μ)
+HDP.L2_innerProductSpace.{u_1} {α✝ : Type u_1} {inst✝ : MeasurableSpace α✝} {μ : MeasureTheory.Measure α✝}
+  [MeasureTheory.IsFiniteMeasure μ] : InnerProductSpace ℝ ↥(MeasureTheory.Lp ℝ 2 μ)
+HDP.charFun_const_mul_map.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} (S : Ω → ℝ) (c t : ℝ)
+  (hS : AEMeasurable S μ) :
+  MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => c * S ω) μ) t =
+    MeasureTheory.charFun (MeasureTheory.Measure.map S μ) (c * t)
+HDP.charFun_sum_fin.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {N : ℕ} (Y : Fin N → Ω → ℝ) (hY : ProbabilityTheory.iIndepFun Y μ)
+  (hYm : ∀ (i : Fin N), AEMeasurable (Y i) μ) (t : ℝ) :
+  MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => ∑ i, Y i ω) μ) t =
+    ∏ i, MeasureTheory.charFun (MeasureTheory.Measure.map (Y i) μ) t
+HDP.clt_charFun_scalar_limit {ν : MeasureTheory.Measure ℝ} [MeasureTheory.IsProbabilityMeasure ν]
+  (h2 : MeasureTheory.MemLp (fun x => x) 2 ν) (hmean : ∫ (x : ℝ), x ∂ν = 0) (σ : ℝ) (hσ : 0 < σ)
+  (hvar : ∫ (x : ℝ), x ^ 2 ∂ν = σ ^ 2) (t : ℝ) :
+  Filter.Tendsto (fun N => ↑N * (MeasureTheory.charFun ν (t / (σ * √↑N)) - 1)) Filter.atTop (nhds (-↑t ^ 2 / 2))
+HDP.charFun_normalized_sum.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (N : ℕ) (t : ℝ) :
+  MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ) t =
+    MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => X 0 ω - m) μ) (t / (σ * √↑N)) ^ N
+HDP.centered_law_properties.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ)
+  (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m) (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) :
+  have ν := MeasureTheory.Measure.map (fun ω => X 0 ω - m) μ;
+  MeasureTheory.MemLp (fun x => x) 2 ν ∧ ∫ (x : ℝ), x ∂ν = 0 ∧ ∫ (x : ℝ), x ^ 2 ∂ν = σ ^ 2
+HDP.charFun_Z_tendsto.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m)
+  (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) (t : ℝ) :
+  Filter.Tendsto
+    (fun N => MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ) t)
+    Filter.atTop (nhds (Complex.exp (-↑t ^ 2 / 2)))
+HDP.variance_Z.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) {N : ℕ} (hN : 0 < N) :
+  ProbabilityTheory.variance (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ = 1
+HDP.mean_Z.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ]
+  (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ) (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ)
+  (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m) (N : ℕ) : ∫ (ω : Ω), (∑ i, (X (↑i) ω - m)) / (σ * √↑N) ∂μ = 0
+HDP.memLp_Z.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ)
+  (N : ℕ) : MeasureTheory.MemLp (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) 2 μ
+HDP.measure_norm_gt_Z_le.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m) (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) {r : ℝ}
+  (hr : 0 < r) (N : ℕ) :
+  (MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ) {x | r < ‖x‖} ≤ ENNReal.ofReal (1 / r ^ 2)
+HDP.tight_Z.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m) (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) :
+  MeasureTheory.IsTightMeasureSet
+    (Set.range fun N => MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ)
+HDP.central_limit_theorem.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m)
+  (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) :
+  let Z := fun N ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N);
+  have νs := fun N => ⟨MeasureTheory.Measure.map (Z N) μ, ⋯⟩;
+  have gauss := ⟨ProbabilityTheory.gaussianReal 0 1, ⋯⟩;
+  Filter.Tendsto νs Filter.atTop (nhds gauss)
+HDP.central_limit_cdf.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m)
+  (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) (t : ℝ) :
+  Filter.Tendsto (fun N => (MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ).real (Set.Iic t))
+    Filter.atTop (nhds ((ProbabilityTheory.gaussianReal 0 1).real (Set.Iic t)))
+HDP.central_limit_tail.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (m σ : ℝ) (hσ : 0 < σ)
+  (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (hmean : ∀ (i : ℕ), ∫ (ω : Ω), X i ω ∂μ = m)
+  (hvar : ∀ (i : ℕ), ProbabilityTheory.variance (X i) μ = σ ^ 2) (t : ℝ) :
+  Filter.Tendsto (fun N => (MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - m)) / (σ * √↑N)) μ).real (Set.Ici t))
+    Filter.atTop (nhds ((ProbabilityTheory.gaussianReal 0 1).real (Set.Ici t)))
+HDP.norm_exp_sub_quadratic_le {z : ℂ} (hz : ‖z‖ ≤ 1) : ‖Complex.exp z - (1 + z + z ^ 2 / 2)‖ ≤ 2 / 9 * ‖z‖ ^ 3
+HDP.exp_quadratic_error_tendsto (x : ℝ) :
+  Filter.Tendsto
+    (fun s => (Complex.exp (↑s * ↑x * Complex.I) - 1 - ↑s * ↑x * Complex.I - (↑s * ↑x * Complex.I) ^ 2 / 2) / ↑s ^ 2)
+    (nhdsWithin 0 {0}ᶜ) (nhds 0)
+HDP.exp_linear_error_tendsto (x : ℝ) :
+  Filter.Tendsto (fun s => (Complex.exp (↑s * ↑x * Complex.I) - 1 - ↑s * ↑x * Complex.I) / ↑s ^ 2) (nhdsWithin 0 {0}ᶜ)
+    (nhds (-↑x ^ 2 / 2))
+HDP.norm_exp_linear_error_div_sq_le (x : ℝ) {s : ℝ} (hs : s ≠ 0) :
+  ‖(Complex.exp (↑s * ↑x * Complex.I) - 1 - ↑s * ↑x * Complex.I) / ↑s ^ 2‖ ≤ 3 * x ^ 2
+HDP.charFun_centered_taylor {ν : MeasureTheory.Measure ℝ} [MeasureTheory.IsProbabilityMeasure ν]
+  (h2 : MeasureTheory.MemLp (fun x => x) 2 ν) (hmean : ∫ (x : ℝ), x ∂ν = 0) :
+  Filter.Tendsto (fun s => (MeasureTheory.charFun ν s - 1) / ↑s ^ 2) (nhdsWithin 0 {0}ᶜ)
+    (nhds (-↑(∫ (x : ℝ), x ^ 2 ∂ν) / 2))
+HDP.bernoulli_id_memLp (p : NNReal) (hp : p ≤ 1) : MeasureTheory.MemLp (fun x => x) 2 (HDP.bernoulliMeasure p)
+HDP.de_moivre_laplace.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (p : NNReal) (hp0 : 0 < p) (hp1 : p < 1)
+  (hXmeas : ∀ (i : ℕ), AEMeasurable (X i) μ) (hindep : ProbabilityTheory.iIndepFun X μ)
+  (hXlaw : ∀ (i : ℕ), MeasureTheory.Measure.map (X i) μ = HDP.bernoulliMeasure p) :
+  have σ := √(↑p * (1 - ↑p));
+  have νs := fun N => ⟨MeasureTheory.Measure.map (fun ω => (∑ i, (X (↑i) ω - ↑p)) / (σ * √↑N)) μ, ⋯⟩;
+  have gauss := ⟨ProbabilityTheory.gaussianReal 0 1, ⋯⟩;
+  Filter.Tendsto νs Filter.atTop (nhds gauss)
+HDP.jensen.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] {φ : ℝ → ℝ} (hφ : ConvexOn ℝ Set.univ φ) (hX : MeasureTheory.Integrable X μ)
+  (hφX : MeasureTheory.Integrable (φ ∘ X) μ) : φ (∫ (ω : Ω), X ω ∂μ) ≤ ∫ (ω : Ω), φ (X ω) ∂μ
+HDP.LpNorm_mono.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] {p q : ENNReal} (hpq : p ≤ q) (hX : MeasureTheory.AEStronglyMeasurable X μ) :
+  HDP.LpNorm p μ X ≤ HDP.LpNorm q μ X
+HDP.LpNorm_add_le.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X Y : Ω → ℝ} {p : ENNReal}
+  (hp : 1 ≤ p) (hX : MeasureTheory.MemLp X p μ) (hY : MeasureTheory.MemLp Y p μ) :
+  HDP.LpNorm p μ (X + Y) ≤ HDP.LpNorm p μ X + HDP.LpNorm p μ Y
+HDP.holder.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X Y : Ω → ℝ} {p q : ℝ}
+  (hpq : p.HolderConjugate q) (hX : MeasureTheory.MemLp X (ENNReal.ofReal p) μ)
+  (hY : MeasureTheory.MemLp Y (ENNReal.ofReal q) μ) :
+  |∫ (ω : Ω), X ω * Y ω ∂μ| ≤ MeasureTheory.lpNorm X (ENNReal.ofReal p) μ * MeasureTheory.lpNorm Y (ENNReal.ofReal q) μ
+HDP.holder_one_top.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X Y : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.MemLp X 1 μ) (hY : MeasureTheory.MemLp Y ⊤ μ) :
+  |∫ (ω : Ω), X ω * Y ω ∂μ| ≤ MeasureTheory.lpNorm X 1 μ * MeasureTheory.lpNorm Y ⊤ μ
+HDP.cauchy_schwarz.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X Y : Ω → ℝ}
+  (hX : MeasureTheory.MemLp X 2 μ) (hY : MeasureTheory.MemLp Y 2 μ) :
+  |∫ (ω : Ω), X ω * Y ω ∂μ| ≤ MeasureTheory.lpNorm X 2 μ * MeasureTheory.lpNorm Y 2 μ
+HDP.variance_sum_indep.{u_1, u_2} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ι : Type u_2} [Fintype ι] (X : ι → Ω → ℝ)
+  (hX : ∀ (i : ι), MeasureTheory.MemLp (X i) 2 μ)
+  (hindep : Set.univ.Pairwise fun i j => ProbabilityTheory.IndepFun (X i) (X j) μ) :
+  ProbabilityTheory.variance (∑ i, X i) μ = ∑ i, ProbabilityTheory.variance (X i) μ
+HDP.variance_sampleMean.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) {N : ℕ} (hN : 0 < N) :
+  ProbabilityTheory.variance (HDP.sampleMean X N) μ = ProbabilityTheory.variance (X 0) μ / ↑N
+HDP.strong_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hint : MeasureTheory.Integrable (X 0) μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) :
+  ∀ᵐ (ω : Ω) ∂μ, Filter.Tendsto (fun N => HDP.sampleMean X N ω) Filter.atTop (nhds (∫ (ω : Ω), X 0 ω ∂μ))
+HDP.integral_sampleMean.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hint : ∀ (i : ℕ), MeasureTheory.Integrable (X i) μ)
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) {N : ℕ} (hN : 0 < N) :
+  ∫ (ω : Ω), HDP.sampleMean X N ω ∂μ = ∫ (ω : Ω), X 0 ω ∂μ
+HDP.bernoulliMeasure (p : NNReal) : MeasureTheory.Measure ℝ
+HDP.bernoulli_mean (p : NNReal) (hp : p ≤ 1) : ∫ (x : ℝ), x ∂HDP.bernoulliMeasure p = ↑p
+HDP.bernoulli_variance (p : NNReal) (hp : p ≤ 1) :
+  ProbabilityTheory.variance (fun x => x) (HDP.bernoulliMeasure p) = ↑p * (1 - ↑p)
+HDP.binomialPMFMeasure (N : ℕ) (p : NNReal) (hp : p ≤ 1) : MeasureTheory.Measure (Fin (N + 1))
+HDP.binomialMeasure (N : ℕ) (p : NNReal) (hp : p ≤ 1) : MeasureTheory.Measure ℝ
+HDP.poissonDist (r : NNReal) : MeasureTheory.Measure ℕ
+HDP.poissonDist_apply (r : NNReal) (k : ℕ) :
+  (HDP.poissonDist r) {k} = ENNReal.ofReal (ProbabilityTheory.poissonPMFReal r k)
+HDP.poissonPMFReal_eq (r : NNReal) (k : ℕ) :
+  ProbabilityTheory.poissonPMFReal r k = Real.exp (-↑r) * ↑r ^ k / ↑k.factorial
+HDP.gaussianPDFReal_zero_one (x : ℝ) :
+  ProbabilityTheory.gaussianPDFReal 0 1 x = 1 / √(2 * Real.pi) * Real.exp (-x ^ 2 / 2)
+HDP.memLp_two_integrable.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {f : Ω → ℝ} (hf : MeasureTheory.MemLp f 2 μ) : MeasureTheory.Integrable f μ
+HDP.sampleMean_eq.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (X : ℕ → Ω → ℝ) (N : ℕ) :
+  HDP.sampleMean X N = fun ω => (↑N)⁻¹ * ∑ i ∈ Finset.range N, X i ω
+HDP.sampleMean_deviation_isBigO.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hX : ∀ (i : ℕ), MeasureTheory.MemLp (X i) 2 μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) :
+  (fun N => ∫ (ω : Ω), |HDP.sampleMean X N ω - ∫ (ω' : Ω), X 0 ω' ∂μ| ∂μ) =O[Filter.atTop] fun N => (√↑N)⁻¹
+HDP.poissonReal (r : NNReal) : MeasureTheory.Measure ℝ
+HDP.charFun_poissonReal (r : NNReal) (t : ℝ) :
+  MeasureTheory.charFun (HDP.poissonReal r) t = Complex.exp (↑↑r * (Complex.exp (↑t * Complex.I) - 1))
+HDP.charFun_bernoulli (p : NNReal) (hp : p ≤ 1) (t : ℝ) :
+  MeasureTheory.charFun (HDP.bernoulliMeasure p) t = 1 - ↑↑p + ↑↑p * Complex.exp (↑t * Complex.I)
+HDP.charFun_sum_bernoulli_row.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i))
+  (hp : ∀ (N i : ℕ), p N i ≤ 1) (hrow : ∀ (N : ℕ), ProbabilityTheory.iIndepFun (fun i => X N ↑i) μ) (N : ℕ) (t : ℝ) :
+  MeasureTheory.charFun (MeasureTheory.Measure.map (fun ω => ∑ i, X N (↑i) ω) μ) t =
+    ∏ i, (1 - ↑↑(p N ↑i) + ↑↑(p N ↑i) * Complex.exp (↑t * Complex.I))
+HDP.ae_nonneg_of_map_bernoulli.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  {p : NNReal} (hX : AEMeasurable X μ) (h : MeasureTheory.Measure.map X μ = HDP.bernoulliMeasure p) : 0 ≤ᵐ[μ] X
+HDP.memLp_of_map_bernoulli.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  {p : NNReal} (hX : AEMeasurable X μ) (h : MeasureTheory.Measure.map X μ = HDP.bernoulliMeasure p) (hp : p ≤ 1) :
+  MeasureTheory.MemLp X 2 μ
+HDP.integral_of_map_bernoulli.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {X : Ω → ℝ} {p : NNReal} (hX : AEMeasurable X μ)
+  (h : MeasureTheory.Measure.map X μ = HDP.bernoulliMeasure p) (hp : p ≤ 1) : ∫ (ω : Ω), X ω ∂μ = ↑p
+HDP.ae_nonneg_sum_row.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i)) (N : ℕ) :
+  0 ≤ᵐ[μ] fun ω => ∑ i, X N (↑i) ω
+HDP.integral_sum_row.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i))
+  (hp : ∀ (N i : ℕ), p N i ≤ 1) (N : ℕ) : ∫ (ω : Ω), ∑ i, X N (↑i) ω ∂μ = ∑ i, ↑(p N ↑i)
+HDP.integrable_sum_row.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i))
+  (hp : ∀ (N i : ℕ), p N i ≤ 1) (N : ℕ) : MeasureTheory.Integrable (fun ω => ∑ i, X N (↑i) ω) μ
+HDP.exists_sum_bound (p : ℕ → ℕ → NNReal) (lam : NNReal)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  ∃ C, 0 ≤ C ∧ ∀ (N : ℕ), ∑ i ∈ Finset.range N, ↑(p N i) ≤ C
+HDP.tight_poisson_sums.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal) (lam : NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i))
+  (hp : ∀ (N i : ℕ), p N i ≤ 1)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  MeasureTheory.IsTightMeasureSet (Set.range fun N => MeasureTheory.Measure.map (fun ω => ∑ i, X N (↑i) ω) μ)
+HDP.aemeasurable_sum_row.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} (X : ℕ → ℕ → Ω → ℝ)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ) (N : ℕ) : AEMeasurable (fun ω => ∑ i, X N (↑i) ω) μ
+HDP.poisson_limit_theorem.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → ℕ → Ω → ℝ) (p : ℕ → ℕ → NNReal) (lam : NNReal)
+  (hXmeas : ∀ (N i : ℕ), AEMeasurable (X N i) μ)
+  (hXlaw : ∀ (N i : ℕ), MeasureTheory.Measure.map (X N i) μ = HDP.bernoulliMeasure (p N i))
+  (hrow : ∀ (N : ℕ), ProbabilityTheory.iIndepFun (fun i => X N ↑i) μ) (hp : ∀ (N i : ℕ), p N i ≤ 1)
+  (hmax : ∀ (ε : ℝ), 0 < ε → ∀ᶠ (N : ℕ) in Filter.atTop, ∀ i < N, ↑(p N i) < ε)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  let S := fun N ω => ∑ i, X N (↑i) ω;
+  have νs := fun N => ⟨MeasureTheory.Measure.map (S N) μ, ⋯⟩;
+  have target := ⟨HDP.poissonReal lam, ⋯⟩;
+  Filter.Tendsto νs Filter.atTop (nhds target)
+HDP.norm_prod_sub_prod_range_le (a b : ℕ → ℂ) (M : ℕ → ℝ) (hM : ∀ (i : ℕ), 1 ≤ M i) (N : ℕ) :
+  (∀ i < N, ‖a i‖ ≤ M i) →
+    (∀ i < N, ‖b i‖ ≤ M i) →
+      ‖∏ i ∈ Finset.range N, a i - ∏ i ∈ Finset.range N, b i‖ ≤
+        (∏ i ∈ Finset.range N, M i) * ∑ i ∈ Finset.range N, ‖a i - b i‖
+HDP.norm_one_add_sub_exp_le {u : ℂ} (hu : ‖u‖ ≤ 1) : ‖1 + u - Complex.exp u‖ ≤ 3 / 4 * ‖u‖ ^ 2
+HDP.prod_exp_tendsto (p : ℕ → ℕ → NNReal) (lam : NNReal)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) (t : ℝ) :
+  Filter.Tendsto (fun N => ∏ i ∈ Finset.range N, Complex.exp (↑↑(p N i) * (Complex.exp (↑t * Complex.I) - 1)))
+    Filter.atTop (nhds (Complex.exp (↑↑lam * (Complex.exp (↑t * Complex.I) - 1))))
+HDP.sum_sq_tendsto_zero (p : ℕ → ℕ → NNReal) (lam : NNReal)
+  (hmax : ∀ (ε : ℝ), 0 < ε → ∀ᶠ (N : ℕ) in Filter.atTop, ∀ i < N, ↑(p N i) < ε)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i) ^ 2) Filter.atTop (nhds 0)
+HDP.norm_one_add_le_exp_norm (u : ℂ) : ‖1 + u‖ ≤ Real.exp ‖u‖
+HDP.norm_exp_le_exp_norm (u : ℂ) : ‖Complex.exp u‖ ≤ Real.exp ‖u‖
+HDP.prod_diff_tendsto_zero (p : ℕ → ℕ → NNReal) (lam : NNReal) (t : ℝ) (hp : ∀ (N i : ℕ), p N i ≤ 1)
+  (hmax : ∀ (ε : ℝ), 0 < ε → ∀ᶠ (N : ℕ) in Filter.atTop, ∀ i < N, ↑(p N i) < ε)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  Filter.Tendsto
+    (fun N =>
+      ‖∏ i ∈ Finset.range N, (1 + ↑↑(p N i) * (Complex.exp (↑t * Complex.I) - 1)) -
+          ∏ i ∈ Finset.range N, Complex.exp (↑↑(p N i) * (Complex.exp (↑t * Complex.I) - 1))‖)
+    Filter.atTop (nhds 0)
+HDP.poisson_product_tendsto (p : ℕ → ℕ → NNReal) (lam : NNReal) (t : ℝ) (hp : ∀ (N i : ℕ), p N i ≤ 1)
+  (hmax : ∀ (ε : ℝ), 0 < ε → ∀ᶠ (N : ℕ) in Filter.atTop, ∀ i < N, ↑(p N i) < ε)
+  (hsum : Filter.Tendsto (fun N => ∑ i ∈ Finset.range N, ↑(p N i)) Filter.atTop (nhds ↑lam)) :
+  Filter.Tendsto (fun N => ∏ i ∈ Finset.range N, (1 - ↑↑(p N i) + ↑↑(p N i) * Complex.exp (↑t * Complex.I)))
+    Filter.atTop (nhds (Complex.exp (↑↑lam * (Complex.exp (↑t * Complex.I) - 1))))
+HDP.coin : MeasureTheory.Measure Bool
+HDP.coinX : Bool → ℝ
+HDP.coinY : Bool → ℝ
+HDP.coin_integral_X : ∫ (x : Bool), |HDP.coinX x| ^ ↑(1 / 2) ∂HDP.coin = 1 / 2
+HDP.coin_integral_Y : ∫ (x : Bool), |HDP.coinY x| ^ ↑(1 / 2) ∂HDP.coin = 1 / 2
+HDP.coin_integral_XY : ∫ (x : Bool), |(HDP.coinX + HDP.coinY) x| ^ ↑(1 / 2) ∂HDP.coin = 1
+HDP.coin_lpNorm_X : MeasureTheory.lpNorm HDP.coinX HDP.half HDP.coin = 1 / 4
+HDP.coin_lpNorm_Y : MeasureTheory.lpNorm HDP.coinY HDP.half HDP.coin = 1 / 4
+HDP.coin_lpNorm_XY : MeasureTheory.lpNorm (HDP.coinX + HDP.coinY) HDP.half HDP.coin = 1
+HDP.triangle_inequality_fails_at_half :
+  ¬MeasureTheory.lpNorm (HDP.coinX + HDP.coinY) HDP.half HDP.coin ≤
+      MeasureTheory.lpNorm HDP.coinX HDP.half HDP.coin + MeasureTheory.lpNorm HDP.coinY HDP.half HDP.coin
+HDP.coin_integral_X_rpow (p : ℝ) (hp0 : 0 < p) : ∫ (x : Bool), |HDP.coinX x| ^ p ∂HDP.coin = 1 / 2
+HDP.coin_integral_Y_rpow (p : ℝ) (hp0 : 0 < p) : ∫ (x : Bool), |HDP.coinY x| ^ p ∂HDP.coin = 1 / 2
+HDP.coin_integral_XY_rpow (p : ℝ) (hp0 : 0 < p) : ∫ (x : Bool), |(HDP.coinX + HDP.coinY) x| ^ p ∂HDP.coin = 1
+HDP.lpNorm_X_rpow {p : ℝ} (hp0 : 0 < p) : MeasureTheory.lpNorm HDP.coinX (ENNReal.ofReal p) HDP.coin = (1 / 2) ^ (1 / p)
+HDP.lpNorm_XY_rpow {p : ℝ} (hp0 : 0 < p) : MeasureTheory.lpNorm (HDP.coinX + HDP.coinY) (ENNReal.ofReal p) HDP.coin = 1
+HDP.triangle_inequality_fails_of_lt_one {p : ℝ} (hp0 : 0 < p) (hp1 : p < 1) :
+  ¬MeasureTheory.lpNorm (HDP.coinX + HDP.coinY) (ENNReal.ofReal p) HDP.coin ≤
+      MeasureTheory.lpNorm HDP.coinX (ENNReal.ofReal p) HDP.coin +
+        MeasureTheory.lpNorm HDP.coinY (ENNReal.ofReal p) HDP.coin
+HDP.integral_eq_integral_tail.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.Integrable X μ) (hX_nonneg : 0 ≤ᵐ[μ] X) :
+  ∫ (ω : Ω), X ω ∂μ = ∫ (t : ℝ) in Set.Ioi 0, HDP.tail μ X t
+HDP.lintegral_eq_lintegral_tail.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  (hX : AEMeasurable X μ) (hX_nonneg : 0 ≤ᵐ[μ] X) :
+  ∫⁻ (ω : Ω), ENNReal.ofReal (X ω) ∂μ = ∫⁻ (t : ℝ) in Set.Ioi 0, μ {ω | t < X ω}
+HDP.integral_eq_tail_sub_lower.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.Integrable X μ) :
+  ∫ (ω : Ω), X ω ∂μ = (∫ (t : ℝ) in Set.Ioi 0, HDP.tail μ X t) - ∫ (t : ℝ) in Set.Iic 0, μ.real {ω | X ω < t}
+HDP.absMoment_eq_integral_tail_ennreal.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  {X : Ω → ℝ} {p : ℝ} (hp : 0 < p) (hX : AEMeasurable X μ) :
+  ∫⁻ (ω : Ω), ENNReal.ofReal (|X ω| ^ p) ∂μ =
+    ENNReal.ofReal p * ∫⁻ (t : ℝ) in Set.Ioi 0, μ {ω | t < |X ω|} * ENNReal.ofReal (t ^ (p - 1))
+HDP.markov.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX_nonneg : 0 ≤ᵐ[μ] X) (hX : MeasureTheory.Integrable X μ) {t : ℝ}
+  (ht : 0 < t) : μ.real {ω | t ≤ X ω} ≤ (∫ (ω : Ω), X ω ∂μ) / t
+HDP.chebyshev.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.MemLp X 2 μ) {t : ℝ} (ht : 0 < t) :
+  μ.real {ω | t ≤ |X ω - ∫ (x : Ω), X x ∂μ|} ≤ ProbabilityTheory.variance X μ / t ^ 2
+HDP.chebyshev_from_markov.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : MeasureTheory.MemLp X 2 μ) {t : ℝ} (ht : 0 < t) :
+  μ.real {ω | t ≤ |X ω - ∫ (x : Ω), X x ∂μ|} ≤ ProbabilityTheory.variance X μ / t ^ 2
+HDP.cdfOf_eq_measureReal.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : AEMeasurable X μ) (t : ℝ) : HDP.cdfOf μ X t = μ.real {ω | X ω ≤ t}
+HDP.tail_eq_one_sub_cdf.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : AEMeasurable X μ) (t : ℝ) : HDP.tail μ X t = 1 - HDP.cdfOf μ X t
+HDP.markov_ennreal.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω} {X : Ω → ℝ}
+  [MeasureTheory.IsProbabilityMeasure μ] (hX : AEMeasurable X μ) (hX_nonneg : 0 ≤ᵐ[μ] X) {t : ℝ} (ht : 0 < t) :
+  μ {ω | ENNReal.ofReal t ≤ ENNReal.ofReal (X ω)} * ENNReal.ofReal t ≤ ∫⁻ (ω : Ω), ENNReal.ofReal (X ω) ∂μ
+HDP.absMoment_eq_integral_tail_ennreal'.{u_2} {Ω : Type u_2} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  {X : Ω → ℝ} {p : ℝ} (hp : 0 < p) (hX : AEMeasurable X μ) :
+  ∫⁻ (ω : Ω), ENNReal.ofReal (|X ω| ^ p) ∂μ =
+    ∫⁻ (t : ℝ) in Set.Ioi 0, ENNReal.ofReal (p * t ^ (p - 1)) * μ {ω | t < |X ω|}
+HDP.absMoment_eq_integral_tail_real.{u_2} {Ω : Type u_2} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {X : Ω → ℝ} {p : ℝ} (hp : 0 < p) (hX : AEMeasurable X μ)
+  (hfin : ∫⁻ (t : ℝ) in Set.Ioi 0, ENNReal.ofReal (p * t ^ (p - 1)) * μ {ω | t < |X ω|} ≠ ⊤) :
+  ∫ (ω : Ω), |X ω| ^ p ∂μ = ∫ (t : ℝ) in Set.Ioi 0, p * t ^ (p - 1) * μ.real {ω | t < |X ω|}
+HDP.charFun_tendsto_of_tendsto {νs : ℕ → MeasureTheory.ProbabilityMeasure ℝ} {ν : MeasureTheory.ProbabilityMeasure ℝ}
+  (h : Filter.Tendsto νs Filter.atTop (nhds ν)) (t : ℝ) :
+  Filter.Tendsto (fun n => MeasureTheory.charFun (↑(νs n)) t) Filter.atTop (nhds (MeasureTheory.charFun (↑ν) t))
+HDP.tendsto_probabilityMeasure_of_charFun (νs : ℕ → MeasureTheory.ProbabilityMeasure ℝ)
+  (ν : MeasureTheory.ProbabilityMeasure ℝ) (htight : MeasureTheory.IsTightMeasureSet {x | ∃ n, ↑(νs n) = x})
+  (hchar :
+    ∀ (t : ℝ),
+      Filter.Tendsto (fun n => MeasureTheory.charFun (↑(νs n)) t) Filter.atTop (nhds (MeasureTheory.charFun (↑ν) t))) :
+  Filter.Tendsto νs Filter.atTop (nhds ν)

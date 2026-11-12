@@ -1,0 +1,8 @@
+Formalization phase starts now. Read AGENTS.md and apply the installed
+book-formalization skill to the whole source PDF. Independently derive the source
+inventory, formalization steps, exact Lean statements and proofs from scratch.
+Use fresh native Codex reviewers for the skill's independent roles as specified.
+Continue through all actionable work until the whole PDF is resolved or a genuine
+typed nonlocal blocker exists. Follow the explicit protocol overrides and retain
+all real evidence. Do not stop after a first increment or confuse compile success
+with source completeness. Persist reports/STATUS.json before ending.

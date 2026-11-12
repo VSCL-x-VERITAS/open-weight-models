@@ -1,0 +1,4 @@
+No project-wide license has been selected for this experiment release.
+Lean, Mathlib and their dependencies retain their respective upstream licenses
+and are fetched separately. The book PDF and extracted book text are not
+redistributed. This release is supplied for inspection and independent checking.

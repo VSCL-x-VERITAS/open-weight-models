@@ -1,0 +1,43 @@
+{
+  "state": "blocked",
+  "phase": "formalization_local_work_exhausted_source_specification_pending",
+  "recorded_at_utc": "2026-11-03T00:37:18.888693+00:00",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "skill_version": "8.1.70",
+  "setup_ready": true,
+  "formalization_started": true,
+  "source_accounting_complete": true,
+  "all_source_resolved": false,
+  "all_well_defined_reviewed_source_targets_locally_verified": true,
+  "initial_empty_build_passed": true,
+  "final_integrated_build_passed": true,
+  "final_build": "reports/final-build.json",
+  "result": "reports/FORMALIZATION_RESULT.json",
+  "inventory": "reports/source-inventory-final.json",
+  "local_routing_queue": ".formalization/units/chapter01-clean/01/queue.json",
+  "required_local_mathematical_or_review_work_remaining": [],
+  "blockers": [
+    {
+      "type": "SOURCE_SPECIFICATION_UNRESOLVED",
+      "id": "SIGNED_NONINTEGER_RAW_MOMENT",
+      "row": "D-moment",
+      "source": "printed p5: raw moment E X^p for arbitrary real p>0 and signed real X",
+      "evidence": [
+        "reports/SOURCE_DISCREPANCIES.json",
+        "reports/reviews/source-review.json",
+        "reports/reviews/inventory-v2-coverage.json",
+        "reports/reviews/final-source-crosswalk-review.json"
+      ],
+      "why_nonlocal": "The complete supplied PDF does not specify a real negative-base noninteger-power convention. A proof or unsupported Mathlib convention cannot determine source intent; external consultation is forbidden.",
+      "action_needed": "Supply a source-authoritative convention/domain correction for signed X raised to arbitrary positive noninteger real powers, or an explicit operator semantic amendment. Preserve all completed source reviews/proofs; only the affected specification/target needs prospective work."
+    }
+  ],
+  "canonical_claude_admission": false,
+  "canonical_proof_receipts": false,
+  "canonical_chapter_pass": false,
+  "published": false,
+  "completeness_percentage": "N/A; one source-specification subclaim remains unresolved",
+  "protocol_adaptation": "reports/PROTOCOL_ADAPTATION.json",
+  "next_action": "Supply a source-authoritative convention/domain correction for signed X raised to arbitrary positive noninteger real powers, or an explicit operator semantic amendment. Preserve all completed source reviews/proofs; only the affected specification/target needs prospective work."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "operator-clarification-001",
+  "case": "chapter01",
+  "prepared_at_utc": "2026-11-03T09:48:47.349595+00:00",
+  "authorization": "User: independently review what they need, provide it as you see fit, then resume their runs.",
+  "experiment_classification_before": "unassisted clean Codex trial with adapted skill",
+  "experiment_classification_after": "operator-assisted continuation of the same clean Codex trial",
+  "source_contract": "source/operator-clarification-001/CLARIFICATION.txt",
+  "source_contract_sha256": "288129e3e2b10126a5cc61b22994ef9908a4af982e33a5359dd87bbdc86ad52a",
+  "resume_prompt": "run/RESUME_AFTER_OPERATOR_001.txt",
+  "resume_prompt_sha256": "9aa41147ee002c879a52f87f68ba25fe6a8d20367d1472dea4f2ad13360e3c76",
+  "provided_lean_proofs": false,
+  "provided_prior_library_or_experiment_solutions": false,
+  "operator_review_scope": "The two reported source blockers, their primary references and relevant existing moment/covering definitions; not a new full independent source audit.",
+  "operator_research_duration_seconds": null,
+  "operator_research_tokens": null,
+  "operator_research_note": "This coordinating chat/research is outside the native trial meter. No missing duration, tokens or API-equivalent charge is fabricated.",
+  "baseline": {
+    "state": "blocked",
+    "response_usage_records": 654,
+    "tokens": {
+      "input_tokens": 71412644,
+      "cached_input_tokens": 70174848,
+      "output_tokens": 318019,
+      "reasoning_output_tokens": 87061
+    },
+    "api_equivalent_usd": "12.6732668",
+    "active_seconds_excluding_between_turn_idle": 2131.929177045822,
+    "setup_active_seconds": 116.93548011779785,
+    "formalization_active_seconds": 2014.9936969280243
+  },
+  "original_workspace_hashes_sha256": "e0d4bce2105d6e599f2611882d81e418619211a57211b2db8767ea9209a7408c"
+}

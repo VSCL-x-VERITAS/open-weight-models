@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.1-sol",
+  "retrieved_date": "2026-11-03",
+  "currency": "USD",
+  "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+  "standard_per_million": {
+    "input": 2,
+    "cached_input": 0.1,
+    "output": 10
+  },
+  "long_context_input_threshold": 272000,
+  "long_context_multipliers": {
+    "input": 2,
+    "cached_input": 2,
+    "output": 1.5
+  },
+  "reasoning_is_subset_of_output": true,
+  "estimate_not_invoice": true,
+  "cache_write_note": "Separate cache-write charges are not inferred from unreported fields. Estimate uses observed Codex cache reads; API cache behaviour may differ."
+}

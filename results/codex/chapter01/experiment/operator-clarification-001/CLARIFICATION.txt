@@ -1,0 +1,59 @@
+Operator clarification 001 — Chapter 1 signed raw moments
+
+Authority: the user explicitly asked the operator to independently review the
+blocker, provide the needed clarification as appropriate, and resume the run.
+This is an explicit operator semantic amendment. It changes this continuation
+to an assisted experiment. The original PDF remains unchanged.
+
+INDEPENDENT REVIEW
+I visually checked the original PDF's printed page 5, your discrepancy record
+and Basic.lean's definitions. The displayed signed real raw moment at arbitrary
+positive real order is underspecified. The real square root of a negative value
+already makes the unrestricted wording untenable. Mathlib's total Real.rpow
+does not determine the author's intended meaning. Your refusal to silently adopt
+that extension was correct. Existing supported-domain definitions may be reused.
+
+ADOPT THIS EXPLICIT DOMAIN CORRECTION
+1. For an arbitrary signed real random variable, raw moments in this experiment
+   mean integer orders n in the positive naturals: E[X^n], with ordinary signed
+   integer powers. Keep the existing optional extended expectation treatment:
+   one-sided infinities are allowed where defined, and infinity-minus-infinity
+   stays undefined. Finite real statements retain their integrability conditions.
+2. For nonnegative real random variables, raw moments E[X^p] are allowed for every
+   real p>0, with ordinary nonnegative-base real powers and extended nonnegative
+   expectations; keep finite-real bridges with their actual finiteness hypotheses.
+3. For arbitrary signed real variables, absolute moments E[|X|^p] remain defined
+   for every real p>0. Retain infinite values and the Lp material already proved.
+4. No semantics are asserted here for a general signed variable at a noninteger
+   raw order. This is a documented correction of the PDF's domain, not a theorem
+   proving the printed unrestricted wording. Do not relabel absolute moments as
+   signed raw moments, use complex moments, or silently use negative-base rpow.
+   Special rational-power conventions outside these domains are not part of the
+   amended specification; they are not universally impossible, just not adopted.
+
+SOURCE SUPPORT
+NIST's tutorial defines moments of a real variable using positive integer orders
+(Possolo–Toman, Tutorial for Metrologists, printed p.17, Section 4.8).
+https://www.nist.gov/system/files/documents/2017/04/28/TutorialMetrologists2011Nov22.pdf
+This supports the standard signed integer convention. It does not prove that the
+book intended this exact correction; that choice is explicitly operator-authorized.
+Nonnegative and absolute real-power domains follow the original PDF and ordinary
+real analysis, not a newly supplied negative-base extension.
+
+REMAINING WORK
+Obtain a fresh independent Codex statement/source review of this proof-free
+amendment. Preserve original unresolved-source evidence and mark its disposition
+as resolved_by_operator_domain_amendment, with the exact retained limitation.
+Make the correction explicit in the module documentation, source inventory,
+final crosswalk and report. Check that accepted public raw-moment declarations
+only assert these meaningful domains. Reuse valid existing proofs and reviews;
+add only missing bridges or counterexample evidence that materially verifies the
+correction. In particular check agreement on the common nonnegative integer
+domain and the finite expectation bridges, rather than only renaming definitions.
+Recheck affected source coverage, actual integrated Lean build and allowed axioms.
+
+When all mathematical and review work is complete, completion must be described
+as the supplied Chapter 1 with this explicit domain correction, not verbatim
+formalization of its unrestricted signed/noninteger wording. Do not silently
+waive unrelated scope items. Canonical Claude admission remains unavailable under
+the Codex-only protocol, so retain its separate limitation without fake receipts.

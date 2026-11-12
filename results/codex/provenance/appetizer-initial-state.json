@@ -1,0 +1,66 @@
+{
+  "case": "appetizer",
+  "created_unix": 1793662716.670177,
+  "source_pdf": "Appetizer.pdf",
+  "source_sha256": "164189f2c6e5d39c6b8aa96f3a3c18d02f42194b890be3610aaa44d7c487ca7f",
+  "initial_lean": "import Mathlib\n",
+  "initial_product_modules": [],
+  "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4",
+      "rev": "e8ea1afc32790ce1d4e1a4e45cc412ba9388716b"
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "rev": "2b93f2523263a6df8a8fbbe3dd28b7f028087480"
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "rev": "ea1e51a85f6bd53b6a84239b00593eebd03d522b"
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "rev": "212dc300449e436298804f09b264f624667106f8"
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "rev": "6f8999a4e31701d2c905262d3788a8c0d21b3f1f"
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "rev": "5bb0ac23f6e6c4c3ba1b084f2d65cb1bd2a9cf7a"
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "rev": "ed250d06b33e67aa5dc5f2cc349a5a35e8b6b390"
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "rev": "0c688ceba0d380f6e56f977009fc2bb2322af5a3"
+    }
+  ],
+  "workflow_version": "8.1.70",
+  "workflow_commit": "1fb46504020649465d98ef2533a926e8c1e4dbf4",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "auth_mode": "native ChatGPT sign-in; credentials denied to tools",
+  "claude_consultation": "disabled by explicit user choice",
+  "deviations": [
+    "Canonical Claude source-admission receipt unavailable in Codex-only protocol.",
+    "Full POSIX installer failed on macOS xattr API; exact tagged skill packages installed with the standard Codex installer."
+  ]
+}

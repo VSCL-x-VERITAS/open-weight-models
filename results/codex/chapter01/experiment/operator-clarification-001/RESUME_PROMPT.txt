@@ -1,0 +1,27 @@
+Resume this SAME chapter01 experiment from its persisted proofs and reviews.
+The user has explicitly authorized an independent operator review, narrowly
+justified source clarification and resumption. Read AGENTS.md, current STATUS,
+and source/operator-clarification-001/CLARIFICATION.txt in full.
+
+The clarification is a source-only operator intervention: its explicit amended
+contract supersedes the old unresolved-source blocker. It does not change Lean,
+Mathlib, skill, model, effort, filesystem permissions, no-network policy, or the
+prohibition on prior project/experiment solutions. Continue with GPT-6.1 Sol/High.
+The operator researched cited mathematics outside this sandbox; you receive only
+the retained clarification, no Lean solution, prior library or external access.
+
+Mark reports/STATUS.json working while actionable work remains. Preserve original
+evidence; it has also been archived outside your accessible workspace. Record
+assisted_continuation_001 explicitly in your inventory and final report. Obtain
+a fresh independent Codex review of the new proof-free contract, then complete
+its proof and affected source/structure/axiom/build checks. Existing valid work
+must be reused. Continue all actionable mathematical work; do not create new
+workflow infrastructure or repeat unrelated completed reviews. Never introduce
+unsupported proof assumptions or weaken this contract just to close the row.
+
+The original skill's canonical Claude/receipt limitations remain recorded; they
+do not themselves block the authorized adapted mathematical workflow. Never
+claim canonical Chapter PASS or unassisted completion. On completion use
+claimed_complete_pending_audit with explicit amended-source scope and links to
+actual independent review and kernel evidence. A newly found genuine nonlocal
+blocker must be precise and evidence-backed. A hard proof is not such a blocker.

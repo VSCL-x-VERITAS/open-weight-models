@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"checks\": [{\"check\": \"prior_product\", \"denied\": true}, {\"check\": \"prior_attempt\", \"denied\": true}, {\"check\": \"prior_audit\", \"denied\": true}, {\"check\": \"other_new_case\", \"denied\": true}, {\"check\": \"global_credentials\", \"denied\": true}, {\"check\": \"native_credentials\", \"denied\": true}, {\"check\": \"skill_book_package\", \"denied\": true}, {\"check\": \"root_repository\", \"denied\": true}, {\"check\": \"other_harness_network\", \"denied\": true, \"errno\": 1}], \"positive_source_and_mathlib\": true}\n",
+  "stderr": "",
+  "original_empty_project_assertion_omitted_on_resume": true
+}

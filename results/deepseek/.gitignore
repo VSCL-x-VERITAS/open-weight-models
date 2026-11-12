@@ -1,0 +1,15 @@
+# Generated dependencies, builds and local verification
+**/.lake/
+.verification/
+__pycache__/
+.DS_Store
+# Credentials and private runtime state must never be committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+.tools/
+# Book source is identified by checksum, not redistributed
+source/

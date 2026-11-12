@@ -1,0 +1,377 @@
+AUDIT_CONSTANT HDP.Sharpness.logScale_sparse_bound KIND=theorem INTERNAL=false
+'HDP.Sharpness.logScale_sparse_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.radiusConstant.eq_1 KIND=theorem INTERNAL=false
+'HDP.Sharpness.radiusConstant.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.coordinateEmbedding_apply_of_not_range KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.coordinateEmbedding_apply_of_not_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.caratheodory_sharp KIND=theorem INTERNAL=false
+'HDP.caratheodory_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.unorderedCenters_card KIND=theorem INTERNAL=false
+'HDP.unorderedCenters_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Sharpness.crosspolytope_upper_bound KIND=theorem INTERNAL=false
+'HDP.Sharpness.crosspolytope_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_sparse_hamming_code._proof_1_2 KIND=theorem INTERNAL=true
+'HDP.exists_sparse_hamming_code._proof_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.positive_simplex_combination_requires_all_vertices KIND=theorem INTERNAL=false
+'HDP.positive_simplex_combination_requires_all_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.identDistrib_centered_sq_integral KIND=theorem INTERNAL=false
+'HDP.identDistrib_centered_sq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.orderedCenters_cover._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.orderedCenters_cover._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_independent_copies KIND=theorem INTERNAL=false
+'HDP.exists_independent_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.unordered_selection_bound KIND=theorem INTERNAL=false
+'HDP.unordered_selection_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_realization_mem_le KIND=theorem INTERNAL=false
+'HDP.exists_realization_mem_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.parameter_dichotomy KIND=theorem INTERNAL=false
+'HDP.Sharpness.parameter_dichotomy' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Crosspolytope.dist_sq_coordinateEmbedding KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.dist_sq_coordinateEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertices KIND=definition INTERNAL=false
+'HDP.Crosspolytope.vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.mem_convexHull_iff_finite_combination._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.mem_convexHull_iff_finite_combination._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex._proof_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.vertex._proof_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Sharpness.sparse_parameters KIND=theorem INTERNAL=false
+'HDP.Sharpness.sparse_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.mem_body_of_l1Norm_le_half._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.mem_body_of_l1Norm_le_half._simp_1_4' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.packing_card_le_cover_card KIND=theorem INTERNAL=false
+'HDP.packing_card_le_cover_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.extremePoints_body._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.extremePoints_body._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.exercise_0_0_5 KIND=theorem INTERNAL=false
+'HDP.exercise_0_0_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.covering_polytopes KIND=theorem INTERNAL=false
+'HDP.covering_polytopes' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparse_code_card_le_cover_card KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.sparse_code_card_le_cover_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.splitter KIND=definition INTERNAL=true
+'_private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.splitter' does not depend on any axioms
+AUDIT_CONSTANT HDP.Crosspolytope.Space KIND=definition INTERNAL=false
+'HDP.Crosspolytope.Space' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Variance.0.HDP.integral_norm_sq_coords KIND=theorem INTERNAL=true
+'_private.HDP.Variance.0.HDP.integral_norm_sq_coords' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_mem_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.denseWord_mem_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparse_code_card_le_cover_card._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.sparse_code_card_le_cover_card._simp_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_7' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Crosspolytope.vertices.eq_1 KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertices.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.extremePoints_body._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.extremePoints_body._simp_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.extremePoints_body._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.extremePoints_body._simp_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_hamming_code_card_gt KIND=theorem INTERNAL=false
+'HDP.exists_hamming_code_card_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.BallCover KIND=definition INTERNAL=false
+'HDP.BallCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.coordinateEmbedding KIND=definition INTERNAL=false
+'HDP.Crosspolytope.coordinateEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.polytope_vertices KIND=theorem INTERNAL=false
+'HDP.polytope_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex_injective KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.norm_vertex KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.norm_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.radiusConstant KIND=definition INTERNAL=false
+'HDP.Sharpness.radiusConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_finite_law_independent_copies KIND=theorem INTERNAL=false
+'HDP.exists_finite_law_independent_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.sum_choose_le_exp._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.sum_choose_le_exp._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.caratheodory KIND=theorem INTERNAL=false
+'HDP.caratheodory' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.extremePoints_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.extremePoints_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.zero_mem_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.zero_mem_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.eq_2 KIND=theorem INTERNAL=true
+'_private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.eq_2' does not depend on any axioms
+AUDIT_CONSTANT HDP.finiteIndexLaw_expectation KIND=theorem INTERNAL=false
+'HDP.finiteIndexLaw_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.dense_code_card_le_cover_card._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.dense_code_card_le_cover_card._simp_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.convex_l1Ball KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.convex_l1Ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex.eq_1 KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertex.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.entropy_lower_bound._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.Sharpness.entropy_lower_bound._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Source.exercise_0_0_6 KIND=theorem INTERNAL=false
+'HDP.Source.exercise_0_0_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_dense_hamming_code._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.exists_dense_hamming_code._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.BallCover.eq_1 KIND=theorem INTERNAL=false
+'HDP.BallCover.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.body KIND=definition INTERNAL=false
+'HDP.Crosspolytope.body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_sparse_hamming_code._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.exists_sparse_hamming_code._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Variance.0.HDP.integral_coord KIND=theorem INTERNAL=true
+'_private.HDP.Variance.0.HDP.integral_coord' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.orderedCenters KIND=definition INTERNAL=false
+'HDP.orderedCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_finite_relation_packing._proof_1_3 KIND=theorem INTERNAL=true
+'HDP.exists_finite_relation_packing._proof_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Sharpness.entropy_lower_bound._proof_1_2 KIND=theorem INTERNAL=true
+'HDP.Sharpness.entropy_lower_bound._proof_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.exists_finite_relation_packing KIND=theorem INTERNAL=false
+'HDP.exists_finite_relation_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.norm_body_le_half KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.norm_body_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.dist_vertices_le_one KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.dist_vertices_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_hamming_code_reduced._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.exists_hamming_code_reduced._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex_mem_vertices KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertex_mem_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw_value_probability KIND=theorem INTERNAL=false
+'HDP.finiteIndexLaw_value_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory_diam KIND=theorem INTERNAL=false
+'HDP.approximate_caratheodory_diam' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hamming_ball_card_le KIND=theorem INTERNAL=false
+'HDP.hamming_ball_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.ceiling_sample_size KIND=theorem INTERNAL=false
+'HDP.ceiling_sample_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw KIND=definition INTERNAL=false
+'HDP.finiteIndexLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.mem_convexHull_iff_finite_combination KIND=theorem INTERNAL=false
+'HDP.mem_convexHull_iff_finite_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.l1Norm KIND=definition INTERNAL=false
+'HDP.Crosspolytope.l1Norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.logScale_dense_bound KIND=theorem INTERNAL=false
+'HDP.Sharpness.logScale_dense_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT Caratheodory.minCardFinsetOfMemConvexHull.congr_simp KIND=theorem INTERNAL=false
+'Caratheodory.minCardFinsetOfMemConvexHull.congr_simp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Source.theorem_0_0_2 KIND=theorem INTERNAL=false
+'HDP.Source.theorem_0_0_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.eq_1 KIND=theorem INTERNAL=true
+'_private.HDP.Crosspolytope.0.HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1.eq_1' does not depend on any axioms
+AUDIT_CONSTANT HDP.unordered_selection_count KIND=theorem INTERNAL=false
+'HDP.unordered_selection_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.radiusConstant._proof_1 KIND=theorem INTERNAL=true
+'HDP.Sharpness.radiusConstant._proof_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.empirical_sum_bound KIND=theorem INTERNAL=false
+'HDP.empirical_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.logScale_pos KIND=theorem INTERNAL=false
+'HDP.Sharpness.logScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.dense_code_card_le_cover_card._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.dense_code_card_le_cover_card._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.exists_finite_relation_packing._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.exists_finite_relation_packing._simp_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparse_code_card_le_cover_card._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.sparse_code_card_le_cover_card._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord KIND=definition INTERNAL=false
+'HDP.Crosspolytope.denseWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex KIND=definition INTERNAL=false
+'HDP.Crosspolytope.vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.centered_sq_integral_le KIND=theorem INTERNAL=false
+'HDP.centered_sq_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.translate_mem_convexHull._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.translate_mem_convexHull._simp_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.pow_div_le_choose KIND=theorem INTERNAL=false
+'HDP.pow_div_le_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.orderedCenters_cover KIND=theorem INTERNAL=false
+'HDP.orderedCenters_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.sum_choose_le_exp KIND=theorem INTERNAL=false
+'HDP.sum_choose_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.sum_choose_le_exp._proof_1_2 KIND=theorem INTERNAL=true
+'HDP.sum_choose_le_exp._proof_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Source.corollary_0_0_4 KIND=theorem INTERNAL=false
+'HDP.Source.corollary_0_0_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.integral_centered_eq_zero KIND=theorem INTERNAL=false
+'HDP.integral_centered_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hamming_cylinder_card_le KIND=theorem INTERNAL=false
+'HDP.hamming_cylinder_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.coordinateEmbedding_apply KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.coordinateEmbedding_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.norm_sub_le_of_mem_convexHull._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.norm_sub_le_of_mem_convexHull._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord.eq_1 KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.denseWord.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.radiusConstant_pos KIND=theorem INTERNAL=false
+'HDP.Sharpness.radiusConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw_singleton KIND=theorem INTERNAL=false
+'HDP.finiteIndexLaw_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparseWord_mem_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.sparseWord_mem_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.translation_preserves_distance KIND=theorem INTERNAL=false
+'HDP.translation_preserves_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_empirical_realization KIND=theorem INTERNAL=false
+'HDP.exists_empirical_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_strong_law KIND=theorem INTERNAL=false
+'HDP.empirical_strong_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.l1Norm_vertex KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.l1Norm_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.pow_div_le_choose._proof_1_2 KIND=theorem INTERNAL=true
+'HDP.pow_div_le_choose._proof_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.exists_dense_hamming_code KIND=theorem INTERNAL=false
+'HDP.exists_dense_hamming_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_7' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.translation_preserves_mean_error KIND=theorem INTERNAL=false
+'HDP.translation_preserves_mean_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.card_vertices KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.card_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.entropy_lower_bound KIND=theorem INTERNAL=false
+'HDP.Sharpness.entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.coordinateEmbedding._proof_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.coordinateEmbedding._proof_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_eq KIND=theorem INTERNAL=false
+'HDP.empirical_mean_sq_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_dense_hamming_code._proof_1_3 KIND=theorem INTERNAL=true
+'HDP.exists_dense_hamming_code._proof_1_3' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le KIND=theorem INTERNAL=false
+'HDP.empirical_mean_sq_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.mem_body_of_l1Norm_le_half KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.mem_body_of_l1Norm_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.radius_square_bounds KIND=theorem INTERNAL=false
+'HDP.Sharpness.radius_square_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.mem_convexHull_iff_finite_combination._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.mem_convexHull_iff_finite_combination._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.improved_base_eventually_smaller KIND=theorem INTERNAL=false
+'HDP.improved_base_eventually_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.EntropyEmbedding.0.HDP.Crosspolytope.onehot_diff_sq KIND=theorem INTERNAL=true
+'_private.HDP.EntropyEmbedding.0.HDP.Crosspolytope.onehot_diff_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory KIND=theorem INTERNAL=false
+'HDP.approximate_caratheodory' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.norm_body_le_half._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.norm_body_le_half._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.norm_mem_vertices KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.norm_mem_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_sparse_hamming_code KIND=theorem INTERNAL=false
+'HDP.exists_sparse_hamming_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.l1Norm_coordinateEmbedding KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.l1Norm_coordinateEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_8 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_8' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.unordered_selection_bound._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.unordered_selection_bound._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparseWord_dist_sq KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.sparseWord_dist_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_realization_le KIND=theorem INTERNAL=false
+'HDP.exists_realization_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.diameter_eq_sup KIND=theorem INTERNAL=false
+'HDP.diameter_eq_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.unorderedCenters KIND=definition INTERNAL=false
+'HDP.unorderedCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw._proof_1 KIND=theorem INTERNAL=true
+'HDP.finiteIndexLaw._proof_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Variance.0.HDP.coord_memLp KIND=theorem INTERNAL=true
+'_private.HDP.Variance.0.HDP.coord_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_nonpos_inner KIND=theorem INTERNAL=false
+'HDP.exists_nonpos_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw_memLp KIND=theorem INTERNAL=false
+'HDP.finiteIndexLaw_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_hamming_code KIND=theorem INTERNAL=false
+'HDP.exists_hamming_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_finite_relation_packing._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.exists_finite_relation_packing._simp_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.orderedCenters_subset_unorderedCenters KIND=theorem INTERNAL=false
+'HDP.orderedCenters_subset_unorderedCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.translate_mem_convexHull KIND=theorem INTERNAL=false
+'HDP.translate_mem_convexHull' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.l1Norm.eq_1 KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.l1Norm.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq._simp_1_6' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.norm_sub_le_of_mem_convexHull KIND=theorem INTERNAL=false
+'HDP.norm_sub_le_of_mem_convexHull' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.unordered_selection_epsilon_bound KIND=theorem INTERNAL=false
+'HDP.unordered_selection_epsilon_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.orderedCenters_card KIND=theorem INTERNAL=false
+'HDP.orderedCenters_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex_apply KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertex_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.l1Norm_le_half_of_mem_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.l1Norm_le_half_of_mem_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_dense_hamming_code._proof_1_2 KIND=theorem INTERNAL=true
+'HDP.exists_dense_hamming_code._proof_1_2' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparseWord.eq_1 KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.sparseWord.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finiteIndexLaw.eq_1 KIND=theorem INTERNAL=false
+'HDP.finiteIndexLaw.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.empirical_mean_sq_integral_le._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.empirical_mean_sq_integral_le._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.centered_sq_integral KIND=theorem INTERNAL=false
+'HDP.centered_sq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.choose_le_sum_choose KIND=theorem INTERNAL=false
+'HDP.choose_le_sum_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.pow_div_le_choose._proof_1_1 KIND=theorem INTERNAL=true
+'HDP.pow_div_le_choose._proof_1_1' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.translate_radius_bound KIND=theorem INTERNAL=false
+'HDP.translate_radius_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.dense_code_card_le_cover_card KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.dense_code_card_le_cover_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.body_eq_l1Ball KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.body_eq_l1Ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.sparseWord KIND=definition INTERNAL=false
+'HDP.Crosspolytope.sparseWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_hamming_code_reduced KIND=theorem INTERNAL=false
+'HDP.exists_hamming_code_reduced' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.coordinateEmbedding_sum KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.coordinateEmbedding_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.vertex_mem_body KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.vertex_mem_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.integral_norm_sq_le_of_bound KIND=theorem INTERNAL=false
+'HDP.integral_norm_sq_le_of_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1 KIND=definition INTERNAL=false
+'HDP.Crosspolytope.mem_body_of_l1Norm_le_half.match_1_1' does not depend on any axioms
+AUDIT_CONSTANT HDP.Sharpness.radiusConstant_lt_one KIND=theorem INTERNAL=false
+'HDP.Sharpness.radiusConstant_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.independent_mean_zero_sum_sq KIND=theorem INTERNAL=false
+'HDP.independent_mean_zero_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Sharpness.logScale KIND=definition INTERNAL=false
+'HDP.Sharpness.logScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.dist_body_le_one KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.dist_body_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.exists_finite_relation_packing_card KIND=theorem INTERNAL=false
+'HDP.exists_finite_relation_packing_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.EntropyEmbedding.0.HDP.Crosspolytope.one_le_sq_fin_sub KIND=theorem INTERNAL=true
+'_private.HDP.EntropyEmbedding.0.HDP.Crosspolytope.one_le_sq_fin_sub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT_CONSTANT HDP.approximate_caratheodory._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.approximate_caratheodory._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.improved_covering KIND=theorem INTERNAL=false
+'HDP.improved_covering' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Crosspolytope.denseWord_hamming_le_dist_sq KIND=theorem INTERNAL=false
+'HDP.Crosspolytope.denseWord_hamming_le_dist_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_TOTAL 186

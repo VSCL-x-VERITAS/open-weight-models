@@ -1,0 +1,53 @@
+{
+  "case": "appetizer",
+  "method": "Fresh copied product source and fresh project build outputs; APFS clones of pinned official dependency caches only",
+  "started_utc": "2026-11-03T10:48:58.250610+00:00",
+  "finished_utc": "2026-11-03T10:55:47.275610+00:00",
+  "source_sha256": {
+    "HDP.lean": "bd19ff9690929c59cb34810f33472eea7b04a573ab3f922e4b8add78afed5830",
+    "HDP/Approximation.lean": "8f48640413f5303dad1a316ae8e8165ad6403eed306a5349878adbbeb444a77f",
+    "HDP/Combinatorics.lean": "a3494116bfb668d3049a7167ebd2512e060db0f338aefdc4a51967beb6feb341",
+    "HDP/ConvexBasics.lean": "e7a9742554caea898cccb4fb62fbc5f4e9699d27c6a5861a6eec36bfe12392a1",
+    "HDP/Covering.lean": "5d45c5145f45dec85d81be05ec22312afb6bf688fe330915254d49e1c264ddd5",
+    "HDP/Crosspolytope.lean": "8622eb4eb3a843bb0bf3ee6334f7d4bc95bdf55b175d292e006edd67885e40bc",
+    "HDP/Empirical.lean": "888232a772cfc7f8dc7064c174f8cf3f2df0aa8d3481d7c89b38085ce88a4bb9",
+    "HDP/EntropyEmbedding.lean": "883d29b90d286dfb5d2d211c83cd443aea3b73fcfaf87cb57806a8962482ff44",
+    "HDP/EntropyPacking.lean": "334676660ba1bfabcf44a1aa57cd6d908c930cb47e9a7bff1a26f2ffec485ec6",
+    "HDP/EntropyParameters.lean": "0274d870fdd466b7bc79fe8c1c9e63c272d498b28aa71b0c8d4de1c6df291161",
+    "HDP/Sharpness.lean": "9782a6c78a64e8b515459cdd94ec4e27de544f0d85ae6e9e7b884f2efbb6541c",
+    "HDP/Source.lean": "82f669e8b52fa01d78d1bb458910a10309eca993454f2c8e1020275773c4a046",
+    "HDP/Supplemental.lean": "a34873f5537fe7344fc0032545f0a8cedaebe312aca84c1807bdd8fce679f20e",
+    "HDP/Variance.lean": "c0877129d0da212543108c803bd3b571108a7b208bce11a2edbe885c62de76a7",
+    "lean-toolchain": "fdf7ccfe204caff50fab1913b9f13a763be5384e87d14555c9fdcb2be2b9f7f8",
+    "lakefile.toml": "e239ebb0731e5cc791da5ad9bf90c638ce8683a77d1c3e31c886ed87ee791a7b",
+    "lake-manifest.json": "ccfe8a72d6d227aebfe4e58575ddf2a2aef03b795052f97b770c36f684cc5774"
+  },
+  "source_modules": [
+    "HDP.Approximation",
+    "HDP.Combinatorics",
+    "HDP.ConvexBasics",
+    "HDP.Covering",
+    "HDP.Crosspolytope",
+    "HDP.Empirical",
+    "HDP.EntropyEmbedding",
+    "HDP.EntropyPacking",
+    "HDP.EntropyParameters",
+    "HDP.Sharpness",
+    "HDP.Source",
+    "HDP.Supplemental",
+    "HDP.Variance"
+  ],
+  "fresh_build_exit_code": 0,
+  "all_local_axiom_check_exit_code": 0,
+  "all_local_constant_total": 186,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "original_product_unchanged": true,
+  "kernel_checker_sha256": "e44aabfd9174e7ea5387ec1563ba7758a8c652d782836dd5d15dbb8f478c4dec",
+  "build_log_sha256": "04ffb4ef82849dc59de57e4b8a6a610b792006379e0056ae1fa48e0719c21b60",
+  "axiom_log_sha256": "f00ca0e60b3edb06b904ed19d1704cebd6160063e6e6c7e98ea1d9c306bf48d0",
+  "limits": "Kernel validity of elaborated statements; source correspondence is a separate model review. No line-by-line informal reproof of every helper."
+}

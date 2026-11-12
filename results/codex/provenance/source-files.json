@@ -1,0 +1,161 @@
+{
+  "files": [
+    {
+      "path": "appetizer/HDP.lean",
+      "original_sha256": "bd19ff9690929c59cb34810f33472eea7b04a573ab3f922e4b8add78afed5830",
+      "exported_sha256": "bd19ff9690929c59cb34810f33472eea7b04a573ab3f922e4b8add78afed5830",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Approximation.lean",
+      "original_sha256": "8f48640413f5303dad1a316ae8e8165ad6403eed306a5349878adbbeb444a77f",
+      "exported_sha256": "8f48640413f5303dad1a316ae8e8165ad6403eed306a5349878adbbeb444a77f",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Combinatorics.lean",
+      "original_sha256": "a3494116bfb668d3049a7167ebd2512e060db0f338aefdc4a51967beb6feb341",
+      "exported_sha256": "a3494116bfb668d3049a7167ebd2512e060db0f338aefdc4a51967beb6feb341",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/ConvexBasics.lean",
+      "original_sha256": "e7a9742554caea898cccb4fb62fbc5f4e9699d27c6a5861a6eec36bfe12392a1",
+      "exported_sha256": "e7a9742554caea898cccb4fb62fbc5f4e9699d27c6a5861a6eec36bfe12392a1",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Covering.lean",
+      "original_sha256": "5d45c5145f45dec85d81be05ec22312afb6bf688fe330915254d49e1c264ddd5",
+      "exported_sha256": "5d45c5145f45dec85d81be05ec22312afb6bf688fe330915254d49e1c264ddd5",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Crosspolytope.lean",
+      "original_sha256": "8622eb4eb3a843bb0bf3ee6334f7d4bc95bdf55b175d292e006edd67885e40bc",
+      "exported_sha256": "8622eb4eb3a843bb0bf3ee6334f7d4bc95bdf55b175d292e006edd67885e40bc",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Empirical.lean",
+      "original_sha256": "888232a772cfc7f8dc7064c174f8cf3f2df0aa8d3481d7c89b38085ce88a4bb9",
+      "exported_sha256": "888232a772cfc7f8dc7064c174f8cf3f2df0aa8d3481d7c89b38085ce88a4bb9",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/EntropyEmbedding.lean",
+      "original_sha256": "883d29b90d286dfb5d2d211c83cd443aea3b73fcfaf87cb57806a8962482ff44",
+      "exported_sha256": "883d29b90d286dfb5d2d211c83cd443aea3b73fcfaf87cb57806a8962482ff44",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/EntropyPacking.lean",
+      "original_sha256": "334676660ba1bfabcf44a1aa57cd6d908c930cb47e9a7bff1a26f2ffec485ec6",
+      "exported_sha256": "334676660ba1bfabcf44a1aa57cd6d908c930cb47e9a7bff1a26f2ffec485ec6",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/EntropyParameters.lean",
+      "original_sha256": "0274d870fdd466b7bc79fe8c1c9e63c272d498b28aa71b0c8d4de1c6df291161",
+      "exported_sha256": "0274d870fdd466b7bc79fe8c1c9e63c272d498b28aa71b0c8d4de1c6df291161",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Sharpness.lean",
+      "original_sha256": "9782a6c78a64e8b515459cdd94ec4e27de544f0d85ae6e9e7b884f2efbb6541c",
+      "exported_sha256": "9782a6c78a64e8b515459cdd94ec4e27de544f0d85ae6e9e7b884f2efbb6541c",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Source.lean",
+      "original_sha256": "82f669e8b52fa01d78d1bb458910a10309eca993454f2c8e1020275773c4a046",
+      "exported_sha256": "82f669e8b52fa01d78d1bb458910a10309eca993454f2c8e1020275773c4a046",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Supplemental.lean",
+      "original_sha256": "a34873f5537fe7344fc0032545f0a8cedaebe312aca84c1807bdd8fce679f20e",
+      "exported_sha256": "a34873f5537fe7344fc0032545f0a8cedaebe312aca84c1807bdd8fce679f20e",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/HDP/Variance.lean",
+      "original_sha256": "c0877129d0da212543108c803bd3b571108a7b208bce11a2edbe885c62de76a7",
+      "exported_sha256": "c0877129d0da212543108c803bd3b571108a7b208bce11a2edbe885c62de76a7",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/lean-toolchain",
+      "original_sha256": "fdf7ccfe204caff50fab1913b9f13a763be5384e87d14555c9fdcb2be2b9f7f8",
+      "exported_sha256": "fdf7ccfe204caff50fab1913b9f13a763be5384e87d14555c9fdcb2be2b9f7f8",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/lakefile.toml",
+      "original_sha256": "e239ebb0731e5cc791da5ad9bf90c638ce8683a77d1c3e31c886ed87ee791a7b",
+      "exported_sha256": "e239ebb0731e5cc791da5ad9bf90c638ce8683a77d1c3e31c886ed87ee791a7b",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "appetizer/lake-manifest.json",
+      "original_sha256": "ccfe8a72d6d227aebfe4e58575ddf2a2aef03b795052f97b770c36f684cc5774",
+      "exported_sha256": "ccfe8a72d6d227aebfe4e58575ddf2a2aef03b795052f97b770c36f684cc5774",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP.lean",
+      "original_sha256": "a3bfb87d5bf4483fb00c99c76f2a5e0f9ae152b240b67b3cce43561d454ff771",
+      "exported_sha256": "a3bfb87d5bf4483fb00c99c76f2a5e0f9ae152b240b67b3cce43561d454ff771",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP/Basic.lean",
+      "original_sha256": "c1c32adcbbfc30384f250424bcfbc278664d7fce6b76791dfbdf11aa339fc8d2",
+      "exported_sha256": "c1c32adcbbfc30384f250424bcfbc278664d7fce6b76791dfbdf11aa339fc8d2",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP/LimitTheorems.lean",
+      "original_sha256": "c4967e1dda0523177abe375164c5fe02092cc373d753dc06ed5cd78e63a1eb26",
+      "exported_sha256": "c4967e1dda0523177abe375164c5fe02092cc373d753dc06ed5cd78e63a1eb26",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP/Moments.lean",
+      "original_sha256": "c6a5dd2ddda93c4e67bcd10a2d25fedce13d10309ca1ddc6811b6397e968ea63",
+      "exported_sha256": "c6a5dd2ddda93c4e67bcd10a2d25fedce13d10309ca1ddc6811b6397e968ea63",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP/PoissonLimit.lean",
+      "original_sha256": "570e1ea5f85f609e758b0a74e157f86ac14f66793781db659f21a8f583ab8591",
+      "exported_sha256": "570e1ea5f85f609e758b0a74e157f86ac14f66793781db659f21a8f583ab8591",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/HDP/Tails.lean",
+      "original_sha256": "912eaa637412127174ece8c06ed87070cf1bd18f17a7f0e1df9cd50660068ef4",
+      "exported_sha256": "912eaa637412127174ece8c06ed87070cf1bd18f17a7f0e1df9cd50660068ef4",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/lean-toolchain",
+      "original_sha256": "fdf7ccfe204caff50fab1913b9f13a763be5384e87d14555c9fdcb2be2b9f7f8",
+      "exported_sha256": "fdf7ccfe204caff50fab1913b9f13a763be5384e87d14555c9fdcb2be2b9f7f8",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/lakefile.toml",
+      "original_sha256": "e239ebb0731e5cc791da5ad9bf90c638ce8683a77d1c3e31c886ed87ee791a7b",
+      "exported_sha256": "e239ebb0731e5cc791da5ad9bf90c638ce8683a77d1c3e31c886ed87ee791a7b",
+      "source": "final native Codex output; unchanged by operator audit"
+    },
+    {
+      "path": "chapter01/lake-manifest.json",
+      "original_sha256": "ccfe8a72d6d227aebfe4e58575ddf2a2aef03b795052f97b770c36f684cc5774",
+      "exported_sha256": "ccfe8a72d6d227aebfe4e58575ddf2a2aef03b795052f97b770c36f684cc5774",
+      "source": "final native Codex output; unchanged by operator audit"
+    }
+  ],
+  "product_export_policy": "Byte-identical final native sources and pins; audit checkers are separate operator additions"
+}

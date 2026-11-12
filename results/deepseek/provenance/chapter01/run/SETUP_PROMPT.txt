@@ -1,0 +1,5 @@
+This is the warm setup phase only. Read AGENTS.md and run/PROTOCOL.txt.
+Check the available Lean compiler, pinned Mathlib and generic PDF tooling.
+Do not read the mathematical PDF, construct its inventory or targets, or prove
+anything yet. Report readiness and stop for the fixed formalization launch.
+Do not change the model, tools, pins, access policy or measurement controls.

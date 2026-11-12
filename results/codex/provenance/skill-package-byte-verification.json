@@ -1,0 +1,22 @@
+[
+  {
+    "skill": "formalization-code-review",
+    "files_checked": 22,
+    "mismatches": []
+  },
+  {
+    "skill": "book-formalization-migration",
+    "files_checked": 48,
+    "mismatches": []
+  },
+  {
+    "skill": "book-formalization",
+    "files_checked": 434,
+    "mismatches": []
+  },
+  {
+    "skill": "formalization-faithfulness-audit",
+    "files_checked": 453,
+    "mismatches": []
+  }
+]

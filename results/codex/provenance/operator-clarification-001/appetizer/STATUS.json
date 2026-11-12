@@ -1,0 +1,59 @@
+{
+  "state": "blocked",
+  "phase": "formalization",
+  "updated_at_utc": "2026-11-03T00:02:31.077398+00:00",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "skill": "8.1.70",
+  "formalization_started": true,
+  "whole_pdf_resolved": false,
+  "completion_claim": false,
+  "canonical_Chapter_PASS": false,
+  "source": "source/Appetizer.pdf",
+  "inventory": "reports/inventory.json",
+  "formalization_report": "reports/FORMALIZATION_REPORT.json",
+  "source_coverage": "all source items accounted for; final Notes sharpness unresolved",
+  "inventory_completeness": "N/A",
+  "full_reviewed_denominator_sealed": false,
+  "numbered_results_locally_formalized_and_reviewed": [
+    "0.0.1",
+    "0.0.2",
+    "0.0.3(a,b)",
+    "0.0.4",
+    "0.0.5",
+    "0.0.6"
+  ],
+  "local_kernel_verification": "pass",
+  "full_lake_build": "pass",
+  "fresh_product_compilations": "9/9 pass",
+  "statement_type_checks": "51/51 pass",
+  "axiom_checks": "55/55 permitted axioms only",
+  "independent_evidence": {
+    "source": "reports/reviews/source-independent.json",
+    "coverage": "reports/reviews/inventory-coverage-final.json",
+    "statements": [
+      "reports/reviews/faithfulness-batch1.json",
+      "reports/reviews/faithfulness-batch2.json",
+      "reports/reviews/faithfulness-batch3.json",
+      "reports/reviews/faithfulness-helpers.json"
+    ],
+    "verification": "reports/reviews/verification.json",
+    "structure": "reports/reviews/structure.json"
+  },
+  "blockers": [
+    {
+      "type": "SOURCE_SPECIFICATION_UNAVAILABLE",
+      "source_row": "U17",
+      "page": 4,
+      "description": "Notes assert that the improved covering bound is sharp without specifying lower-bound quantifiers, parameter regime or constants; cited results are not supplied and remote consultation is forbidden.",
+      "evidence": "reports/BLOCKERS.json",
+      "independently_confirmed": true
+    }
+  ],
+  "canonical_receipts_obtained": false,
+  "canonical_limitations": "reports/canonical-route-blocker.json",
+  "currently_actionable_proof_rows_remaining": [],
+  "next_action": "Supply a precise source statement for Notes sharpness U17, including lower-bound quantifiers, parameter regime, dimensions and constants, or the cited theorem text. Independently review the newly supplied contract and then formalize it. No currently actionable proof row remains.",
+  "publication": "local only; manual operator publication; no canonical Chapter PASS",
+  "evidence_manifest": "reports/FINAL_EVIDENCE.json"
+}

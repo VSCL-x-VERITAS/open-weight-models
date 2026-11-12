@@ -1,0 +1,8 @@
+Read AGENTS.md and run/PROTOCOL.txt. Formalize the complete assigned PDF at
+source/Chapter01.pdf into Lean using only Lean core and the pinned Mathlib.
+Derive all inventory, definitions, target statements and proofs yourself from
+the PDF. Work autonomously through source reading, planning, statement
+self-review, proofs, compilation and final coverage/axiom checks. Save output
+under lean/HDP/ and a final report under reports/. Continue useful work until
+complete; if you stop incomplete, name all remaining items and the actual cause.
+Do not use prior formalizations, other models, web resources or proof suggestions.

@@ -1,0 +1,43 @@
+Continue the same Chapter 1 formalization from your actual saved work. This is
+the operator-authorized fifth attempt and a human-prompted continuation. Preserve
+the four earlier attempts and their incomplete outcomes; this is not a one-shot
+success. Do not change harness settings, model, pins, isolation or metered route.
+
+Read AGENTS.md, run/PROTOCOL.txt, reports/resume-04/final-report.md, the live
+coverage inventory, source/Chapter01.pdf and relevant existing Lean files. Your
+own latest report records three remaining source-correspondence obligations:
+Exercise 1.2.3's literal real form, binomial law identification and Lp
+Banach/Hilbert correspondence. Finish these from your own saved attempts and
+work you develop yourself. Check whether your claimed completed rows also need
+any source-correspondence work. Preserve completed proofs. The assigned PDF,
+pinned Lean/Mathlib and your own work in this experiment remain the only
+mathematical inputs. No outside proof strategy or mathematical correction is
+supplied here. Product libraries, previous Appetizer attempts, web resources,
+other models and external repositories remain excluded.
+
+Keep working while useful local tasks are actionable. A missing ready-made
+library theorem or failed proof attempt is not a completion condition. Continue
+proof development, try your own alternatives and save durable useful drafts and
+compiler errors rather than discarding unfinished work to issue a final report.
+No new time or step limit is imposed by this prompt. A completed assistant turn
+is not completion of the chapter.
+
+Independently self-review the full PDF scope against actual declaration
+statements, including hypotheses, domains, quantifiers, parameter ranges and
+conclusion strength. Resolve remaining correspondence at the source's original
+strength. A proposition definition is not a proof; a special case is not a full
+scope claim. Do not weaken claims, add target-valued assumptions, introduce
+custom theorem axioms, sorry, admit or unsafe proofs. Record concrete defects
+you identify yourself and preserve earlier evidence honestly.
+
+Keep this continuation's checkpoints, actual proof attempts, source/reuse
+correspondence, compiler output, axiom checks, exact open obligations and final
+report under reports/resume-05/. Maintain the live inventory. Before a completion
+claim, finish the full source self-review, affected builds and axiom checks.
+Separate your self-review from independent semantic review. Any remaining gap
+must be reported explicitly without counting the chapter as complete.
+
+The operator controls measurement externally. Do not start, stop or switch
+measurements or access private observer data. Numeric reports/metrics are
+observational, not mathematical input; keep unknown billing fields unknown.
+Do not publish, push, contact others or use another paid model.

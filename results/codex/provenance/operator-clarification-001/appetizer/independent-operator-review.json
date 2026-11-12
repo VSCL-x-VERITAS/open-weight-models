@@ -1,0 +1,13 @@
+{
+  "reviewer": "operator in coordinating chat, independent of native trial generators",
+  "scope": "Reported source blocker and relevant existing definitions only, not a full final theorem/source audit",
+  "review_date_client_timezone": "2026-11-03 Europe/Athens",
+  "original_pdf_unchanged": true,
+  "generated_lean_proofs_supplied": false,
+  "prior_library_access_granted": false,
+  "retained_review_conclusion": "Blocker is justified; explicit source supplement/domain amendment supplied; fresh native independent contract review still required",
+  "primary_source": "Carl-Pajor (1988), equation (2.14), printed p492, dyadic entropy definition printed p480",
+  "primary_source_url": "https://www.math.uci.edu/~rvershyn/teaching/hdp/carl-pajor.pdf",
+  "operator_download_sha256": "74529710a1c3c4694f643f29803a41889aa1039f25fcc810909fbb391c639dde",
+  "primary_equation_visually_checked": true
+}

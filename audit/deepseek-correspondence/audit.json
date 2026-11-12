@@ -1,0 +1,438 @@
+{
+  "audit_date_athens": "2026-11-02T20:26:02.999569+02:00",
+  "reviewer": "Codex, a separate model review from DeepSeek proof generation; same operator assistant that prepared the harness, not a blinded human reviewer",
+  "release_commit": "11c5bcf20f1e91b501c96fce3038ba4ad39dafc6",
+  "repository": "https://github.com/gspyrou1/hdp-formalization-deepseek",
+  "scope": "All 11 assigned PDF pages visually inspected and independently text-extracted; source definitions, numbered results/exercises, operative body claims and Notes compared with final Lean declaration statements and relevant definitions.",
+  "source_pdf_sha256": {
+    "appetizer": "164189f2c6e5d39c6b8aa96f3a3c18d02f42194b890be3610aaa44d7c487ca7f",
+    "chapter01": "855fdaf6870f664f1e470d47641b6d72758afdb9b87649a6494b027cecc02b17"
+  },
+  "frozen_source_integrity": true,
+  "repository_unchanged": true,
+  "deepseek_openrouter_requests_during_audit": 0,
+  "prior_kernel_evidence": "Release build and 150-declaration axiom check previously passed; no unchanged full build rerun solely for this audit.",
+  "new_kernel_evidence": "Elaborated chapter signatures read and six independent domain/convention-check lemmas compiled, with standard axioms only.",
+  "verdict": "Core main theorem statements broadly correspond under documented finite-domain/nondegeneracy conventions. Literal full-source correspondence is not certified: one mathematical Notes claim is omitted and domain/scope/bridge findings remain.",
+  "not_found": "No incorrect main numbered theorem statement, custom theorem axiom or convergence-valued circular assumption identified in the reviewed final targets. This is not a proof of absence of every possible specification defect.",
+  "limitations": [
+    "Not blinded: reviewer had earlier experiment context.",
+    "No line-by-line mathematical reproof of every helper; kernel evidence is used for proof validity.",
+    "No new lower-bound theorem or corrected experimental proof was supplied.",
+    "Finite-domain scope choices are distinguished from false statements; source-silent assumptions require an explicit acceptance policy."
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "category": "DOMAIN_QUALIFICATION",
+      "impact": "Material to an unrestricted source-completeness claim; not a falsified finite-domain theorem",
+      "project": "chapter01",
+      "source": "Book p.5: expectation, variance, moments and MGF; p.7 explicitly allows infinite nonnegative expectations.",
+      "code": [
+        {
+          "path": "chapter01/HDP/Basic.lean",
+          "line": 21
+        },
+        {
+          "path": "chapter01/HDP/Basic.lean",
+          "line": 92
+        }
+      ],
+      "finding": "The exported expectation/moment/MGF wrappers return real Bochner integrals. Outside Integrable, the integral returns 0. The imported real variance similarly returns 0 outside MemLp 2 rather than representing infinite variance. No domain predicate or extended-valued MGF wrapper accompanies the exported MGF definition.",
+      "evidence": "Six separate audit lemmas compile against the release: nonintegrable expectation and exponential expectation equal 0; measurable non-L2 real variance equals 0 while extended variance is infinity; Real.rpow (-1) (1/3) equals 1/2 and the constant-variable HDP.moment equals 1/2. The last example illustrates a convention issue, not a failure of integer or absolute moments. See evidence/Chapter01DomainChecks.lean and its compiler output.",
+      "qualification": "Standard totalization used by Mathlib is legitimate inside the proper domain. The main limit theorems have integrability/MemLp hypotheses protecting them. The nonnegative layer-cake and Markov statements also have extended-valued versions. This is a representation/domain finding, not proof unsoundness.",
+      "closure": "State and justify a finite-domain convention, document the MGF integrability domain, or add an extended-valued representation and a correspondence theorem. Do not count an unrestricted real wrapper as a literal representation at divergent inputs. For ordinary moments, restrict the exponent/domain or explicitly justify the negative-base real-power convention."
+    },
+    {
+      "id": "F02",
+      "category": "SCOPE_RESTRICTION",
+      "impact": "Requires an explicit source interpretation or an extended-value completion",
+      "project": "chapter01",
+      "source": "Book p.7, Exercise 1.2.2: signed tail identity for any random variable.",
+      "code": [
+        {
+          "path": "chapter01/HDP/Tails.lean",
+          "line": 31
+        }
+      ],
+      "finding": "integral_eq_tail_sub_lower requires Integrable X. It proves the finite signed expectation identity, not the one-sided infinite cases that a literal extended-expectation reading can include.",
+      "qualification": "For absolutely integrable variables, this statement matches; the change from Iio 0 to Iic 0 affects only a Lebesgue-null endpoint. The source does not define infinity-minus-infinity, so not every measurable variable has a meaningful signed identity. The extra integrability hypothesis is reasonable under a finite-quantity convention but must be disclosed.",
+      "closure": "Explicitly adopt the integrable reading or handle the extended cases where at least one signed part has finite integral."
+    },
+    {
+      "id": "F03",
+      "category": "SCOPE_RESTRICTION",
+      "impact": "Finite-second-moment exercise versions; not the broadest meaningful extended reading",
+      "project": "appetizer",
+      "source": "Book p.3, Exercise 0.0.3(a),(b).",
+      "code": [
+        {
+          "path": "appetizer/HDP/FiniteProbability.lean",
+          "line": 132
+        },
+        {
+          "path": "appetizer/HDP/Variance.lean",
+          "line": 17
+        }
+      ],
+      "finding": "Both variance identities require MemLp 2. The book does not explicitly impose finite second moments; for integrable vectors with infinite second moment, the corresponding nonnegative expectations can have a meaningful extended-value identity.",
+      "qualification": "The finite-second-moment statements are correct, and the empirical-method application uses a finite bounded sampling distribution, so this restriction does not undermine approximate Caratheodory or the covering bounds. The book itself needs an existence convention for E Z.",
+      "closure": "Report these exercises as finite-second-moment versions, or supply appropriately stated extended identities. Do not treat source-silent moment assumptions as an exact unqualified transcription."
+    },
+    {
+      "id": "F04",
+      "category": "UNCOVERED_SOURCE_CLAIM",
+      "impact": "Definite omission under the experiment protocol including mathematical claims in Notes",
+      "project": "appetizer",
+      "source": "Book p.4, Notes 0.0.1, final sentence: the Exercise 0.0.6 bound is asserted sharp.",
+      "code": [
+        {
+          "path": "appetizer/HDP/ImprovedCovering.lean",
+          "line": 72
+        },
+        {
+          "path": "appetizer/HDP/Sharpness.lean",
+          "line": 68
+        }
+      ],
+      "finding": "improved_covering supplies an upper covering bound with constant 4. The only sharpness theorem in the final Appetizer source concerns the n+1 Caratheodory bound. No lower-bound/optimality statement for Exercise 0.0.6 is formalized. The model inventory incorrectly treats the Notes as having no mathematical assertion.",
+      "qualification": "The source gives a citation and no precise lower-bound quantifiers or parameter regime. A faithful new target requires specifying what sharp means in that cited assertion. Omitting historical bibliography is reasonable; omitting this mathematical assertion needs a separate explicit scope exclusion.",
+      "closure": "Either restrict the completion claim to the specified numbered results and finite-domain exercises, excluding cited optimality, or specify and formalize the sharpness assertion with appropriate source evidence."
+    },
+    {
+      "id": "F05",
+      "category": "CORRESPONDENCE_BRIDGE_GAP",
+      "impact": "Canonical definition is valid; generic source-family identification is not established locally",
+      "project": "chapter01",
+      "source": "Book p.10: the sum S_N of the independent Bernoulli family has Binom(N,p) distribution.",
+      "code": [
+        {
+          "path": "chapter01/HDP/LimitTheorems.lean",
+          "line": 117
+        },
+        {
+          "path": "chapter01/HDP/LimitTheorems.lean",
+          "line": 122
+        }
+      ],
+      "finding": "binomialMeasure is defined as the law of the coordinate sum under a canonical product of Bernoulli measures. No theorem identifies the sum of an arbitrary independent Bernoulli family with this measure. The separately retained binomialPMFMeasure is not linked to it either.",
+      "qualification": "The canonical product-law definition is mathematically sound and can be accepted as a definition of the distribution. The source does not state the binomial PMF, so equivalence to that PMF is not by itself a missing book theorem. The bridge for an arbitrary source family is the relevant correspondence issue. De Moivre-Laplace is proved directly for arbitrary independent Bernoulli variables and is not invalidated.",
+      "closure": "Add the generic map-of-sum equality, or explicitly classify this row as a canonical distribution definition rather than a proved law-identification theorem."
+    },
+    {
+      "id": "F06",
+      "category": "HISTORICAL_API_HYGIENE",
+      "impact": "Misleading exported draft names; no defect found in the proved limit theorems",
+      "project": "chapter01",
+      "source": "Book pp.9-10: independent identically distributed sequences and independent Bernoulli rows.",
+      "code": [
+        {
+          "path": "chapter01/HDP/OpenStatements.lean",
+          "line": 27
+        },
+        {
+          "path": "chapter01/HDP/CLT.lean",
+          "line": 319
+        },
+        {
+          "path": "chapter01/HDP/PoissonLimit.lean",
+          "line": 192
+        }
+      ],
+      "finding": "The historical IsIID definition uses pairwise independence. The retained draft CLT/de Moivre/Poisson targets therefore do not encode the intended full joint-independence specification. They are still imported/exported by HDP.lean.",
+      "qualification": "These are Prop definitions, not proofs; the file header and release README label them historical. The actual central_limit_theorem and de_moivre_laplace use iIndepFun; poisson_limit_theorem uses iIndepFun within each finite row. Those proved statements do not inherit the draft error.",
+      "closure": "Move the drafts outside the public final library or rename them clearly as historical specifications. Keep their existence separate from completion/axiom claims."
+    }
+  ],
+  "appetizer_comparison": [
+    {
+      "id": "A01",
+      "source_item": "p.1 (0.1), convex combinations and convex hull",
+      "status": "MATCH",
+      "lean_evidence": "Defs.lean:14,18",
+      "assessment": "Finite arbitrary index type and convexHull equivalence encode the source definition."
+    },
+    {
+      "id": "A02",
+      "source_item": "p.1 Theorem 0.0.1",
+      "status": "MATCH",
+      "lean_evidence": "Caratheodory.lean:13",
+      "assessment": "Finite subset of T, cardinal at most n+1, and hull membership. The proven definition bridge gives the coefficients."
+    },
+    {
+      "id": "A03",
+      "source_item": "p.1 sharpness of n+1",
+      "status": "MATCH",
+      "lean_evidence": "Sharpness.lean:68",
+      "assessment": "Explicit simplex and point requiring every one of n+1 vertices."
+    },
+    {
+      "id": "A04",
+      "source_item": "p.2 Theorem 0.0.2",
+      "status": "MATCH_WITH_CLARIFICATION",
+      "lean_evidence": "Approximate.lean:112",
+      "assessment": "Positive natural k, repeated samples allowed, correct 1/sqrt(k) error at D=1. Source phrase every integer k needs k>0 for its displayed formula."
+    },
+    {
+      "id": "A05",
+      "source_item": "p.2 footnote, diameter scaling",
+      "status": "MATCH_ON_BOUNDED_DOMAIN",
+      "lean_evidence": "Approximate.lean:112",
+      "assessment": "D/sqrt(k), D>=0, IsBounded T and Metric.diam T<=D. These match finite diameter; an infinite-diameter extension is not represented."
+    },
+    {
+      "id": "A06",
+      "source_item": "p.3 Exercise 0.0.3(a)",
+      "status": "QUALIFIED_F03",
+      "lean_evidence": "FiniteProbability.lean:132",
+      "assessment": "Correct Euclidean vector mean-zero identity with joint independence and finite second moments."
+    },
+    {
+      "id": "A07",
+      "source_item": "p.3 Exercise 0.0.3(b)",
+      "status": "QUALIFIED_F03",
+      "lean_evidence": "Variance.lean:17",
+      "assessment": "Correct Hilbert-space generalization under MemLp 2."
+    },
+    {
+      "id": "A08",
+      "source_item": "p.4 Corollary 0.0.4",
+      "status": "MATCH",
+      "lean_evidence": "Approximate.lean:198",
+      "assessment": "Convex hull of a finite generating set, N^ceil(1/epsilon^2) centers, distances <= epsilon. Finite generating sets generalize vertex sets."
+    },
+    {
+      "id": "A09",
+      "source_item": "p.4 Exercise 0.0.5",
+      "status": "MATCH",
+      "lean_evidence": "Binomial.lean:163",
+      "assessment": "All three inequalities, 1<=m<=n, real-cast binomial coefficients and exp(1) constant."
+    },
+    {
+      "id": "A10",
+      "source_item": "p.4 Exercise 0.0.6",
+      "status": "MATCH",
+      "lean_evidence": "ImprovedCovering.lean:72",
+      "assessment": "Upper bound with a single explicit absolute constant C=4, correct ceiling and epsilon/N dependence."
+    },
+    {
+      "id": "A11",
+      "source_item": "p.4 Notes, sharpness of improved bound",
+      "status": "GAP_F04",
+      "lean_evidence": "No matching lower-bound theorem",
+      "assessment": "Not the Caratheodory n+1 sharpness statement; the final Notes sentence is mathematical."
+    },
+    {
+      "id": "A12",
+      "source_item": "pp.2-3 proof mechanism and displays",
+      "status": "MATCH_IN_CORE_PROOF",
+      "lean_evidence": "Approximate.lean:13-183; FiniteProbability.lean",
+      "assessment": "Translation, finite weighted sampling/variance estimate, existence of a realization and scaling are present. Motivational SLLN is cited background rather than a needed proof step."
+    },
+    {
+      "id": "A13",
+      "source_item": "pp.1,3 figures; bibliographic prose",
+      "status": "EXCLUDED_NONOPERATIVE",
+      "lean_evidence": "Not a Lean target",
+      "assessment": "Illustrations and attribution need not be formal theorems. This exclusion does not cover A11."
+    }
+  ],
+  "chapter01_comparison": [
+    {
+      "id": "C01",
+      "source_item": "p.5 expectation, moments, MGF, variance",
+      "status": "QUALIFIED_F01",
+      "lean_evidence": "Basic.lean:21,43,47,92; Mathlib variance",
+      "assessment": "Correct finite-domain quantities, but not unrestricted extended values. Negative-base noninteger real powers also require a convention."
+    },
+    {
+      "id": "C02",
+      "source_item": "pp.5-6 Lp norm and Lp membership",
+      "status": "MATCH_WITH_CONVENTION",
+      "lean_evidence": "Basic.lean:29,33",
+      "assessment": "eLpNorm has the intended positive finite exponent/infinity meaning; MemLp adds measurability as random-variable structure. Raw functions are identified a.e. in the Banach-space interpretation."
+    },
+    {
+      "id": "C03",
+      "source_item": "p.6 Banach and Hilbert structures",
+      "status": "MATCH_BY_REUSE",
+      "lean_evidence": "Basic.lean:104,109",
+      "assessment": "CompleteSpace and InnerProductSpace of Mathlib Lp are the appropriate quotient-space structures; not new independent analytic proofs."
+    },
+    {
+      "id": "C04",
+      "source_item": "p.6 (1.1), standard deviation, (1.2)",
+      "status": "MATCH_ON_L2",
+      "lean_evidence": "Basic.lean:37,69,73,77",
+      "assessment": "Integral of XY, centered covariance and the sqrt-variance/norm identity. L2 hypotheses prevent default-value problems."
+    },
+    {
+      "id": "C05",
+      "source_item": "p.6 triangle inequality fails for 0<p<1",
+      "status": "MATCH",
+      "lean_evidence": "Sharpness.lean:157",
+      "assessment": "A two-point probability-space counterexample for every real exponent in (0,1), not merely p=1/2."
+    },
+    {
+      "id": "C06",
+      "source_item": "p.6 Jensen",
+      "status": "MATCH_ON_FINITE_DOMAIN",
+      "lean_evidence": "Inequalities.lean:19",
+      "assessment": "Global convexity and integrability of X and phi(X). Infinite RHS version not separately stated; disclose finite-domain convention."
+    },
+    {
+      "id": "C07",
+      "source_item": "p.6 (1.3), monotonicity",
+      "status": "MATCH",
+      "lean_evidence": "Inequalities.lean:26",
+      "assessment": "Probability measure and measurable X; eLpNorm order. The source defines Lp only for p>0, so p=0 is a totalization convention, not a substantive target."
+    },
+    {
+      "id": "C08",
+      "source_item": "p.6 (1.4), Minkowski",
+      "status": "MATCH",
+      "lean_evidence": "Inequalities.lean:31",
+      "assessment": "p>=1, X,Y in MemLp, including p=infinity."
+    },
+    {
+      "id": "C09",
+      "source_item": "pp.6-7 Cauchy-Schwarz and Holder",
+      "status": "MATCH",
+      "lean_evidence": "Inequalities.lean:37,55,77",
+      "assessment": "Absolute expected product; finite conjugates and the 1/infinity endpoint covered."
+    },
+    {
+      "id": "C10",
+      "source_item": "p.7 CDF and upper tail",
+      "status": "MATCH",
+      "lean_evidence": "Basic.lean:51,55; Tails.lean:139,147",
+      "assessment": "<= for CDF and strict > for upper tail, with the correct complement probability."
+    },
+    {
+      "id": "C11",
+      "source_item": "p.7 Lemma 1.2.1, finite/infinite identity",
+      "status": "MATCH",
+      "lean_evidence": "Tails.lean:17,24",
+      "assessment": "Real integrable and ENNReal versions together cover simultaneous finiteness/infinity."
+    },
+    {
+      "id": "C12",
+      "source_item": "p.7 Exercise 1.2.2",
+      "status": "QUALIFIED_F02",
+      "lean_evidence": "Tails.lean:31",
+      "assessment": "Matches the absolutely integrable case; one-sided infinite cases need scope treatment."
+    },
+    {
+      "id": "C13",
+      "source_item": "p.8 Exercise 1.2.3",
+      "status": "MATCH",
+      "lean_evidence": "Tails.lean:91,171,183",
+      "assessment": "All p>0; real equality under finiteness of extended RHS, plus the extended identity. On a probability space this matches the source finiteness condition."
+    },
+    {
+      "id": "C14",
+      "source_item": "p.8 Markov",
+      "status": "MATCH",
+      "lean_evidence": "Tails.lean:100,161",
+      "assessment": "Finite real and extended-value threshold inequalities, positive t, nonnegative random variable."
+    },
+    {
+      "id": "C15",
+      "source_item": "p.8 Chebyshev and Exercise 1.2.6",
+      "status": "MATCH_ON_FINITE_VARIANCE",
+      "lean_evidence": "Tails.lean:106,115",
+      "assessment": "Correct centered absolute tail, t^2 denominator and proof via Markov on the square."
+    },
+    {
+      "id": "C16",
+      "source_item": "pp.8-9 variance sum and (1.5)",
+      "status": "MATCH_ON_FINITE_VARIANCE",
+      "lean_evidence": "LimitTheorems.lean:19,28",
+      "assessment": "Pairwise independence suffices; MemLp 2, identical distributions and positive N give the correct sample-mean variance."
+    },
+    {
+      "id": "C17",
+      "source_item": "p.9 Theorem 1.3.1, SLLN",
+      "status": "MATCH_UNDER_WEAKER_HYPOTHESES",
+      "lean_evidence": "LimitTheorems.lean:52",
+      "assessment": "Integrable common law, a.e. sample-mean convergence, pairwise independence is a valid weakening here. Zero-based indices have no mathematical effect."
+    },
+    {
+      "id": "C18",
+      "source_item": "p.9 normal density (1.6)",
+      "status": "MATCH_BY_REUSE",
+      "lean_evidence": "LimitTheorems.lean:153; Mathlib gaussianReal",
+      "assessment": "Correct standard normal PDF formula; the measure/density interpretation relies on the imported Gaussian library."
+    },
+    {
+      "id": "C19",
+      "source_item": "p.9 Theorem 1.3.2, CLT",
+      "status": "MATCH_WITH_NONDEGENERACY",
+      "lean_evidence": "CLT.lean:319",
+      "assessment": "Mutual iIndepFun, common distribution, finite second moments, actual mean and variance. sigma>0 is needed for the source normalization. No desired-convergence hypothesis is assumed."
+    },
+    {
+      "id": "C20",
+      "source_item": "p.9 CLT CDF and tail restatement",
+      "status": "MATCH_BY_EQUIVALENT_REPRESENTATION",
+      "lean_evidence": "CLT.lean:352,381",
+      "assessment": "All real thresholds; correct Iic/Ici events. Limit is Gaussian half-line measure. The final explicit density-integral display is not restated in one local theorem but follows from the library density representation."
+    },
+    {
+      "id": "C21",
+      "source_item": "p.10 Exercise 1.3.3",
+      "status": "MATCH",
+      "lean_evidence": "LimitTheorems.lean:178",
+      "assessment": "Expected absolute deviation is O(1/sqrt(N)); finite variance, a weaker pairwise-independence hypothesis is sufficient."
+    },
+    {
+      "id": "C22",
+      "source_item": "p.10 Bernoulli law, mean and variance",
+      "status": "MATCH",
+      "lean_evidence": "LimitTheorems.lean:79,93,102",
+      "assessment": "Correct masses at 0/1 and p(1-p), with p in [0,1]."
+    },
+    {
+      "id": "C23",
+      "source_item": "p.10 binomial law identification",
+      "status": "QUALIFIED_F05",
+      "lean_evidence": "LimitTheorems.lean:117,122",
+      "assessment": "Canonical product-law definition is valid; arbitrary independent-family bridge is absent."
+    },
+    {
+      "id": "C24",
+      "source_item": "p.10 de Moivre-Laplace (1.7)",
+      "status": "MATCH_BY_EQUIVALENT_REPRESENTATION",
+      "lean_evidence": "DeMoivreLaplace.lean:24",
+      "assessment": "p in (0,1), arbitrary jointly independent Bernoulli sequence, centered normalized law converges to N(0,1). Algebraically equivalent source normalization."
+    },
+    {
+      "id": "C25",
+      "source_item": "p.10 Poisson mass (1.8)",
+      "status": "MATCH_BY_REUSE",
+      "lean_evidence": "LimitTheorems.lean:139,142,148; PoissonCharFun.lean:14",
+      "assessment": "Correct Poisson PMF on naturals; pushforward to real line used for weak convergence, including lambda=0."
+    },
+    {
+      "id": "C26",
+      "source_item": "p.10 Theorem 1.3.4, Poisson limit",
+      "status": "MATCH",
+      "lean_evidence": "PoissonLimit.lean:192",
+      "assessment": "Joint independence within each finite row, uniform maximum tending to 0, sum of p tending to finite lambda>=0; convergence of actual sum laws. No conclusion-valued assumption."
+    },
+    {
+      "id": "C27",
+      "source_item": "Historical draft specifications",
+      "status": "HYGIENE_F06",
+      "lean_evidence": "OpenStatements.lean:27,45,67",
+      "assessment": "Not proved theorems, not accepted target evidence; actual final CLT and Poisson statements use correct independence."
+    },
+    {
+      "id": "C28",
+      "source_item": "p.11 Notes; interpretive/forward references",
+      "status": "EXCLUDED_NONOPERATIVE",
+      "lean_evidence": "No separate mathematical target needed",
+      "assessment": "Bibliography and attribution are narrative. Geometric covariance interpretation is explained by the checked inner-product identity; the later-chapter forward reference is outside scope."
+    }
+  ]
+}

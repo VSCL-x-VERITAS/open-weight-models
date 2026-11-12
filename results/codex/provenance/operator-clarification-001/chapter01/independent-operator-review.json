@@ -1,0 +1,11 @@
+{
+  "reviewer": "operator in coordinating chat, independent of native trial generators",
+  "scope": "Reported source blocker and relevant existing definitions only, not a full final theorem/source audit",
+  "review_date_client_timezone": "2026-11-03 Europe/Athens",
+  "original_pdf_unchanged": true,
+  "generated_lean_proofs_supplied": false,
+  "prior_library_access_granted": false,
+  "retained_review_conclusion": "Blocker is justified; explicit source supplement/domain amendment supplied; fresh native independent contract review still required",
+  "primary_source": "NIST Possolo-Toman (2011), Section4.8, printed p17",
+  "primary_source_url": "https://www.nist.gov/system/files/documents/2017/04/28/TutorialMetrologists2011Nov22.pdf"
+}

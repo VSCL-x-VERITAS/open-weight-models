@@ -1,0 +1,133 @@
+{
+  "report_date_athens": "2026-11-02",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "reasoning": "High",
+  "harness": "@deepseek-ai/dsh@0.2.1-rc.5",
+  "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+  "mathlib_revision": "e8ea1afc32790ce1d4e1a4e45cc412ba9388716b",
+  "appetizer": {
+    "all_measured_phases": {
+      "request_count": 355,
+      "input_tokens": 81425615,
+      "output_tokens": 214816,
+      "reported_cached_input_tokens": 79155840,
+      "reported_reasoning_tokens": 204210,
+      "measured_elapsed_seconds": 2914.729,
+      "cost_usd": 1.05823739,
+      "accounting_complete": true
+    },
+    "setup": {
+      "request_count": 14,
+      "input_tokens": 113142,
+      "output_tokens": 4016,
+      "reported_cached_input_tokens": 107648,
+      "reported_reasoning_tokens": 2639,
+      "measured_elapsed_seconds": 58.361,
+      "cost_usd": 0.003576304,
+      "accounting_complete": true
+    },
+    "formalization": {
+      "request_count": 341,
+      "input_tokens": 81312473,
+      "output_tokens": 210800,
+      "reported_cached_input_tokens": 79048192,
+      "reported_reasoning_tokens": 201571,
+      "measured_elapsed_seconds": 2856.368,
+      "cost_usd": 1.054661086,
+      "accounting_complete": true
+    },
+    "formalization_attempts": 1,
+    "human_prompted_continuations": 0
+  },
+  "chapter01": {
+    "main_attempt_and_continuations": {
+      "request_count": 711,
+      "input_tokens": 310966660,
+      "output_tokens": 445514,
+      "reported_cached_input_tokens": 301869681,
+      "reported_reasoning_tokens": 427708,
+      "measured_elapsed_seconds": 10900.128,
+      "cost_usd": 3.184093647,
+      "accounting_complete": true
+    },
+    "setup": {
+      "request_count": 13,
+      "input_tokens": 122733,
+      "output_tokens": 5611,
+      "reported_cached_input_tokens": 99968,
+      "reported_reasoning_tokens": 5144,
+      "measured_elapsed_seconds": 65.212,
+      "cost_usd": 0.006557444,
+      "accounting_complete": true
+    },
+    "formalization": {
+      "request_count": 698,
+      "input_tokens": 310843927,
+      "output_tokens": 439903,
+      "reported_cached_input_tokens": 301769713,
+      "reported_reasoning_tokens": 422564,
+      "measured_elapsed_seconds": 10834.916,
+      "cost_usd": 3.177536203,
+      "accounting_complete": true
+    },
+    "formalization_attempts": 5,
+    "human_prompted_continuations": 4,
+    "separate_setup_calibration": {
+      "request_count": 15,
+      "input_tokens": 162981,
+      "output_tokens": 5103,
+      "reported_cached_input_tokens": 149120,
+      "reported_reasoning_tokens": 4402,
+      "measured_elapsed_seconds": 33.207,
+      "cost_usd": 0.00595059,
+      "accounting_complete": true
+    }
+  },
+  "both_main_experiments": {
+    "request_count": 1066,
+    "input_tokens": 392392275,
+    "output_tokens": 660330,
+    "reported_cached_input_tokens": 381025521,
+    "reported_reasoning_tokens": 631918,
+    "measured_elapsed_seconds": 13814.857,
+    "cost_usd": 4.242331037,
+    "accounting_complete": true
+  },
+  "both_including_separate_calibration": {
+    "request_count": 1081,
+    "input_tokens": 392555256,
+    "output_tokens": 665433,
+    "reported_cached_input_tokens": 381174641,
+    "reported_reasoning_tokens": 636320,
+    "measured_elapsed_seconds": 13848.064,
+    "cost_usd": 4.248281627,
+    "accounting_complete": true
+  },
+  "source_pdfs": {
+    "appetizer": {
+      "pages": 4,
+      "sha256": "164189f2c6e5d39c6b8aa96f3a3c18d02f42194b890be3610aaa44d7c487ca7f"
+    },
+    "chapter01": {
+      "pages": 7,
+      "book_pages": "5-11",
+      "sha256": "855fdaf6870f664f1e470d47641b6d72758afdb9b87649a6494b027cecc02b17"
+    }
+  },
+  "counts": {
+    "appetizer": {
+      "modules_excluding_entry": 8,
+      "declarations_in_release_axiom_check": 37
+    },
+    "chapter01": {
+      "modules_excluding_entry": 13,
+      "declarations_in_release_axiom_check": 113
+    }
+  },
+  "semantic_status": "Model-reported complete coverage; independent full source-to-statement audit pending for both projects.",
+  "cost_basis": "Actual reconciled OpenRouter usage, USD; no list-price estimate. All saved runs have complete accounting.",
+  "time_basis": "Observed agent/tool/API active elapsed time; union of observed idle/human blocking removed. Local setup, installations, operator recovery and post-run verification outside measured agent activity are excluded.",
+  "setup_scope": "Warm model protocol/environment checks, not cold installation of Lean, Mathlib or the released book-formalization skill.",
+  "token_basis": "Input totals count repeated context on every request. Cache/reasoning counts are subsets and are not added to input/output totals.",
+  "prior_pilot": "Earlier nonclean Appetizer pilot excluded because existing project formalizations were accessible; its metrics are not blended into these clean results."
+}

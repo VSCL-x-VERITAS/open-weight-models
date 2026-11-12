@@ -1,0 +1,556 @@
+{
+  "review_kind": "user-authorized read-only operator code comparison; not a canonical formalization-code-review skill receipt",
+  "reviewed_date": "2026-11-03",
+  "scope": {
+    "roots": {
+      "codex_appetizer": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean",
+      "deepseek_appetizer": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer",
+      "codex_chapter01": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean",
+      "deepseek_chapter01": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01"
+    },
+    "inspected": "Actual released Lean source, public theorem hypotheses/conclusions, proof bodies, import roots and selected check files. No experiment or release files modified. No old independent DeepSeek audit used.",
+    "not_claimed": "Independent compilation, source-PDF equivalence adjudication, proof replay timings, model speed, model effort, or randomized causal comparison. Parent audit handles build and source-PDF validation."
+  },
+  "overall_assessment": "Both final releases contain substantive Lean proofs of the main common finite-dimensional approximation and Chapter 1 limit theorems. Codex is stronger in explicit semantic treatment of infinite/undefined quantities, actual-vertex and PMF-law bridges, reusable source wrappers, and additional assisted entropy coverage. DeepSeek has a direct probabilistic approximation proof, a weaker-hypothesis SLLN API, and clearer topic boundaries/reuse for Chapter 1. These observations do not isolate model ability because protocols and operator assistance differed.",
+  "protocol_caveats": [
+    "Comparison is between final accumulated artifacts, not matched first attempts.",
+    "The supplied experiment context says Codex used the full formalization skill, reviewer feedback and operator mathematical clarification; DeepSeek used a simpler protocol. These unequal interventions confound any attribution to the base generator.",
+    "Codex entropy_lower_bound explicitly records an operator-supplied assisted continuation. Count it as final artifact coverage while preserving that provenance.",
+    "The final DeepSeek release repaired the draft pairwise-independence issue for proved CLT and Poisson theorems. Historical Prop records remain and must be distinguished from the final proved APIs.",
+    "Source length and declaration counts are descriptive only: scope, API granularity, comments and proof architecture differ, so they do not measure correctness, productivity, speed or maintainability."
+  ],
+  "comparisons": [
+    {
+      "id": "appetizer-main-theorem",
+      "area": "coverage and hypothesis strength",
+      "observed_difference": "Both formalize exact D/sqrt(k) empirical approximation with repetitions. Codex proves it for an arbitrary real inner-product space using a pointwise diameter bound; DeepSeek restricts to finite-dimensional Euclidean space and additionally asks for boundedness and Metric.diam T <= D.",
+      "assessment": "Codex exposes a more general and simpler-to-apply theorem. DeepSeek assumptions are mathematically suitable and not evidence of a false result; boundedness is explicit because real Metric.diam totalizes the unbounded case.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Approximation.lean",
+          "line": 70,
+          "end_line": 94
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Approximate.lean",
+          "line": 112,
+          "end_line": 183
+        }
+      ]
+    },
+    {
+      "id": "appetizer-proof-design",
+      "area": "proof design and source proof coverage",
+      "observed_difference": "Codex derives its exported approximate Caratheodory theorem by a deterministic greedy induction: choose a displacement with nonpositive inner product and update squared error. A separate Empirical module proves index PMFs, existence of independent copies, the empirical strong law, mean-square error identities and realization extraction. DeepSeek proves its main approximation through finite product probability, weighted variance and selection of a realization with error below expectation.",
+      "assessment": "DeepSeek directly connects the main theorem to the probabilistic argument. Codex has a shorter general deterministic theorem and separately formalizes much of the probabilistic infrastructure, but its main theorem does not depend on that empirical infrastructure. These are different proof architectures, not a soundness ranking.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Approximation.lean",
+          "line": 12,
+          "end_line": 67
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 9,
+          "end_line": 75
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 107,
+          "end_line": 188
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Approximate.lean",
+          "line": 13,
+          "end_line": 110
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/FiniteProbability.lean",
+          "line": 16,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "id": "caratheodory-coefficients-and-sharpness",
+      "area": "API specificity and reuse",
+      "observed_difference": "Codex Caratheodory exposes the finite support and actual nonnegative coefficients summing to one; DeepSeek exposes a finite support and convex-hull membership. Both use Mathlib minimal-cardinality Caratheodory infrastructure and both prove sharpness. Codex sharpness factors through a reusable affine-independent simplex lemma; DeepSeek uses an explicit coordinate simplex and barycenter.",
+      "assessment": "Codex makes coefficients available directly and has a useful general simplex helper. DeepSeek has a concrete, inspectable coordinate witness. The convex-hull output can be converted to coefficients with Mathlib, so this is an API convenience difference rather than a coverage failure.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/ConvexBasics.lean",
+          "line": 24,
+          "end_line": 103
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Caratheodory.lean",
+          "line": 13,
+          "end_line": 31
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Sharpness.lean",
+          "line": 16,
+          "end_line": 140
+        }
+      ]
+    },
+    {
+      "id": "actual-vertices",
+      "area": "polytope semantics",
+      "observed_difference": "DeepSeek covering_polytope and improved_covering take a finite generating set s and use s.card. Codex also has finite-generator bounds, then proves polytope_vertices and exports source wrappers with N = (P.extremePoints R).ncard for an arbitrary finitely generated P.",
+      "assessment": "Codex explicitly closes the bridge from an arbitrary generating representation to the actual vertex count. DeepSeek results remain valid for their inputs, but the name/comment about N vertices does not establish that an arbitrary supplied s consists exactly of extreme points.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Approximate.lean",
+          "line": 198,
+          "end_line": 238
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/ImprovedCovering.lean",
+          "line": 72,
+          "end_line": 123
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 82,
+          "end_line": 104
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Supplemental.lean",
+          "line": 73,
+          "end_line": 85
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 21,
+          "end_line": 56
+        }
+      ]
+    },
+    {
+      "id": "covering-constants",
+      "area": "strength of proved bound",
+      "observed_difference": "Codex proves the multichoose bound as well as the real bound (exp(1) + exp(1)*epsilon^2*N)^ceil(1/epsilon^2). DeepSeek counts the same multiset objects internally but exports the weaker constant-4 bound (4 + 4*epsilon^2*s.card)^ceil(1/epsilon^2). Both use natural-number powers and the natural ceiling sample size.",
+      "assessment": "The Codex numerical constant is tighter and its exported theorem retains the intermediate combinatorial estimate. Either universal constant suffices for a source assertion asking only for an absolute constant.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Covering.lean",
+          "line": 90,
+          "end_line": 104
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/ImprovedCovering.lean",
+          "line": 23,
+          "end_line": 80
+        }
+      ]
+    },
+    {
+      "id": "entropy-sharpness",
+      "area": "additional coverage",
+      "observed_difference": "Codex has a diameter-one crosspolytope construction, Hamming-code packing/embedding modules, and entropy_lower_bound with one absolute c, uniform n,k and arbitrary ambient covering centers. DeepSeek Appetizer Sharpness.lean proves only the n+1 Caratheodory support sharpness; no covering entropy lower bound occurs in the inspected release modules.",
+      "assessment": "Codex covers a substantial additional mathematical target. Its theorem is explicitly marked Assisted continuation 001 and the operator's explicit dyadic entropy lower bound. That provenance prevents attributing this difference to an unassisted model comparison.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Sharpness.lean",
+          "line": 7,
+          "end_line": 29
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Crosspolytope.lean",
+          "line": 7,
+          "end_line": 19
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyPacking.lean",
+          "line": 118,
+          "end_line": 181
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/EntropyEmbedding.lean",
+          "line": 174,
+          "end_line": 229
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP/Sharpness.lean",
+          "line": 68,
+          "end_line": 140
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/HDP.lean",
+          "line": 1,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "extended-quantity-semantics",
+      "area": "Chapter 1 expectation, moments and MGF",
+      "observed_difference": "DeepSeek expectation, absMoment and mgfOf are unconditional real-valued Bochner-integral wrappers. Codex defines absoluteMoment and extendedMGF by ENNReal lintegrals, with finiteness/integrability equivalences and bridges back to real quantities. Codex also represents signed natural moments by Option EReal and records none exactly when both positive and negative parts diverge.",
+      "assessment": "Codex gives a materially more faithful API for quantities that can be infinite or undefined. A totalized real integral does not represent infinite expectation: Mathlib assigns zero in nonintegrable cases. DeepSeek wrappers are fine on integrable inputs but their unconditional definitions do not enforce that restriction.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Basic.lean",
+          "line": 21,
+          "end_line": 48
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Basic.lean",
+          "line": 92,
+          "end_line": 97
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+          "line": 18,
+          "end_line": 73
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+          "line": 199,
+          "end_line": 220
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean",
+          "line": 27,
+          "end_line": 73
+        }
+      ],
+      "qualification": "This semantic judgment does not imply DeepSeek tail theorems all assume finiteness: its ENNReal layer-cake and Markov theorems explicitly cover infinite cases."
+    },
+    {
+      "id": "raw-moment-powers",
+      "area": "signed raw powers and domain conventions",
+      "observed_difference": "DeepSeek moment takes p : Real and integrates (X omega)^p for arbitrary signed X, thereby selecting Mathlib Real.rpow on negative bases. It has no inspected theorem identifying these arbitrary-real-exponent raw moments with standard signed integer moments or restricting the raw-moment domain. Codex uses natural-number powers for signed raw moments, and a separate real-exponent moment API for nonnegative-valued variables with finite and integer-agreement bridges.",
+      "assessment": "Codex makes the mathematical domain decision explicit and avoids assigning a negative-base convention silently. DeepSeek's definition is valid Lean but requires an interpretation choice beyond the usual unqualified phrase E X^p. This is a source-fidelity/API issue, not a failed Lean proof.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Basic.lean",
+          "line": 43,
+          "end_line": 48
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+          "line": 24,
+          "end_line": 39
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+          "line": 49,
+          "end_line": 55
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean",
+          "line": 76,
+          "end_line": 106
+        }
+      ]
+    },
+    {
+      "id": "tails-infinite-vs-finite",
+      "area": "tail identities and semantic bridges",
+      "observed_difference": "Both releases prove nonnegative and absolute-moment ENNReal layer-cake identities without finiteness, plus finite real variants and Markov/Chebyshev. DeepSeek signed tail decomposition requires Integrable X. Codex additionally proves signed positive/negative parts via tails, signed expectation identities, an undefined iff both parts infinite theorem, and an extended Jensen theorem requiring only integrability of X.",
+      "assessment": "Codex has broader explicit infinite/undefined-case coverage. It would be inaccurate to call DeepSeek entirely real-only: its final Tails module contains genuine unrestricted ENNReal results and a finiteness-to-real tail bridge.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Tails.lean",
+          "line": 17,
+          "end_line": 34
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Tails.lean",
+          "line": 91,
+          "end_line": 98
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/Tails.lean",
+          "line": 161,
+          "end_line": 254
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean",
+          "line": 148,
+          "end_line": 235
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+          "line": 223,
+          "end_line": 265
+        }
+      ]
+    },
+    {
+      "id": "independence-final-vs-history",
+      "area": "joint independence and historical targets",
+      "observed_difference": "DeepSeek final central_limit_theorem, de_moivre_laplace and poisson_limit_theorem require iIndepFun; the CLT requires square integrability and positive sigma. Its imported OpenStatements module preserves first-attempt Prop targets with only pairwise independence, explicitly labeled as historical records. Codex IID packages iIndepFun and identical distributions, and its proved CLT uses MemLp and positive variance. Codex has no analogous historical pairwise CLT target in the inspected modules.",
+      "assessment": "Both final proved CLT/Poisson families use the necessary joint independence. The historical DeepSeek Prop definitions are unproved overstrong statements, and not evidence of a proof of a pairwise-independent CLT. Keeping them in the public import creates an avoidable naming/discoverability hazard. The correction should not be erased when comparing final releases.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/OpenStatements.lean",
+          "line": 1,
+          "end_line": 79
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP.lean",
+          "line": 5,
+          "end_line": 11
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/CLT.lean",
+          "line": 319,
+          "end_line": 356
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/DeMoivreLaplace.lean",
+          "line": 24,
+          "end_line": 30
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/PoissonLimit.lean",
+          "line": 192,
+          "end_line": 202
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 24,
+          "end_line": 30
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 631,
+          "end_line": 676
+        }
+      ]
+    },
+    {
+      "id": "hypotheses-not-uniform-win",
+      "area": "hypothesis strength and source wrappers",
+      "observed_difference": "DeepSeek variance_sampleMean and strong_law require only pairwise independence, which is sufficient for these conclusions; Codex source-facing iid versions use its full IID package. Codex separately provides setwise pairwise variance additivity and finite-family variance wrappers. DeepSeek CLT takes explicit m,sigma and all-variable moment hypotheses; Codex derives moments of every X i from X 0 and identical distribution, and normalizes by the actual mean and variance.",
+      "assessment": "DeepSeek is more general at the SLLN entry point. Codex offers a more compact CLT interface with fewer redundant moment hypotheses and more explicit finite-source wrappers. Full IID in a SLLN wrapper is a strengthening of assumptions, not an error.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/LimitTheorems.lean",
+          "line": 19,
+          "end_line": 57
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/CLT.lean",
+          "line": 319,
+          "end_line": 327
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 39,
+          "end_line": 45
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 68,
+          "end_line": 95
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 106,
+          "end_line": 131
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 631,
+          "end_line": 655
+        }
+      ]
+    },
+    {
+      "id": "binomial-law-bridge",
+      "area": "PMF/binomial identification",
+      "observed_difference": "DeepSeek defines binomialPMFMeasure from PMF.binomial and separately defines binomialMeasure as the law of the coordinate sum under a Bernoulli product measure; binomialPMFMeasure is explicitly kept for reference. No theorem in the release identifies the two constructions or exports a general independent Bernoulli sum HasLaw bridge. Codex defines binomialMeasure by mapping PMF.binomial into Real and proves binomial_sum_law for arbitrary independent Bool-valued Bernoulli inputs, plus real-to-Bool law and almost-everywhere reconstruction bridges.",
+      "assessment": "Codex closes a useful distribution-identification bridge that is absent from DeepSeek's exported development. DeepSeek product-law definition itself correctly matches the interpretation as a sum of independent Bernoulli variables; this observation is an absent bridge, not a claim that its law is wrong.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/LimitTheorems.lean",
+          "line": 116,
+          "end_line": 137
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean",
+          "line": 24,
+          "end_line": 30
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean",
+          "line": 465,
+          "end_line": 511
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean",
+          "line": 622,
+          "end_line": 696
+        }
+      ]
+    },
+    {
+      "id": "limit-proof-architectures",
+      "area": "substantive proofs and reuse",
+      "observed_difference": "Both CLTs use characteristic-function asymptotics, second-moment tightness, and a Prokhorov/characteristic-uniqueness weak-convergence argument. DeepSeek proves its characteristic Taylor expansion using a dominated-convergence bound on exponential remainders; Codex proves weighted characteristic differentiation, C2 regularity, and a Taylor-Peano remainder. DeepSeek reuses its WeakConvergence theorem for both CLT and Poisson. Codex Poisson instead obtains singleton limits through circle Fourier coefficients and then weak convergence on discrete Nat.",
+      "assessment": "Both contain substantial analytic proofs rather than merely proposition declarations. DeepSeek has particularly clean cross-target reuse of a named weak-convergence module. Codex's weighted-characteristic helpers and discrete Poisson singleton theorem are useful additional infrastructure. Source inspection alone does not justify runtime or implementation-effort comparisons.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/CharFunTaylor.lean",
+          "line": 150,
+          "end_line": 230
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/WeakConvergence.lean",
+          "line": 20,
+          "end_line": 60
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/CLT.lean",
+          "line": 319,
+          "end_line": 349
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP/PoissonLimit.lean",
+          "line": 208,
+          "end_line": 235
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 297,
+          "end_line": 398
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+          "line": 511,
+          "end_line": 535
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean",
+          "line": 372,
+          "end_line": 463
+        }
+      ]
+    },
+    {
+      "id": "organization-readability",
+      "area": "organization and maintenance judgment",
+      "observed_difference": "DeepSeek Chapter 1 separates basic inequalities, Taylor expansion, weak convergence, CLT, de Moivre-Laplace, and Poisson into topic files. Codex Chapter 1 has fewer modules and large LimitTheorems and PoissonLimit files (712 and 725 lines); it uses a Limits namespace and named reusable source-level bridges. Codex Appetizer separates centers/counting, source wrappers and entropy geometry across more modules. Both frequently import all of Mathlib. Codex Appetizer embeds 28 #print axioms commands in source files; DeepSeek uses separate checks/Axioms.lean files.",
+      "assessment": "DeepSeek's Chapter 1 module boundaries are easier to navigate by topic. Codex's source wrappers, typed law packages and stronger semantic APIs help downstream users, at the cost of a larger conceptual surface. Embedded diagnostic printing is less tidy than separate checks. These are qualified code-review judgments; no version-upgrade robustness experiment was run.",
+      "source_references": [
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/HDP.lean",
+          "line": 1,
+          "end_line": 11
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP.lean",
+          "line": 1,
+          "end_line": 5
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Empirical.lean",
+          "line": 190,
+          "end_line": 204
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/appetizer/workspace/lean/HDP/Source.lean",
+          "line": 9,
+          "end_line": 56
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/chapter01/checks/Axioms.lean",
+          "line": 1
+        },
+        {
+          "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/hdp-deepseek-formalization/appetizer/checks/Axioms.lean",
+          "line": 1
+        }
+      ]
+    }
+  ],
+  "source_statistics_definition": "For each root, only HDP.lean plus immediate HDP/*.lean are counted; excludes checks/, Lake config, dependency sources and build artifacts. Physical lines use Python splitlines; bytes are file sizes. Declaration count is a lexical count of line-start def/abbrev/lemma/theorem/structure/inductive/instance, optionally prefixed noncomputable, so it is not an elaborated environment count. No sorry/admit/axiom/unsafe word token was found in those source files; this is a lexical check and is not a substitute for build or axiom inspection.",
+  "source_statistics": {
+    "codex_appetizer": {
+      "file_count": 14,
+      "physical_lines_including_comments_blank_lines_and_imports": 1691,
+      "utf8_bytes": 76585,
+      "line_start_declaration_count": 108,
+      "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+      "lexical_sorry_admit_axiom_unsafe_hits": [],
+      "source_sha256": {
+        "HDP.lean": "bd19ff9690929c59cb34810f33472eea7b04a573ab3f922e4b8add78afed5830",
+        "HDP/Approximation.lean": "8f48640413f5303dad1a316ae8e8165ad6403eed306a5349878adbbeb444a77f",
+        "HDP/Combinatorics.lean": "a3494116bfb668d3049a7167ebd2512e060db0f338aefdc4a51967beb6feb341",
+        "HDP/ConvexBasics.lean": "e7a9742554caea898cccb4fb62fbc5f4e9699d27c6a5861a6eec36bfe12392a1",
+        "HDP/Covering.lean": "5d45c5145f45dec85d81be05ec22312afb6bf688fe330915254d49e1c264ddd5",
+        "HDP/Crosspolytope.lean": "8622eb4eb3a843bb0bf3ee6334f7d4bc95bdf55b175d292e006edd67885e40bc",
+        "HDP/Empirical.lean": "888232a772cfc7f8dc7064c174f8cf3f2df0aa8d3481d7c89b38085ce88a4bb9",
+        "HDP/EntropyEmbedding.lean": "883d29b90d286dfb5d2d211c83cd443aea3b73fcfaf87cb57806a8962482ff44",
+        "HDP/EntropyPacking.lean": "334676660ba1bfabcf44a1aa57cd6d908c930cb47e9a7bff1a26f2ffec485ec6",
+        "HDP/EntropyParameters.lean": "0274d870fdd466b7bc79fe8c1c9e63c272d498b28aa71b0c8d4de1c6df291161",
+        "HDP/Sharpness.lean": "9782a6c78a64e8b515459cdd94ec4e27de544f0d85ae6e9e7b884f2efbb6541c",
+        "HDP/Source.lean": "82f669e8b52fa01d78d1bb458910a10309eca993454f2c8e1020275773c4a046",
+        "HDP/Supplemental.lean": "a34873f5537fe7344fc0032545f0a8cedaebe312aca84c1807bdd8fce679f20e",
+        "HDP/Variance.lean": "c0877129d0da212543108c803bd3b571108a7b208bce11a2edbe885c62de76a7"
+      }
+    },
+    "deepseek_appetizer": {
+      "file_count": 9,
+      "physical_lines_including_comments_blank_lines_and_imports": 999,
+      "utf8_bytes": 44636,
+      "line_start_declaration_count": 38,
+      "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+      "lexical_sorry_admit_axiom_unsafe_hits": [],
+      "source_sha256": {
+        "HDP.lean": "8b60b9691883a90025ec97fb6162cba1c27fd97cfcfb44ba053023d786bd39af",
+        "HDP/Approximate.lean": "ee6efe92509d60bb3419081e208a75b6e403b67d78888ef7528ac52f28687691",
+        "HDP/Binomial.lean": "2a0f4b0b7358ed448f7cc2f0bb7b27d6232dd6c33af0cf5f87d1e45f67fbbc6f",
+        "HDP/Caratheodory.lean": "9b3caa2fd9c655e84ffd361b1542df15b11068d71dab3e2f5141647513269710",
+        "HDP/Defs.lean": "82600f230ab5d86cb1929592bb822eca8834e36644da309c71c8849fc1de4eb9",
+        "HDP/FiniteProbability.lean": "30fac43c3e5cff09da8866ab7017628ebfca030f5b4754ccadff7ded80b3e69a",
+        "HDP/ImprovedCovering.lean": "1bbc92b9fbd6fdcc320d8303a798b2a6a53a76c5078fa63cb25aa17a8b50a8af",
+        "HDP/Sharpness.lean": "21b8e6e30d8880214c0af307b32598e0aa591c157dfd2923c5dfa1633d6098a1",
+        "HDP/Variance.lean": "832a89b8a9fe2922790aa9cf44e21e9e584a2ec53ce7cb5a59107b9de415d8ce"
+      }
+    },
+    "codex_chapter01": {
+      "file_count": 6,
+      "physical_lines_including_comments_blank_lines_and_imports": 2129,
+      "utf8_bytes": 105482,
+      "line_start_declaration_count": 189,
+      "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+      "lexical_sorry_admit_axiom_unsafe_hits": [],
+      "source_sha256": {
+        "HDP.lean": "a3bfb87d5bf4483fb00c99c76f2a5e0f9ae152b240b67b3cce43561d454ff771",
+        "HDP/Basic.lean": "c1c32adcbbfc30384f250424bcfbc278664d7fce6b76791dfbdf11aa339fc8d2",
+        "HDP/LimitTheorems.lean": "c4967e1dda0523177abe375164c5fe02092cc373d753dc06ed5cd78e63a1eb26",
+        "HDP/Moments.lean": "c6a5dd2ddda93c4e67bcd10a2d25fedce13d10309ca1ddc6811b6397e968ea63",
+        "HDP/PoissonLimit.lean": "570e1ea5f85f609e758b0a74e157f86ac14f66793781db659f21a8f583ab8591",
+        "HDP/Tails.lean": "912eaa637412127174ece8c06ed87070cf1bd18f17a7f0e1df9cd50660068ef4"
+      }
+    },
+    "deepseek_chapter01": {
+      "file_count": 14,
+      "physical_lines_including_comments_blank_lines_and_imports": 2380,
+      "utf8_bytes": 118855,
+      "line_start_declaration_count": 124,
+      "lean_toolchain": "leanprover/lean4:v4.29.0-rc3",
+      "lexical_sorry_admit_axiom_unsafe_hits": [],
+      "source_sha256": {
+        "HDP.lean": "de39c15e4feb2c0977616d92f2346aae02383194f745e530af8ff6a0dfd3fc21",
+        "HDP/Basic.lean": "fb73341f6ddebaccb3311f348f28eaa257ebaac10c74f1ba477e8957864d6a35",
+        "HDP/CLT.lean": "ccd972ce0196a94d59237f1bd776f650043435cca3222ce1701926e653b700c9",
+        "HDP/CharFunTaylor.lean": "f0d62b30bc370f6010017845426cf764d5531534747c94ec75bed9ac0c227853",
+        "HDP/DeMoivreLaplace.lean": "2e8db3df0c0d5ca1ddeb7e359d64042d3ff52c4a7fd4be863399fc40e4498430",
+        "HDP/Inequalities.lean": "0c382eccb4d2a390fa5d7d8f49e03bc9814cf83ebf8bf5fe2698284314f06d6a",
+        "HDP/LimitTheorems.lean": "14d0df0095b4a6207926d92b69568889b5dc3dc084b180b63557f03ceb9b58c5",
+        "HDP/OpenStatements.lean": "9fa67ab2f55abb8d583fff2aa2f90c949424d8eab4af47e1b0f9821816847d01",
+        "HDP/PoissonCharFun.lean": "7bbdb25710b8b0ac0dcedc5ad932f40bf238ecc0771a8155035614752ff17a11",
+        "HDP/PoissonLimit.lean": "5f6663e7ad096977e2cc6fe3ebfc78c92fe27112467ee4e2e5161ce56650052b",
+        "HDP/PoissonProduct.lean": "853f7a2ffe146d003734a9071c9fda1ed604f90351fada224a7f9f852802d2c9",
+        "HDP/Sharpness.lean": "e5a8015f84f3b7d442a438d02fede24edc56beae28a7ef721918549f9b651641",
+        "HDP/Tails.lean": "7587f5efa4bb7e1212fee31142b27f25390f8694787e8dd929f4b832c519a0bd",
+        "HDP/WeakConvergence.lean": "19365bb6880a8bcb0a30224218a41e97c9b3ce8d801b2f4200bcec9b71e0be33"
+      }
+    }
+  }
+}

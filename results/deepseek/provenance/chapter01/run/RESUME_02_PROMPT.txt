@@ -1,0 +1,48 @@
+This is the operator-authorized continuation of the same Chapter 1 experiment.
+The first formalization attempt ended incomplete. Preserve that outcome and all
+existing partial work; this continuation is not a successful one-shot attempt.
+
+Read AGENTS.md, run/PROTOCOL.txt, the complete assigned source/Chapter01.pdf,
+reports/final-report.md, reports/coverage-inventory.md, and your existing Lean
+files. Continue from the actual saved work rather than starting over. All
+mathematics must still come from this PDF, Lean/Mathlib and your own work in this
+experiment. Prior product libraries, Appetizer attempts, web resources and other
+models remain excluded. No outside proof hints or solutions are supplied.
+
+The report identifies four open obligations: Theorem 1.3.2, formula (1.7),
+Theorem 1.3.4, and the p<1 triangle-inequality-failure claim. Resolve these and
+any unfinished source-to-Lean correspondence recorded in your own report.
+First independently re-read the PDF and self-review every remaining target's
+full statement, hypotheses, quantifiers and conclusion. Prop-valued definitions
+in OpenStatements.lean are unaccepted drafts, not verified targets or proofs.
+Correct only source-supported defects you identify yourself, and document any
+revision while preserving the first-attempt statement in your evidence.
+
+The absence of a ready-made theorem in the pinned Mathlib is not an external
+blocker. Search what is present, then develop the required missing mathematics
+in this project. Do not stop merely because the work requires new foundations,
+looks long, or was not completed in the previous turn. No new time/step budget
+is imposed here. Continue every useful locally actionable proof, prerequisite,
+source-review and verification task, saving durable checkpoints as you go.
+
+Preserve completed proofs and their statements unless your own source review
+finds a concrete defect; record any such defect and revision. Do not weaken a
+claim, add target-valued assumptions, silently narrow source scope, introduce
+axioms, use sorry/admit/unsafe proofs, or count a proposition definition as a
+proof. A failed proof search alone does not establish a source discrepancy.
+
+Keep reports/resume-02/ for this continuation's progress, exact remaining
+obligations, actual attempted work, compiler diagnostics and final report.
+Maintain the live coverage inventory honestly. A finished assistant turn or a
+green todo list is not chapter completion. Before finalizing, reconcile all rows
+with actual proof/reuse/source-correspondence evidence, run affected builds and
+axiom checks, and state exact proved/open items. If truly unable to progress,
+name the actual obstruction and the concrete attempts made; do not label a
+missing library theorem as a host failure or mathematical impossibility.
+
+Use only the same selected DeepSeek V4.1 Flash 1017 / High and pinned Lean/
+Mathlib. Preserve the metered route. The operator has started a separate
+formalization-phase measurement; do not start, stop or switch measurements.
+Use the available numeric exports for provisional usage/cost, with unknown
+billing fields kept unknown. No remote publication or other paid model is
+permitted.

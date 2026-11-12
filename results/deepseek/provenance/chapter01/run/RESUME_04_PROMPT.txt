@@ -1,0 +1,42 @@
+Continue the same Chapter 1 formalization from your saved work. This is the
+operator-authorized fourth attempt, a human-prompted continuation. Preserve the
+three earlier incomplete outcomes and their reports; do not call this one-shot.
+
+Read AGENTS.md, run/PROTOCOL.txt, reports/resume-03/final-report.md, the live
+coverage inventory, your relevant existing Lean files and source/Chapter01.pdf.
+Your own report lists the Poisson limit theorem, Exercise 1.2.3 source-form
+correspondence, binomial law identification and Lp source correspondence as
+remaining work. Continue those actual unfinished tasks and your own recorded
+proof attempts. Resolve every source obligation at its full original strength.
+All mathematics must come from the assigned PDF, pinned Lean/Mathlib and your
+own work in this experiment. No outside proof hints or mathematical corrections
+are supplied by this continuation. Prior product libraries, Appetizer attempts,
+web resources and other models remain excluded.
+
+Continue doing proof work while any useful local task is actionable. An
+unsuccessful proof attempt or an absent ready-made library theorem is a reason
+to try another approach or construct prerequisites, not a completion condition.
+Persist on the unfinished work and save durable checkpoints, including useful
+partial proof drafts and compiler errors so they can be continued. Do not discard
+all unfinished prerequisite work simply to produce a tidy final report. No new
+time or step budget is imposed by this prompt. Do not finish merely to restate
+that the chapter is incomplete while you can still make concrete progress.
+
+Preserve verified work and fixed Lean/Mathlib pins. Independently self-review
+all statements against the PDF, including quantifiers, hypotheses, parameter
+ranges and conclusions. Prop-valued drafts are not proofs. Do not narrow claims,
+add target-valued assumptions, weaken conclusions or introduce sorry, admit,
+custom theorem axioms or unsafe proofs. No other model, external repository,
+publication or contact with others is authorized.
+
+Keep this continuation's checkpoints, actual attempts, remaining obligations,
+compiler evidence, axiom checks and report under reports/resume-04/. Keep the
+live inventory honest. Completion requires coverage of the full source scope,
+source-to-declaration self-review, successful affected builds and axiom checks.
+Distinguish your self-review from independent semantic review. Never claim
+chapter completion from a completed turn, a green checklist or a partial build.
+
+Keep the same DeepSeek V4.1 Flash 1017 / High, isolated environment and metered
+route. The operator controls measurement externally; do not change it or access
+private observer data. Reports/metrics are observational metadata only. Unknown
+usage or billing fields must remain unknown. Do not change harness settings.

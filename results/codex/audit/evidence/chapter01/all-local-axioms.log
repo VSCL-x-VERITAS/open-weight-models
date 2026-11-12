@@ -1,0 +1,527 @@
+AUDIT_CONSTANT HDP.tendsto_fourierCoeff_bernoulli_product KIND=theorem INTERNAL=false
+'HDP.tendsto_fourierCoeff_bernoulli_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.l2_norm_formula KIND=theorem INTERNAL=false
+'HDP.l2_norm_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowCount KIND=definition INTERNAL=false
+'HDP.bernoulliRowCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_standardizedVariable KIND=theorem INTERNAL=false
+'HDP.Limits.iid_standardizedVariable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.characteristic_taylor_remainder KIND=theorem INTERNAL=false
+'HDP.Limits.characteristic_taylor_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum KIND=definition INTERNAL=false
+'HDP.Limits.normalizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.lp_monotone KIND=theorem INTERNAL=false
+'HDP.lp_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.indicator_split KIND=theorem INTERNAL=false
+'HDP.Tails.indicator_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.continuous_weightedCharacteristic KIND=theorem INTERNAL=false
+'HDP.Limits.continuous_weightedCharacteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.standard_deviation_formula KIND=theorem INTERNAL=false
+'HDP.standard_deviation_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedLaw._proof_1 KIND=theorem INTERNAL=true
+'HDP.Limits.normalizedLaw._proof_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.weightedCharacteristic.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.weightedCharacteristic.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signedExpectation KIND=definition INTERNAL=false
+'HDP.Tails.signedExpectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_eq_standardizedSum KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_eq_standardizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowSum.eq_1 KIND=theorem INTERNAL=false
+'HDP.bernoulliRowSum.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleSum KIND=theorem INTERNAL=false
+'HDP.Limits.iid_integral_sampleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.weightedCharacteristic KIND=definition INTERNAL=false
+'HDP.Limits.weightedCharacteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.binomial_sum_law KIND=theorem INTERNAL=false
+'HDP.binomial_sum_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.integral_abs_le_sqrt_integral_sq KIND=theorem INTERNAL=false
+'HDP.Limits.integral_abs_le_sqrt_integral_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.standardizedVariable_zero_eq KIND=theorem INTERNAL=false
+'HDP.Limits.standardizedVariable_zero_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extended_variance_formula KIND=theorem INTERNAL=false
+'HDP.extended_variance_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fairCoin_lp_values KIND=theorem INTERNAL=false
+'HDP.fairCoin_lp_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowCount_singleton_limit KIND=theorem INTERNAL=false
+'HDP.bernoulliRowCount_singleton_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.norm_bernoulli_factor_le_one KIND=theorem INTERNAL=false
+'HDP.norm_bernoulli_factor_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.sampleSum_memLp KIND=theorem INTERNAL=false
+'HDP.Limits.sampleSum_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.mgf_formula KIND=theorem INTERNAL=false
+'HDP.mgf_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fairCoin KIND=definition INTERNAL=false
+'HDP.fairCoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.positive_part_layercake KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.positive_part_layercake' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.absoluteMoment KIND=definition INTERNAL=false
+'HDP.absoluteMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.aemeasurable_bernoulliRowCount KIND=theorem INTERNAL=false
+'HDP.aemeasurable_bernoulliRowCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.deMoivre_laplace_cdf KIND=theorem INTERNAL=false
+'HDP.Limits.deMoivre_laplace_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.poissonMeasureReal.eq_1 KIND=theorem INTERNAL=false
+'HDP.poissonMeasureReal.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.cdf_tendsto_of_weak KIND=theorem INTERNAL=false
+'HDP.Limits.cdf_tendsto_of_weak' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedLaw KIND=definition INTERNAL=false
+'HDP.Limits.normalizedLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.convex_combination KIND=theorem INTERNAL=false
+'HDP.convex_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Tails.cdf KIND=definition INTERNAL=false
+'HDP.Tails.cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.isTight_normalizedSum KIND=theorem INTERNAL=false
+'HDP.Limits.isTight_normalizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.finite_lp_formula KIND=theorem INTERNAL=false
+'HDP.finite_lp_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.sampleSum KIND=definition INTERNAL=false
+'HDP.Limits.sampleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliMeasure.congr_simp KIND=theorem INTERNAL=false
+'HDP.bernoulliMeasure.congr_simp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.abs_sub_ge_iff_sq_ge KIND=theorem INTERNAL=false
+'HDP.Tails.abs_sub_ge_iff_sq_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean KIND=theorem INTERNAL=false
+'HDP.Limits.iid_variance_sampleMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sum KIND=theorem INTERNAL=false
+'HDP.Limits.finite_variance_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.covariance_inner_formula KIND=theorem INTERNAL=false
+'HDP.covariance_inner_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.distribution_determined_by_cdf KIND=theorem INTERNAL=false
+'HDP.Tails.distribution_determined_by_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.variance_formula KIND=theorem INTERNAL=false
+'HDP.variance_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.characteristic_standard_taylor KIND=theorem INTERNAL=false
+'HDP.Limits.characteristic_standard_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.tendsto_sum_sq_zero KIND=theorem INTERNAL=false
+'HDP.tendsto_sum_sq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.tendsto_probabilityMeasure_nat_of_singletons KIND=theorem INTERNAL=false
+'HDP.tendsto_probabilityMeasure_nat_of_singletons' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extendedMGF KIND=definition INTERNAL=false
+'HDP.extendedMGF' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hasLaw_bernoulli_recode_ae KIND=theorem INTERNAL=false
+'HDP.hasLaw_bernoulli_recode_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_raw_moment_finite_iff KIND=theorem INTERNAL=false
+'HDP.nonnegative_raw_moment_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Tails.markov._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Tails.markov._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.tendsto_product_one_sub KIND=theorem INTERNAL=false
+'HDP.tendsto_product_one_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signed_integral_identity KIND=theorem INTERNAL=false
+'HDP.Tails.signed_integral_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_5 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_5' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.ConvergesToPoisson KIND=definition INTERNAL=false
+'HDP.ConvergesToPoisson' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.covariance_formula KIND=theorem INTERNAL=false
+'HDP.covariance_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.negativeTailIntegral.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.negativeTailIntegral.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.coinZero.eq_1 KIND=theorem INTERNAL=false
+'HDP.coinZero.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.natMeasure_eq_of_fourier KIND=theorem INTERNAL=false
+'HDP.natMeasure_eq_of_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.absolute_moment_via_tails KIND=theorem INTERNAL=false
+'HDP.Tails.absolute_moment_via_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.markov KIND=theorem INTERNAL=false
+'HDP.Tails.markov' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signed_natural_moment_undefined KIND=theorem INTERNAL=false
+'HDP.signed_natural_moment_undefined' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extended_variance_finite_bridge KIND=theorem INTERNAL=false
+'HDP.extended_variance_finite_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hasLaw_bernoulli_expectation KIND=theorem INTERNAL=false
+'HDP.hasLaw_bernoulli_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_eq_standardizedSum._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Limits.normalizedSum_eq_standardizedSum._simp_1_3' depends on axioms: [propext, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalDensity.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.standardNormalDensity.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.jensen KIND=theorem INTERNAL=false
+'HDP.jensen' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.weighted_tail_toReal KIND=theorem INTERNAL=false
+'HDP.Tails.weighted_tail_toReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.binomialMeasure KIND=definition INTERNAL=false
+'HDP.binomialMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourierCoeff_natMeasure KIND=theorem INTERNAL=false
+'HDP.fourierCoeff_natMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.closedTail_tendsto_of_weak KIND=theorem INTERNAL=false
+'HDP.Limits.closedTail_tendsto_of_weak' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.characteristic_standard_taylor_coefficients KIND=theorem INTERNAL=false
+'HDP.Limits.characteristic_standard_taylor_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.linfty_formula KIND=theorem INTERNAL=false
+'HDP.linfty_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signedExpectation.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.signedExpectation.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.realToBernoulli_hasLaw KIND=theorem INTERNAL=false
+'HDP.realToBernoulli_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signed_integral_undefined_iff KIND=theorem INTERNAL=false
+'HDP.Tails.signed_integral_undefined_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.central_limit_weak KIND=theorem INTERNAL=false
+'HDP.Limits.central_limit_weak' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.isTight_normalizedSum._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Limits.isTight_normalizedSum._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.jensen_extended KIND=theorem INTERNAL=false
+'HDP.jensen_extended' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.nonnegative_integral_infinite_iff KIND=theorem INTERNAL=false
+'HDP.Tails.nonnegative_integral_infinite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.binomial_fourier_integral KIND=theorem INTERNAL=false
+'HDP.binomial_fourier_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.scaled_taylor_power_limit._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Limits.scaled_taylor_power_limit._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.bernoulliValue.eq_1 KIND=theorem INTERNAL=false
+'HDP.bernoulliValue.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_raw_moment_finite_bridge KIND=theorem INTERNAL=false
+'HDP.nonnegative_raw_moment_finite_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poisson_mass KIND=theorem INTERNAL=false
+'HDP.poisson_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.coinOne.eq_1 KIND=theorem INTERNAL=false
+'HDP.coinOne.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.hasDerivAt_weighted_characteristic KIND=theorem INTERNAL=false
+'HDP.Limits.hasDerivAt_weighted_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT ProbabilityTheory.poissonMeasure.eq_1 KIND=theorem INTERNAL=false
+'ProbabilityTheory.poissonMeasure.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.weighted_integrand_measurable KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.weighted_integrand_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowCount.eq_1 KIND=theorem INTERNAL=false
+'HDP.bernoulliRowCount.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourierCoeff_tsum_nat KIND=theorem INTERNAL=false
+'HDP.fourierCoeff_tsum_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.positiveTailIntegral.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.positiveTailIntegral.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.chebyshev KIND=theorem INTERNAL=false
+'HDP.Tails.chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.tail_eq_one_sub_cdf KIND=theorem INTERNAL=false
+'HDP.Tails.tail_eq_one_sub_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hasLaw_bernoulli_variance KIND=theorem INTERNAL=false
+'HDP.hasLaw_bernoulli_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.nonnegative_indicator_integral._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Tails.nonnegative_indicator_integral._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.standardizedVariable KIND=definition INTERNAL=false
+'HDP.Limits.standardizedVariable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.central_limit_closedTail KIND=theorem INTERNAL=false
+'HDP.Limits.central_limit_closedTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.binomial_fourier_integral._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.binomial_fourier_integral._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extended_lp_formula KIND=theorem INTERNAL=false
+'HDP.extended_lp_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.markov_integrable KIND=theorem INTERNAL=false
+'HDP.Tails.markov_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.indicator_split._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Tails.indicator_split._simp_1_2' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.deMoivre_laplace_closedTail KIND=theorem INTERNAL=false
+'HDP.Limits.deMoivre_laplace_closedTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.sampleMean KIND=definition INTERNAL=false
+'HDP.Limits.sampleMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_eq_variance_normalization KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_eq_variance_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fairCoin.eq_1 KIND=theorem INTERNAL=false
+'HDP.fairCoin.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliMeasure.eq_1 KIND=theorem INTERNAL=false
+'HDP.bernoulliMeasure.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_eq_centered KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_eq_centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poisson_limit KIND=theorem INTERNAL=false
+'HDP.poisson_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.absolute_moment_finite_iff KIND=theorem INTERNAL=false
+'HDP.absolute_moment_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_absolute_mean_rate KIND=theorem INTERNAL=false
+'HDP.Limits.iid_absolute_mean_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.absolute_moment_via_tails_finite KIND=theorem INTERNAL=false
+'HDP.Tails.absolute_moment_via_tails_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.lp_complete KIND=theorem INTERNAL=false
+'HDP.lp_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowSum KIND=definition INTERNAL=false
+'HDP.bernoulliRowSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourier_one_pow KIND=theorem INTERNAL=false
+'HDP.fourier_one_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_integer_moment_agreement._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.nonnegative_integer_moment_agreement._simp_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signed_parts_via_tails KIND=theorem INTERNAL=false
+'HDP.Tails.signed_parts_via_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.holder_endpoint KIND=theorem INTERNAL=false
+'HDP.holder_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.deMoivre_laplace_cdf._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Limits.deMoivre_laplace_cdf._simp_1_2' does not depend on any axioms
+AUDIT_CONSTANT HDP.holder KIND=theorem INTERNAL=false
+'HDP.holder' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.nonnegative_integral_identity KIND=theorem INTERNAL=false
+'HDP.Tails.nonnegative_integral_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fairCoin._proof_2 KIND=theorem INTERNAL=true
+'HDP.fairCoin._proof_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_integer_moment_finite_iff KIND=theorem INTERNAL=false
+'HDP.nonnegative_integer_moment_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_charFun_normalizedSum KIND=theorem INTERNAL=false
+'HDP.Limits.iid_charFun_normalizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.weightedTailIntegral.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.weightedTailIntegral.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliValue KIND=definition INTERNAL=false
+'HDP.bernoulliValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signed_natural_moment_finite KIND=theorem INTERNAL=false
+'HDP.signed_natural_moment_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardizedVariable.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.standardizedVariable.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_7' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.variance_normalizedSum KIND=theorem INTERNAL=false
+'HDP.Limits.variance_normalizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowCount_fourier KIND=theorem INTERNAL=false
+'HDP.bernoulliRowCount_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.eventIndicator.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.eventIndicator.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.IID.memLp KIND=theorem INTERNAL=false
+'HDP.Limits.IID.memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.weightedTailIntegral KIND=definition INTERNAL=false
+'HDP.Tails.weightedTailIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.eventIndicator KIND=definition INTERNAL=false
+'HDP.Tails.eventIndicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.absolute_moment_toReal KIND=theorem INTERNAL=false
+'HDP.absolute_moment_toReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.central_limit_cdf KIND=theorem INTERNAL=false
+'HDP.Limits.central_limit_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.coinOne KIND=definition INTERNAL=false
+'HDP.coinOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourierCoeff_tsum_nat._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.fourierCoeff_tsum_nat._simp_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourierCoeff_poisson KIND=theorem INTERNAL=false
+'HDP.fourierCoeff_poisson' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.IID.integrable KIND=theorem INTERNAL=false
+'HDP.Limits.IID.integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.nonnegative_indicator_integral KIND=theorem INTERNAL=false
+'HDP.Tails.nonnegative_indicator_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.norm_sum_log_sub_le_sum_sq KIND=theorem INTERNAL=false
+'HDP.norm_sum_log_sub_le_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extendedVariance KIND=definition INTERNAL=false
+'HDP.extendedVariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.integral_sampleSum KIND=theorem INTERNAL=false
+'HDP.Limits.integral_sampleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.nonnegative_integral_finite_iff KIND=theorem INTERNAL=false
+'HDP.Tails.nonnegative_integral_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poissonMeasureReal_mass KIND=theorem INTERNAL=false
+'HDP.poissonMeasureReal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT MeasureTheory.Measure.toPMF.congr_simp KIND=theorem INTERNAL=false
+'MeasureTheory.Measure.toPMF.congr_simp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.scaled_taylor_power_limit KIND=theorem INTERNAL=false
+'HDP.Limits.scaled_taylor_power_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.mgf_finite_bridge KIND=theorem INTERNAL=false
+'HDP.mgf_finite_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean_tendsto_zero KIND=theorem INTERNAL=false
+'HDP.Limits.iid_variance_sampleMean_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_charFun_sampleSum KIND=theorem INTERNAL=false
+'HDP.Limits.iid_charFun_sampleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliMeasure KIND=definition INTERNAL=false
+'HDP.bernoulliMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.tendsto_bernoulli_generating_product KIND=theorem INTERNAL=false
+'HDP.tendsto_bernoulli_generating_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.signedNaturalMoment.eq_1 KIND=theorem INTERNAL=false
+'HDP.signedNaturalMoment.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signedExtendedIntegral.eq_1 KIND=theorem INTERNAL=false
+'HDP.signedExtendedIntegral.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.contDiff_one_weightedCharacteristic KIND=theorem INTERNAL=false
+'HDP.Limits.contDiff_one_weightedCharacteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.positive_tail_real KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.positive_tail_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_abs_sampleMean_sub_le KIND=theorem INTERNAL=false
+'HDP.Limits.iid_integral_abs_sampleMean_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_integer_moment_finite_bridge KIND=theorem INTERNAL=false
+'HDP.nonnegative_integer_moment_finite_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.l2_inner_formula KIND=theorem INTERNAL=false
+'HDP.l2_inner_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.integral_fairCoin KIND=theorem INTERNAL=false
+'HDP.integral_fairCoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signedNaturalMoment KIND=definition INTERNAL=false
+'HDP.signedNaturalMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.positiveExpectation KIND=definition INTERNAL=false
+'HDP.Tails.positiveExpectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.minkowski KIND=theorem INTERNAL=false
+'HDP.minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.power_convex KIND=theorem INTERNAL=false
+'HDP.power_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.absoluteMoment.eq_1 KIND=theorem INTERNAL=false
+'HDP.absoluteMoment.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.extended_mgf_finite_iff KIND=theorem INTERNAL=false
+'HDP.extended_mgf_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegativeRawMoment.eq_1 KIND=theorem INTERNAL=false
+'HDP.nonnegativeRawMoment.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.reflected_negative_tail KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.reflected_negative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poissonMeasureReal KIND=definition INTERNAL=false
+'HDP.poissonMeasureReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleSum KIND=theorem INTERNAL=false
+'HDP.Limits.iid_variance_sampleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliMeasure_zero KIND=theorem INTERNAL=false
+'HDP.bernoulliMeasure_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliMeasure_support KIND=theorem INTERNAL=false
+'HDP.bernoulliMeasure_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.constant_interval_integral KIND=theorem INTERNAL=false
+'HDP.Tails.constant_interval_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.small_exponent_counterexample KIND=theorem INTERNAL=false
+'HDP.small_exponent_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_7' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.variance_independent_sum KIND=theorem INTERNAL=false
+'HDP.Limits.variance_independent_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_7 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_7' depends on axioms: [propext]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.reflected_negative_tail_real KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.reflected_negative_tail_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_4 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_4' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_6 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.tail_probability_measurable KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.tail_probability_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.absolute_moment_finite_bridge KIND=theorem INTERNAL=false
+'HDP.absolute_moment_finite_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fairCoin._proof_1 KIND=theorem INTERNAL=true
+'HDP.fairCoin._proof_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.bernoulliMeasure_one KIND=theorem INTERNAL=false
+'HDP.bernoulliMeasure_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalDensity_eq_gaussianPDF KIND=theorem INTERNAL=false
+'HDP.Limits.standardNormalDensity_eq_gaussianPDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.strong_law KIND=theorem INTERNAL=false
+'HDP.Limits.strong_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalLaw._proof_1 KIND=theorem INTERNAL=true
+'HDP.Limits.standardNormalLaw._proof_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.cauchy_schwarz KIND=theorem INTERNAL=false
+'HDP.cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.negativeTailIntegral KIND=definition INTERNAL=false
+'HDP.Tails.negativeTailIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.signed_integral_identity_integrable KIND=theorem INTERNAL=false
+'HDP.Tails.signed_integral_identity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.natural_moment_formula KIND=theorem INTERNAL=false
+'HDP.natural_moment_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulli_integral KIND=theorem INTERNAL=false
+'HDP.bernoulli_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulli_variance KIND=theorem INTERNAL=false
+'HDP.bernoulli_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signedExtendedIntegral_eq_integral KIND=theorem INTERNAL=false
+'HDP.signedExtendedIntegral_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.charFun_map_eq_weightedCharacteristic KIND=theorem INTERNAL=false
+'HDP.Limits.charFun_map_eq_weightedCharacteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.signedExtendedIntegral KIND=definition INTERNAL=false
+'HDP.signedExtendedIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.realToBernoulli.eq_1 KIND=theorem INTERNAL=false
+'HDP.realToBernoulli.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.independent_bernoulli_count_fourier KIND=theorem INTERNAL=false
+'HDP.independent_bernoulli_count_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.absolute_moment_integrable_of_tail_finite KIND=theorem INTERNAL=false
+'HDP.Tails.absolute_moment_integrable_of_tail_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.positiveTailIntegral KIND=definition INTERNAL=false
+'HDP.Tails.positiveTailIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_raw_moment_toReal KIND=theorem INTERNAL=false
+'HDP.nonnegative_raw_moment_toReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_charFun_tendsto KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_charFun_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.sampleSum.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.sampleSum.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_3 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_3' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.sampleMean_memLp KIND=theorem INTERNAL=false
+'HDP.Limits.sampleMean_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.fourier_nat_sum KIND=theorem INTERNAL=false
+'HDP.fourier_nat_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulli_expectation KIND=theorem INTERNAL=false
+'HDP.bernoulli_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean KIND=theorem INTERNAL=false
+'HDP.Limits.finite_variance_sampleMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormal_tail_integral KIND=theorem INTERNAL=false
+'HDP.Limits.standardNormal_tail_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalDensity KIND=definition INTERNAL=false
+'HDP.Limits.standardNormalDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.contDiff_two_characteristic KIND=theorem INTERNAL=false
+'HDP.Limits.contDiff_two_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.norm_log_one_add_sub_le_sq KIND=theorem INTERNAL=false
+'HDP.norm_log_one_add_sub_le_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.positiveExpectation.eq_1 KIND=theorem INTERNAL=false
+'HDP.Tails.positiveExpectation.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT _private.HDP.Tails.0.HDP.Tails.positive_part_layercake._simp_1_3 KIND=theorem INTERNAL=true
+'_private.HDP.Tails.0.HDP.Tails.positive_part_layercake._simp_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean KIND=theorem INTERNAL=false
+'HDP.Limits.iid_integral_sampleMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poisson_limit_real KIND=theorem INTERNAL=false
+'HDP.poisson_limit_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.tendsto_probability_of_tight_charFun KIND=theorem INTERNAL=false
+'HDP.Limits.tendsto_probability_of_tight_charFun' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_variance_sampleMean._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_variance_sampleMean._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Tails.absolute_moment_via_real_tails KIND=theorem INTERNAL=false
+'HDP.Tails.absolute_moment_via_real_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.IID KIND=definition INTERNAL=false
+'HDP.Limits.IID' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.measurable_realToBernoulli KIND=theorem INTERNAL=false
+'HDP.measurable_realToBernoulli' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.lp_triangle KIND=theorem INTERNAL=false
+'HDP.lp_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.iid_integral_sampleMean._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Limits.iid_integral_sampleMean._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_memLp KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalLaw KIND=definition INTERNAL=false
+'HDP.Limits.standardNormalLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.integral_normalizedSum KIND=theorem INTERNAL=false
+'HDP.Limits.integral_normalizedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Tails.weighted_real_tail_integrable KIND=theorem INTERNAL=false
+'HDP.Tails.weighted_real_tail_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.hasLaw_bernoulli_memLp KIND=theorem INTERNAL=false
+'HDP.hasLaw_bernoulli_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_integer_moment_agreement KIND=theorem INTERNAL=false
+'HDP.nonnegative_integer_moment_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.continuous_charFun_probability KIND=theorem INTERNAL=false
+'HDP.Limits.continuous_charFun_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowSum_expectation KIND=theorem INTERNAL=false
+'HDP.bernoulliRowSum_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.sampleMean.eq_1 KIND=theorem INTERNAL=false
+'HDP.Limits.sampleMean.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poissonMeasureReal_support KIND=theorem INTERNAL=false
+'HDP.poissonMeasureReal_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.finite_variance_sampleMean._simp_1_1 KIND=theorem INTERNAL=true
+'HDP.Limits.finite_variance_sampleMean._simp_1_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.Tails.negativeExpectation KIND=definition INTERNAL=false
+'HDP.Tails.negativeExpectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.bernoulliRowSum_eq_cast_count KIND=theorem INTERNAL=false
+'HDP.bernoulliRowSum_eq_cast_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.normalizedSum_tail_le KIND=theorem INTERNAL=false
+'HDP.Limits.normalizedSum_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.deMoivre_laplace_closedTail._simp_1_2 KIND=theorem INTERNAL=true
+'HDP.Limits.deMoivre_laplace_closedTail._simp_1_2' does not depend on any axioms
+AUDIT_CONSTANT HDP.coinZero KIND=definition INTERNAL=false
+'HDP.coinZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.realToBernoulli KIND=definition INTERNAL=false
+'HDP.realToBernoulli' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.poisson_fourier_hasSum KIND=theorem INTERNAL=false
+'HDP.poisson_fourier_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.Limits.standardNormalDensity._proof_1 KIND=theorem INTERNAL=true
+'HDP.Limits.standardNormalDensity._proof_1' depends on axioms: [propext]
+AUDIT_CONSTANT HDP.sum_sq_le_max_mul_sum KIND=theorem INTERNAL=false
+'HDP.sum_sq_le_max_mul_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegativeRawMoment KIND=definition INTERNAL=false
+'HDP.nonnegativeRawMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_CONSTANT HDP.nonnegative_moment_formula KIND=theorem INTERNAL=false
+'HDP.nonnegative_moment_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_TOTAL 261

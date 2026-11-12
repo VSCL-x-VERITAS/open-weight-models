@@ -1,0 +1,22 @@
+General procedure for PDF-to-Lean formalization
+
+1. Read the complete assigned PDF, including mathematical context and footnotes.
+   Derive your own complete inventory and record source locations and scope.
+   Distinguish mathematics from narrative with explicit reasons for exclusions.
+2. Find operative definitions and hypotheses. Search Lean core and pinned Mathlib
+   for matching concepts/results. Record reused results and exact source roles.
+3. State precise Lean targets before proving. Self-review each statement against
+   the source, checking assumptions, quantifiers and conclusion strength. This
+   is self-review, not an independent audit. Preserve reviewed targets during
+   proof repair; document any justified source-driven changes.
+4. Prove the targets. Use the compiler and Mathlib search as needed. Do not
+   replace difficult mathematics with extra assumptions or placeholders.
+5. Build all produced modules, inspect theorem axioms and check for unfinished
+   proofs. Reconcile every inventoried mathematical item with actual Lean code.
+6. Save a final report with exact completed/open items, source issues, reusable
+   Mathlib results, compiler/axiom evidence and any interventions. Report source
+   coverage and kernel verification separately; neither establishes an
+   independent semantic audit. Include the actual available metric snapshot.
+
+No book-specific inventory, target list, proof hints or solution material is
+provided in this protocol. The agent must derive those from the assigned PDF.

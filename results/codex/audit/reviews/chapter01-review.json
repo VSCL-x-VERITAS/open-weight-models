@@ -1,0 +1,975 @@
+{
+  "schema": "independent-operator-source-correspondence-audit-1",
+  "unit": "Supplied Chapter 1, all 7 PDF pages / printed pages 5–11, with operator clarification 001",
+  "reviewer": {
+    "role": "fresh independent source-correspondence reviewer",
+    "native_task_path": "/root/audit_chapter01",
+    "provider": "Codex",
+    "independent_of_native_proof_authors": true,
+    "blinded_to_model_identity": false,
+    "canonical_receipt": false
+  },
+  "protocol": {
+    "mode": "user-authorized independent operator adaptation",
+    "guidance_read": [
+      "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/AGENTS.md",
+      "/Users/gspyrou/Documents/ChatGPT/George S/.tools/codex-hdp-operator/trials/chapter01/codex-home/skills/book-formalization/SKILL.md",
+      "/Users/gspyrou/Documents/ChatGPT/George S/.tools/codex-hdp-operator/trials/chapter01/codex-home/skills/book-formalization/references/roles/faithfulness.md",
+      "/Users/gspyrou/Documents/ChatGPT/George S/.tools/codex-hdp-operator/trials/chapter01/codex-home/skills/book-formalization/references/inventory-contract.md"
+    ],
+    "derivation": "Source population derived from complete extracted source and visual inspection of all seven rendered pages, then compared with actual public declaration types and relevant effective Mathlib definitions. No source denominator was imported from the generator.",
+    "fresh_original_pdf_text_check": "Fresh pdftotext -layout output from source/Chapter01.pdf exactly matches reports/Chapter01.txt (SHA256 7798552d5602a2b97f9062ed6ef7accc12d74038a0e89a6fac2450c5712d3215).",
+    "mutation_scope": "Only this review JSON was written; no product, experiment, release, or proof files changed; no model rerun or external consultation.",
+    "generator_inventories_or_previous_model_audits_read_before_independent_judgment": false,
+    "previous_model_audits_read": false,
+    "postjudgment_record_check": {
+      "purpose": "At parent request, check whether independently identified finite-variance scope is explicit in retained records and inherited by the amended scope; these records did not determine the independently derived source population or initial judgment.",
+      "paths": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/source-inventory-final.json",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/SOURCE_DISCREPANCIES.json",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/assisted_continuation_001/amended-source-scope.json"
+      ],
+      "scope": "Selected relevant scope/domain rows only; no older independent review bodies or completion audit conclusions read."
+    },
+    "narrow_followup": "After initial review, checked the unqualified weighted_tail_toReal conversion against Mathlib integral_toReal, integral_undef, and ENNReal.toReal_top. Recorded F06 without reopening unrelated findings or editing product."
+  },
+  "bindings": [
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/source/Chapter01.pdf",
+      "sha256": "855fdaf6870f664f1e470d47641b6d72758afdb9b87649a6494b027cecc02b17"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/source/operator-clarification-001/CLARIFICATION.txt",
+      "sha256": "288129e3e2b10126a5cc61b22994ef9908a4af982e33a5359dd87bbdc86ad52a"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt",
+      "sha256": "7798552d5602a2b97f9062ed6ef7accc12d74038a0e89a6fac2450c5712d3215"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP.lean",
+      "sha256": "a3bfb87d5bf4483fb00c99c76f2a5e0f9ae152b240b67b3cce43561d454ff771"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean",
+      "sha256": "c1c32adcbbfc30384f250424bcfbc278664d7fce6b76791dfbdf11aa339fc8d2"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean",
+      "sha256": "c6a5dd2ddda93c4e67bcd10a2d25fedce13d10309ca1ddc6811b6397e968ea63"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean",
+      "sha256": "912eaa637412127174ece8c06ed87070cf1bd18f17a7f0e1df9cd50660068ef4"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean",
+      "sha256": "c4967e1dda0523177abe375164c5fe02092cc373d753dc06ed5cd78e63a1eb26"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean",
+      "sha256": "570e1ea5f85f609e758b0a74e157f86ac14f66793781db659f21a8f583ab8591"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/SOURCE_DISCREPANCIES.json",
+      "sha256": "69450a7d37a2872516e8ccbbd0d4dab72495580c9babc092cd65d33b66fb0b96",
+      "use": "postjudgment retained-scope check only"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json",
+      "sha256": "f047ecfeda529aef3b1158df5d3ea96acb8eff9edeb0526ea5864edc65dd0afa",
+      "use": "postjudgment retained-scope check only"
+    },
+    {
+      "path": "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/assisted_continuation_001/amended-source-scope.json",
+      "sha256": "8ed92714319c6753570d522b12d368ec345ba195f40eec177df820a5d8cc60e4",
+      "use": "postjudgment retained-scope check only"
+    }
+  ],
+  "source_images_visually_read": [
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-1.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-2.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-3.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-4.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-5.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-6.png",
+    "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/rendered/page-7.png"
+  ],
+  "verdict": {
+    "amended_completeness": "COMPLETE_AS_AMENDED_ON_THE_STATED_WELL_DEFINED_DOMAINS",
+    "source_correspondence": "No confirmed material mismatch or missing numbered result/exercise found. All operative source content has an independent disposition below.",
+    "material_open_findings": [],
+    "raw_pdf_verbatim_complete": false,
+    "canonical_chapter_pass": false,
+    "canonical_gate_or_receipts_issued": false,
+    "qualification": "This is mathematical source coverage/correspondence judgment, contingent on the separately performed kernel/build audit. It treats finite real means/variances as finite quantities when used as real parameters, p>0 as the defined Lp domain, and Gaussian normalization as requiring positive variance. It does not silently claim unrestricted signed noninteger moments or all extended-variance generalizations. The retained amended-scope record expressly inherits previous recorded conventions. This audit does not treat that record as a newly issued user variance amendment or canonical authorization receipt.",
+    "raw_original_full_extended_completeness": "NOT_ESTABLISHED: signed noninteger raw moments are amended; finite-second-moment variance additivity and Chebyshev are not unrestricted extended-variance versions.",
+    "continuation_required_for_recorded_amended_scope": false,
+    "continuation_required_if_unrestricted_extended_variance_scope_is_requested": true
+  },
+  "confirmed_findings": [
+    {
+      "id": "F01",
+      "severity": "resolved_source_amendment",
+      "finding": "The raw-moment domain amendment is materially implemented, including infinite common-domain agreement and finite bridges. The unrestricted signed/noninteger PDF wording is not formalized.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/source/operator-clarification-001/CLARIFICATION.txt:16",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:3",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:76",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:96"
+      ]
+    },
+    {
+      "id": "F02",
+      "severity": "source_domain_clarification",
+      "finding": "The printed p=0 endpoint in (1.3) is outside the source preceding norm definition. The public monotonicity theorem uses p>0 and documents this correction; no source p=0 norm convention is asserted.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:7",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:153",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean:86"
+      ]
+    },
+    {
+      "id": "F03",
+      "severity": "source_well_definedness_condition",
+      "finding": "The CLT target explicitly requires positive source variance. This is necessary for the printed unit-variance normalization and avoids claiming a false standard normal limit for constant variables.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:3",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:232",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:631"
+      ]
+    },
+    {
+      "id": "F04",
+      "severity": "representation_convention",
+      "finding": "Lp is the standard a.e. quotient, making the norm and Hilbert statements meaningful. This is documented rather than representing the space of pointwise-distinct random variables as normed.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:5",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSpace/Basic.lean:88"
+      ]
+    },
+    {
+      "id": "F05",
+      "severity": "explicit_finite_variance_scope_qualification",
+      "finding": "The MemLp 2 restriction is an explicit retained finite-quantity scope convention, not a false theorem and not a proof of every well-defined infinite-variance case of the original informal wording. Completeness is asserted only for that recorded finite-quantity scope. No separately explicit operator variance-domain amendment was found in the raw-moment clarification.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:68",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:79",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:261",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:27",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:164",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:181",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:235",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/SOURCE_DISCREPANCIES.json:53",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json:1006",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json:1078",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/assisted_continuation_001/amended-source-scope.json:22",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/source/operator-clarification-001/CLARIFICATION.txt:55",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/AGENTS.md:39"
+      ]
+    },
+    {
+      "id": "F06",
+      "severity": "advisory_documentation_overstatement",
+      "finding": "The docstring at Tails.lean:215 calls weighted_tail_toReal the source literal real integral, but the theorem has no tail-finiteness hypothesis. Its equality is valid as a Mathlib totalized conversion: if the nonnegative tail integral diverges, ENNReal.toReal infinity and the nonintegrable real Bochner integral are both 0. It must not be read as an equality between a genuinely infinite expectation and a real-valued expectation. This is a documentation overstatement in an auxiliary conversion, not a wrong source-facing accepted Exercise 1.2.3 target: absolute_moment_via_real_tails at :229 explicitly requires hfinite, and weighted_real_tail_integrable at :235 establishes genuine integrability under that hypothesis. The unrestricted infinite-moment content remains correctly represented by the ENNReal identity at :190.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:190",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:215",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:216",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:229",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:235",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean:204",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean:706",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/Data/ENNReal/Basic.lean:271"
+      ],
+      "recommended_documentation_change": "Describe weighted_tail_toReal as an identity of Mathlib totalized real integrals/toReal conversions; state that its source-real-integral interpretation requires finite weightedTailIntegral. No product edit performed.",
+      "completion_effect": "No change to amended-scope completeness; no proof continuation required for the finite source exercise. Do not use weighted_tail_toReal alone as a source correspondence witness in divergent cases."
+    }
+  ],
+  "uncertainties_and_limits": [
+    {
+      "id": "U01",
+      "materiality": "explicit_domain_limit; no gap under finite-real variance reading",
+      "finding": "The original Corollary 1.2.5 says mean mu and variance sigma² without explicitly saying finite (Chapter01.txt:164); variance additivity says any independent random variables (Chapter01.txt:181). The source explicitly says finite variance only in Exercise 1.3.3 (Chapter01.txt:235). Public Chebyshev/additivity use MemLp 2, so their broader extended-variance cases are absent. This finite-quantity scope is clearly documented in SOURCE_DISCREPANCIES.json:53–56 and final-source-crosswalk.json:1006–1008,1078–1080; amended-source-scope.json:22 retains earlier conventions. The raw-moment clarification itself changes only raw-moment semantics and forbids silent unrelated waivers (CLARIFICATION.txt:55–58). AGENTS.md:39–42 permits explicit assumption/mismatch accounting but does not independently authorize weakening. Therefore the recorded amended finite-quantity scope needs no new mathematical continuation, but a claim to raw-original unrestricted extended-variance coverage would require additional proofs/review (or a separately explicit scope decision), not relabeling the present targets.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:68",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:79",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:261",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:27",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:164",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:181",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/Chapter01.txt:235",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/SOURCE_DISCREPANCIES.json:53",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json:1006",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/final-source-crosswalk.json:1078",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/reports/assisted_continuation_001/amended-source-scope.json:22",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/source/operator-clarification-001/CLARIFICATION.txt:55",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/AGENTS.md:39"
+      ]
+    },
+    {
+      "id": "U02",
+      "materiality": "nonblocking API packaging limitation",
+      "finding": "The binomial sum-law theorem is expressed using Boolean Bernoulli coordinates with real numerical output. Public real recoding and a.e. reconstruction support equivalence, but there is no single assembled real-input binomial_sum_law wrapper.",
+      "references": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:622",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:677",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:688"
+      ]
+    },
+    {
+      "id": "U03",
+      "materiality": "review boundary",
+      "finding": "This audit checks source correspondence and effective types. The parent independently checks Lean compilation and allowed axioms. No new kernel execution, proof acceptance, historical independence authentication of older reviews, canonical source-admission receipt, or versioned gate qualification is claimed."
+    },
+    {
+      "id": "U04",
+      "materiality": "source correction limit",
+      "finding": "The positive-natural signed raw-moment convention is operator-authorized, not inferred as the unique intention of the book. Special rational powers of negative values are neither implemented nor asserted impossible."
+    }
+  ],
+  "independent_source_item_mapping": [
+    {
+      "id": "S01",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Opening chapter overview",
+      "independent_source_meaning": "Sections introduce basic quantities, inequalities and LLN/CLT.",
+      "disposition": "context",
+      "declarations_or_effective_definitions": [],
+      "assessment": "Orientation only; no separate mathematical assertion."
+    },
+    {
+      "id": "S02",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Expectation and footnotes 1–2",
+      "independent_source_meaning": "Expectation is the Lebesgue integral of a real random variable; nonlinear functions bind before expectation.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:41",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:13",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:17",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:178"
+      ],
+      "assessment": "Public finite formulas use the actual Bochner/Lebesgue integral with integrability; signed extended expectation uses positive/negative parts and Option to leave infinity-minus-infinity undefined. Notation prose is context."
+    },
+    {
+      "id": "S03",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Variance definition",
+      "independent_source_meaning": "Var(X)=E[(X-E[X])²].",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:27",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:41",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:57",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:117",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/Probability/Moments/Variance.lean:57"
+      ],
+      "assessment": "Finite variance formula has MemLp 2; extendedVariance retains an infinite second centered moment when the mean is integrable. Its total auxiliary value for nonintegrable X is not accepted as a source-defined mean/variance."
+    },
+    {
+      "id": "S04",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Moment generating function",
+      "independent_source_meaning": "M_X(t)=E exp(tX), all real t, possibly infinite.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:21",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:45",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:61",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:66"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S05",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Raw moments, with operator clarification 001",
+      "independent_source_meaning": "Signed real variables: positive natural orders using integer powers; nonnegative variables: every real positive order. Signed moments may have one-sided infinite expectations but are undefined if both parts diverge.",
+      "disposition": "resolved_by_operator_domain_amendment",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:24",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:36",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:49",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:208",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:215",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:3",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:27",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:38",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:44",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:76",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:89",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:96"
+      ],
+      "assessment": "The original unrestricted signed/noninteger wording is not proved. The code does not substitute absolute moments or negative-base Real.rpow. Common nonnegative integer agreement includes infinity, and the finite bridge includes genuine integrability. Total definitions at n=0 or other auxiliary orders do not assert source semantics there."
+    },
+    {
+      "id": "S06",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Absolute moments",
+      "independent_source_meaning": "E|X|^p for arbitrary real X and every p>0, allowing infinity.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:18",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:52",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:62",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Moments.lean:68"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S07",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "Finite-exponent Lp norm",
+      "independent_source_meaning": "(E|X|^p)^(1/p), 0<p<infinity, extended or finite as appropriate.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:75",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:79",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean:70",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean:86"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S08",
+      "source_printed_pages": [
+        5
+      ],
+      "source_label": "L-infinity norm",
+      "independent_source_meaning": "Essential supremum of |X|.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:85",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean:78"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S09",
+      "source_printed_pages": [
+        5,
+        6
+      ],
+      "source_label": "Lp space and vector-space assertion",
+      "independent_source_meaning": "Random variables with finite Lp norm form the classical Lp space.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean:119",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSpace/Basic.lean:88",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSpace/Basic.lean:418"
+      ],
+      "assessment": "Mathlib uses measurable functions modulo a.e. equality, the necessary standard interpretation for the later norm/Hilbert assertions; finiteness is the carrier condition. This quotient correction is explicitly documented at Basic.lean:6."
+    },
+    {
+      "id": "S10",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Banach and norm assertions",
+      "independent_source_meaning": "For 1<=p<=infinity the Lp quantity is a norm and Lp is complete.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:88",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:91",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSpace/Basic.lean:381",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/LpSpace/Complete.lean:394"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S11",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Failure for p<1",
+      "independent_source_meaning": "For every 0<p<1 the triangle inequality can fail, so this quantity is not generally a norm.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:269",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:279",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:294"
+      ],
+      "assessment": "A fair two-point probability space provides complementary indicator variables. This is the correct existential counterexample, not a false assertion of failure on every probability space."
+    },
+    {
+      "id": "S12",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "L2 Hilbert assertion and (1.1)",
+      "independent_source_meaning": "L2 is Hilbert; its inner product is E[XY] and its norm is sqrt(E|X|²).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:88",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:94",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:102",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Function/L2Space.lean:191"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S13",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Standard deviation",
+      "independent_source_meaning": "The L2 norm of X-E[X] equals sqrt(Var X), denoted sigma(X).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:123"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S14",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Covariance and (1.2)",
+      "independent_source_meaning": "cov(X,Y)=E[(X-E X)(Y-E Y)], equal to the L2 inner product of centered variables.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:113",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:131"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S15",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Remark 1.1.1",
+      "independent_source_meaning": "Covariance has the geometric interpretation of the centered L2 inner product.",
+      "disposition": "covered_by_identity",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:131"
+      ],
+      "assessment": "The operative mathematical content is (1.2). The qualitative phrase about alignment is explanatory, with no additional universal inequality or numerical angle claim."
+    },
+    {
+      "id": "S16",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Convexity footnote 3",
+      "independent_source_meaning": "Convex combinations obey phi(a*x+(1-a)*y)<=a*phi(x)+(1-a)*phi(y) for a in [0,1].",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:141"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S17",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Jensen inequality",
+      "independent_source_meaning": "phi(E X)<=E phi(X) for convex real phi and finite meaningful E X; RHS can be positive infinite.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:146",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:223"
+      ],
+      "assessment": "Finite theorem requires both integrals; extended theorem only requires X integrable and proves the negative part of phi(X) finite, so its EReal subtraction is meaningful even for an infinite positive part."
+    },
+    {
+      "id": "S18",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "(1.3) monotonicity of Lp norms",
+      "independent_source_meaning": "Lp norms increase with exponent for 0<p<=q<=infinity.",
+      "disposition": "covered_with_source_domain_clarification",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:153"
+      ],
+      "assessment": "The printed 0<=p includes an undefined endpoint under the preceding definition. Code explicitly uses 0<p and documents this at Basic.lean:7. A literal p=0 interpretation is not claimed; Mathlib totalizes eLpNorm at 0 as 0."
+    },
+    {
+      "id": "S19",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Power-convexity explanation after (1.3)",
+      "independent_source_meaning": "x^(q/p) is convex on the nonnegative half-line when q/p>=1.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:195"
+      ],
+      "assessment": "The general target handles every real r>=1 on [0,infinity), the domain actually used on absolute values; it does not falsely assert negative-base fractional powers are convex on all real numbers."
+    },
+    {
+      "id": "S20",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "(1.4) Minkowski inequality",
+      "independent_source_meaning": "For p in [1,infinity] and X,Y in Lp, norm(X+Y)<=norm(X)+norm(Y).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:91",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:158"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S21",
+      "source_printed_pages": [
+        6
+      ],
+      "source_label": "Cauchy–Schwarz",
+      "independent_source_meaning": "For X,Y in L2, |E XY|<=norm(X)*norm(Y).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:162"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S22",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Holder inequality, including endpoint",
+      "independent_source_meaning": "Conjugate p,q in (1,infinity) obey |E XY|<=Lp(X)*Lq(Y); also p=1,q=infinity.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:167",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Basic.lean:182",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/.lake/packages/mathlib/Mathlib/Data/Real/ConjExponents.lean:176"
+      ],
+      "assessment": "Real.HolderConjugate means the source conjugacy conditions. The endpoint has a distinct public theorem rather than a finite-real-exponent substitute."
+    },
+    {
+      "id": "S23",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Distribution, CDF and tails",
+      "independent_source_meaning": "F_X(t)=P(X<=t), this determines the law, and P(X>t)=1-F_X(t).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:12",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:131",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:137"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S24",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Lemma 1.2.1",
+      "independent_source_meaning": "For a nonnegative variable, E X equals the integral of its strict upper tails, including simultaneous infinity.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:13",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:20",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:148",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:152",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:156"
+      ],
+      "assessment": "The ENNReal identity directly retains infinite values and is more general than a finite-integrability-only statement. a.e. nonnegativity suffices. Open versus closed zero endpoint has Lebesgue measure zero."
+    },
+    {
+      "id": "S25",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Indicator footnote 4 and layer-cake scalar identity",
+      "independent_source_meaning": "An event indicator is 1 on the event and 0 outside; x=integral_0^x 1=integral_0^infinity 1_{t<x} for x>=0.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:26",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:35",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:38"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S26",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Layer-cake proof explanation",
+      "independent_source_meaning": "Substitute X in the indicator representation and exchange expectation/integration by Fubini–Tonelli.",
+      "disposition": "covered_by_result_and_library",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:148"
+      ],
+      "assessment": "No extra theorem obligation beyond the layer-cake identity; the public theorem uses Mathlib layer-cake integration. This review does not certify the candidate proof implementation."
+    },
+    {
+      "id": "S27",
+      "source_printed_pages": [
+        7
+      ],
+      "source_label": "Exercise 1.2.2",
+      "independent_source_meaning": "Signed expectation equals positive upper-tail integral minus negative lower-tail integral, with defined one-sided infinities and undefined infinity-minus-infinity.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:15",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:17",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:22",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:160",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:166",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:172",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:178"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S28",
+      "source_printed_pages": [
+        8
+      ],
+      "source_label": "Exercise 1.2.3",
+      "independent_source_meaning": "For p>0, E|X|^p equals integral_0^infinity p*t^(p-1)*P(|X|>t)dt whenever RHS is finite.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:24",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:190",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:200",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:208",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:216",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:229",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:235"
+      ],
+      "assessment": "Extended identity is proved without finiteness; additional public targets provide integrability from finite extended RHS and the literal real-integral formula. The weight on t>0 is nonnegative and no negative-base power is used. Advisory F06: weighted_tail_toReal by itself is a totalized conversion; its unqualified docstring overstates genuine real-integral meaning. Only the hfinite-protected target is counted for the source finite-real equation."
+    },
+    {
+      "id": "S29",
+      "source_printed_pages": [
+        8
+      ],
+      "source_label": "Proposition 1.2.4 and scalar split in proof",
+      "independent_source_meaning": "Nonnegative X and t>0 imply P(X>=t)<=E X/t; x splits into its >=t and <t indicator pieces.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:30",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:246",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:256"
+      ],
+      "assessment": "Extended Markov retains infinite expectation. The finite-real version has integrability. The >= threshold is preserved exactly."
+    },
+    {
+      "id": "S30",
+      "source_printed_pages": [
+        8
+      ],
+      "source_label": "Corollary 1.2.5",
+      "independent_source_meaning": "For finite mean and finite variance, P(|X-mu|>=t)<=variance/t² for all t>0.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:261"
+      ],
+      "assessment": "MemLp 2 supplies the finite-real mean/variance domain. The code does not separately state the trivial infinite-variance extended inequality; see U01."
+    },
+    {
+      "id": "S31",
+      "source_printed_pages": [
+        8
+      ],
+      "source_label": "Exercise 1.2.6",
+      "independent_source_meaning": "Deduce Chebyshev by squaring the absolute deviation bound and applying Markov.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:46",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/Tails.lean:261"
+      ],
+      "assessment": "The public event equivalence is exact for t>0. The Chebyshev proof at lines 265–271 explicitly invokes squared-variable Markov and this equivalence; no additional mathematical result is omitted."
+    },
+    {
+      "id": "S32",
+      "source_printed_pages": [
+        8
+      ],
+      "source_label": "Remark 1.2.7",
+      "independent_source_meaning": "A future proposition relates MGF, Lp norms and tails.",
+      "disposition": "context",
+      "declarations_or_effective_definitions": [],
+      "assessment": "Forward reference to Chapter 2; it does not state the relations or require importing/formalizing Proposition 2.5.2 here."
+    },
+    {
+      "id": "S33",
+      "source_printed_pages": [
+        8,
+        9
+      ],
+      "source_label": "Variance additivity",
+      "independent_source_meaning": "The variance of a finite independent sum is the sum of variances.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:68",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:79"
+      ],
+      "assessment": "The finite-real form assumes MemLp 2 for each summand; pairwise independence suffices in the general theorem, and a finite full-independence wrapper is supplied. No infinite-family extension or cross-row assumption is used. See U01 about extended variances."
+    },
+    {
+      "id": "S34",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "(1.5) and concentration prose",
+      "independent_source_meaning": "Independent equal-variance sample means have variance sigma²/N; iid sample-mean variance tends to zero and its expectation is mu.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:85",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:106",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:116",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:133"
+      ],
+      "assessment": "Finite finite-family identity does not assume an infinite iid extension. Shrinking variance and its concentration interpretation are also supported by Chebyshev. No separate quantitative bound beyond these identities is asserted in this paragraph."
+    },
+    {
+      "id": "S35",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "Theorem 1.3.1",
+      "independent_source_meaning": "For iid variables with finite expectation mu, sample means tend almost surely to mu.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:17",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:20",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:24",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:127"
+      ],
+      "assessment": "IID is full iIndepFun plus identical law, not pairwise-only independence; the finite expectation hypothesis is genuine Integrable, with no second-moment assumption. Source index 1 is Lean index 0."
+    },
+    {
+      "id": "S36",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "(1.6) Standard normal density",
+      "independent_source_meaning": "N(0,1) has density (sqrt(2*pi))^-1 exp(-x²/2).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:32",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:283",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:288",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:626"
+      ],
+      "assessment": "Density is explicitly identified with Mathlib Gaussian PDF; the tail-integral equality also binds it to the standard Gaussian measure."
+    },
+    {
+      "id": "S37",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "CLT normalization and zero/unit moments",
+      "independent_source_meaning": "Z_N=(S_N-E S_N)/sqrt(Var S_N)=sum_i(X_i-mu)/(sigma*sqrt(N)), with zero mean and unit variance.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:27",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:205",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:213",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:223",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:232"
+      ],
+      "assessment": "Unit variance correctly requires positive variance and N>0. The source normalization is undefined for zero source variance; this necessary well-definedness condition is documented explicitly. Values at N=0 are only totalization and irrelevant to the limit."
+    },
+    {
+      "id": "S38",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "Theorem 1.3.2",
+      "independent_source_meaning": "Finite-second-moment iid normalized sums converge in distribution to N(0,1), for positive source variance.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:621",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:626",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:631"
+      ],
+      "assessment": "Conclusion is actual weak convergence in ProbabilityMeasure topology, not convergence of characteristic functions alone and not an assumption of CLT. MemLp 2 and positive variance are explicit; no boundedness or higher moments are assumed."
+    },
+    {
+      "id": "S39",
+      "source_printed_pages": [
+        9
+      ],
+      "source_label": "CDF and tail conclusions after Theorem 1.3.2",
+      "independent_source_meaning": "For every real t, normalized CDF and closed upper tail converge pointwise to their normal values; the normal tail is the density integral.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:288",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:653",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:665"
+      ],
+      "assessment": "Both <= and >= conclusions are public. Normal atomlessness justifies every threshold, including closed tails. The density coefficient may remain inside the integral by linearity; the integrand is exactly (1.6)."
+    },
+    {
+      "id": "S40",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "Exercise 1.3.3",
+      "independent_source_meaning": "The expected absolute error of the sample mean is O(1/sqrt(N)) for iid finite variance variables.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:178",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:194"
+      ],
+      "assessment": "Visual page check confirms absolute value bars, which are lost in plain-text layout. Public Big-O is supplemented with the sharp finite-N upper bound sigma/sqrt(N)."
+    },
+    {
+      "id": "S41",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "Bernoulli definition and moments",
+      "independent_source_meaning": "Ber(p), p in (0,1), has masses p at 1 and 1-p at 0, expectation p, variance p(1-p).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:17",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:20",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:51",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:56",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:513",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:523",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:533",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:541",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:549"
+      ],
+      "assessment": "The support assertion prevents a two-mass-only description from silently permitting mass elsewhere. Endpoints p=0,1 are valid stronger auxiliary coverage."
+    },
+    {
+      "id": "S42",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "Binomial law of Bernoulli sum",
+      "independent_source_meaning": "A finite sum of independent common-parameter Bernoulli variables has Binom(N,p) law.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:24",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:622",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:663",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:677",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:688"
+      ],
+      "assessment": "binomialMeasure is a pushforward of the actual Mathlib binomial PMF, not defined circularly as the law of the candidate sum. The public binomial theorem uses Boolean Bernoulli coordinates and numerical sums; real Bernoulli recoding and a.e. reconstruction bridges provide the equivalent source representation. A separate assembled real-input binomial wrapper is absent but no mathematical content is lost."
+    },
+    {
+      "id": "S43",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "(1.7) de Moivre–Laplace",
+      "independent_source_meaning": "For iid Ber(p), p in (0,1), (S_N-Np)/sqrt(Np(1-p)) converges to N(0,1).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:678",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/LimitTheorems.lean:694"
+      ],
+      "assessment": "Real-valued inputs, independence and common Bernoulli law are actual hypotheses. Public CDF and closed-tail limits encode the source convergence in distribution; no extra Gaussian approximation hypothesis occurs."
+    },
+    {
+      "id": "S44",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "Rare-event regime explanation",
+      "independent_source_meaning": "When Bernoulli parameters are rare and summed mean remains bounded, the usual fixed-law Gaussian normalization need not apply; a Poisson limit replaces it under the following precise hypotheses.",
+      "disposition": "covered_by_following_theorem",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:570",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:699"
+      ],
+      "assessment": "The informal prose is not a universal claim that bounded expectation alone yields a particular limit. Mean equality is formalized; the exact maximum and convergent-sum hypotheses appear in the theorem."
+    },
+    {
+      "id": "S45",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "(1.8) Poisson distribution",
+      "independent_source_meaning": "Pois(lambda) is supported on natural numbers, with mass exp(-lambda)*lambda^k/k!, lambda>=0 including zero.",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:28",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:65",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:589",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:599"
+      ],
+      "assessment": "The public target/effective definitions represent this source item on its mathematically meaningful domain."
+    },
+    {
+      "id": "S46",
+      "source_printed_pages": [
+        10
+      ],
+      "source_label": "Theorem 1.3.4",
+      "independent_source_meaning": "Within-row independent triangular real Bernoulli arrays, max parameter ->0 and parameter sum -> finite lambda, have row sums converging in distribution to Pois(lambda).",
+      "disposition": "covered",
+      "declarations_or_effective_definitions": [
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:37",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:403",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:430",
+        "/Users/gspyrou/Documents/ChatGPT/George S/output/codex-hdp-clean/chapter01/workspace/lean/HDP/PoissonLimit.lean:699"
+      ],
+      "assessment": "The final public real-array target quantifies over every bounded continuous real test function. This is full weak convergence, not only zero-mass/point-mass/generating-product convergence. Parameters and rate are NNReal, hence finite nonnegative; lambda=0 is retained. Independence is only within each row, not between rows; no identical-distribution assumption is added. N=0 and empty sup are harmless finite initial totalization."
+    },
+    {
+      "id": "S47",
+      "source_printed_pages": [
+        11
+      ],
+      "source_label": "Section 1.4 Notes",
+      "independent_source_meaning": "Textbook proof references for LLN/CLT and historical attribution/naming of Markov/Chebyshev.",
+      "disposition": "context",
+      "declarations_or_effective_definitions": [],
+      "assessment": "Bibliographic and historical prose has no additional mathematical theorem or exercise. No remote-source verification or formal history claim is undertaken."
+    }
+  ],
+  "coverage_accounting": {
+    "independent_source_items": 47,
+    "numbered_results_and_exercises_checked": [
+      "(1.1)",
+      "(1.2)",
+      "Remark 1.1.1",
+      "(1.3)",
+      "(1.4)",
+      "Lemma 1.2.1",
+      "Exercise 1.2.2",
+      "Exercise 1.2.3",
+      "Proposition 1.2.4",
+      "Corollary 1.2.5",
+      "Exercise 1.2.6",
+      "Remark 1.2.7",
+      "(1.5)",
+      "Theorem 1.3.1",
+      "(1.6)",
+      "Theorem 1.3.2",
+      "Exercise 1.3.3",
+      "(1.7)",
+      "(1.8)",
+      "Theorem 1.3.4"
+    ],
+    "source_intervals_read": "Entire seven-page source; no source page omitted",
+    "mathematical_skips_or_deferrals": [],
+    "context_dispositions": "Opening overview; notation/bibliography/history; forward reference to Chapter 2; qualitative interpretations are explicitly mapped rather than silently omitted.",
+    "formalization_percentage": "Not a canonical sealed denominator; no percentage asserted."
+  }
+}

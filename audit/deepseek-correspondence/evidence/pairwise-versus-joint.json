@@ -1,0 +1,28 @@
+{
+  "outcomes_equally_likely": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "pairwise_independent_fair_bits": true,
+  "probability_all_zero": 0.25,
+  "joint_independence_would_require": 0.125,
+  "purpose": "Elementary illustration that pairwise independence is weaker than joint independence; not a claimed CLT counterexample and not an additional experimental proof input."
+}

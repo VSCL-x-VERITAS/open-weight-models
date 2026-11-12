@@ -1,0 +1,12 @@
+.lake/
+.verification/
+__pycache__/
+node_modules/
+.env
+.env.*
+auth.json
+.credentials.yaml
+*.pem
+*.key
+app-server-private.jsonl
+sessions/

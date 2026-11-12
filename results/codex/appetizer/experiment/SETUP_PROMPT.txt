@@ -1,0 +1,13 @@
+Setup phase only. Do not read or formalize the PDF yet.
+Read AGENTS.md and the installed book-formalization SKILL.md plus its short
+four-role workflow. Run tools/isolation_check.py from this workspace with python3;
+all forbidden reads and the network check must be denied. Preserve its output in
+reports/setup-isolation.json. Check pdftotext/pdfinfo availability without reading
+PDF contents; check the pinned Lean version and run the initial empty-project
+lake build in lean/. Use login=false for shell commands. You have no approval or
+network access and must not bypass the profile. Record any narrow tool/runtime
+problem with actual evidence and solve only within the profile.
+Write reports/SETUP_READY.json with ready true only if isolation and the initial
+Lean build really pass. Record model gpt-6.1-sol, effort high, skill 8.1.70,
+Codex-only deviations and commands. Do not write mathematical inventory or proofs.
+End this setup turn. A separately logged next turn starts formalization.

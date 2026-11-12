@@ -1,0 +1,95 @@
+⚠ [8049/8063] Built HDP.Variance (194s)
+warning: HDP/Variance.lean:11:8: automatically included section variable(s) unused in theorem `_private.HDP.Variance.0.HDP.coord_memLp`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: HDP/Variance.lean:83:0: 'HDP.independent_mean_zero_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Variance.lean:84:0: 'HDP.centered_sq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8050/8063] Built HDP.ConvexBasics (194s)
+info: HDP/ConvexBasics.lean:101:0: 'HDP.mem_convexHull_iff_finite_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/ConvexBasics.lean:102:0: 'HDP.caratheodory' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/ConvexBasics.lean:103:0: 'HDP.positive_simplex_combination_requires_all_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/ConvexBasics.lean:104:0: 'HDP.caratheodory_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8051/8063] Built HDP.Approximation (194s)
+warning: HDP/Approximation.lean:31:2: Try `simp at hp` instead of `simpa using hp`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8052/8063] Built HDP.Combinatorics (194s)
+warning: HDP/Combinatorics.lean:78:37: This simp argument is unused:
+  Real.exp_nat_mul
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵R̵e̵a̵l̵.̵e̵x̵p̵_̵n̵a̵t̵_̵m̵u̵l̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/Combinatorics.lean:111:6: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: HDP/Combinatorics.lean:127:0: 'HDP.exercise_0_0_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Combinatorics.lean:128:0: 'HDP.unordered_selection_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Combinatorics.lean:129:0: 'HDP.unordered_selection_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Combinatorics.lean:130:0: 'HDP.unordered_selection_epsilon_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8053/8063] Built HDP.EntropyPacking (194s)
+✔ [8054/8063] Built HDP.Crosspolytope (194s)
+✔ [8055/8063] Built HDP.EntropyParameters (198s)
+ℹ [8056/8063] Built HDP.Covering (77s)
+info: HDP/Covering.lean:106:0: 'HDP.covering_polytopes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Covering.lean:107:0: 'HDP.improved_covering' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8057/8063] Built HDP.Supplemental (77s)
+warning: HDP/Supplemental.lean:11:0: automatically included section variable(s) unused in theorem `HDP.translate_radius_bound`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Supplemental.lean:17:0: automatically included section variable(s) unused in theorem `HDP.translation_preserves_distance`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Supplemental.lean:50:0: automatically included section variable(s) unused in theorem `HDP.diameter_eq_sup`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Supplemental.lean:73:0: automatically included section variable(s) unused in theorem `HDP.polytope_vertices`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8058/8063] Built HDP.Empirical (84s)
+warning: HDP/Empirical.lean:85:32: unused variable `hD`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Empirical.lean:100:0: automatically included section variable(s) unused in theorem `HDP.identDistrib_centered_sq_integral`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: HDP/Empirical.lean:189:0: 'HDP.finiteIndexLaw_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:190:0: 'HDP.finiteIndexLaw_value_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:191:0: 'HDP.finiteIndexLaw_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:192:0: 'HDP.finiteIndexLaw_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:193:0: 'HDP.exists_finite_law_independent_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:194:0: 'HDP.exists_independent_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:195:0: 'HDP.integral_centered_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:196:0: 'HDP.integral_norm_sq_le_of_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:197:0: 'HDP.centered_sq_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:198:0: 'HDP.identDistrib_centered_sq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:199:0: 'HDP.empirical_strong_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:200:0: 'HDP.empirical_mean_sq_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:201:0: 'HDP.empirical_mean_sq_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:202:0: 'HDP.exists_realization_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:203:0: 'HDP.exists_realization_mem_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: HDP/Empirical.lean:204:0: 'HDP.exists_empirical_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8059/8063] Built HDP.Source (26s)
+✔ [8060/8063] Built HDP.EntropyEmbedding (33s)
+✔ [8061/8063] Built HDP.Sharpness (15s)
+✔ [8062/8063] Built HDP (10s)
+Build completed successfully (8063 jobs).

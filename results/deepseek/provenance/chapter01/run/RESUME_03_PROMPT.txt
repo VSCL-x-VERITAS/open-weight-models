@@ -1,0 +1,43 @@
+This is the operator-authorized third attempt in the same Chapter 1 experiment,
+continuing your own saved work. The first two attempts ended incomplete. Preserve
+those outcomes; this is a human-prompted continuation, not a one-shot success.
+
+Read AGENTS.md, run/PROTOCOL.txt, the complete source/Chapter01.pdf, your live
+coverage inventory, reports/resume-02/final-report.md, your remaining-obligations
+report and your existing Lean files. Continue from your own actual work. The
+Poisson limit theorem is explicitly still open in your report. Continue its
+unfinished prerequisites and proof, using your own recorded attempts and new
+work you develop yourself. A missing ready-made Mathlib theorem is not a reason
+to end the attempt while useful local work remains. No time or step limit is
+imposed by this prompt. Save durable progress and continue actionable work.
+
+Independently self-review all source coverage, including rows already labelled
+closed. Read the original PDF rather than accepting status labels or draft
+Prop-valued definitions as verified specifications. Check every domain,
+hypothesis, independence condition, quantifier, parameter range, constant and
+conclusion against the source. A special case does not by itself prove a claim
+with a broader scope. Resolve any missing source-to-Lean correspondence you
+identify yourself, and document source-supported corrections without losing the
+original drafts and evidence. Do not add extra assumptions, weaken conclusions,
+replace a target by a proposition definition, or silently narrow the source.
+
+Preserve completed proofs unless your own source review identifies a concrete
+defect. Use no sorry, admit, custom theorem axioms, unsafe proofs or assumptions
+that encode the desired conclusion. All mathematics must come from the assigned
+PDF, pinned Lean/Mathlib and your own work in this experiment. Previous product
+libraries, Appetizer attempts, web sources, other models and external proof hints
+remain excluded. No specific outside mathematical correction or proof strategy
+is supplied here. Keep the model, pins, isolation and metered route unchanged.
+
+Keep this attempt's checkpoints, compiler diagnostics, exact remaining
+obligations, axiom checks and final report under reports/resume-03/. Update the
+live inventory honestly. Before claiming completion, inspect actual declaration
+statements against the entire source, finish affected builds and axiom checks,
+and distinguish your self-review from independent semantic review. A completed
+assistant turn or green checklist is not chapter completion. If you truly cannot
+make further progress, record the concrete obstruction and actual attempts made.
+
+The operator starts and stops measurement externally. Do not change measurement
+or access private observer data. Metrics in reports/metrics are observational,
+not mathematical input. Keep unknown billing values unknown. Do not publish,
+push, contact others or use another paid model.

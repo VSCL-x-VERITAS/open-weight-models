@@ -1,0 +1,138 @@
+✔ [8049/8063] Built HDP.Basic (27s)
+✔ [8050/8063] Built HDP.WeakConvergence (27s)
+✔ [8051/8063] Built HDP.Inequalities (16s)
+⚠ [8052/8063] Built HDP.Sharpness (16s)
+warning: HDP/Sharpness.lean:130:37: unused variable `hp0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8053/8063] Built HDP.Tails (9.0s)
+warning: HDP/Tails.lean:162:5: unused variable `hX_nonneg`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:162:37: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8054/8063] Built HDP.LimitTheorems (5.4s)
+warning: HDP/LimitTheorems.lean:86:4: This simp argument is unused:
+  Set.mem_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [bernoulliMeasure, Measure.add_apply, Measure.smul_apply, Measure.dirac_apply,
+      S̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵ ̵Pi.one_apply, smul_eq_mul, mul_one, MeasurableSet.univ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:86:18: This simp argument is unused:
+  Pi.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [bernoulliMeasure, Measure.add_apply, Measure.smul_apply, Measure.dirac_apply,
+      Set.mem_univ, P̵i̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵smul_eq_mul, mul_one, MeasurableSet.univ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:86:45: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [bernoulliMeasure, Measure.add_apply, Measure.smul_apply, Measure.dirac_apply,
+      Set.mem_univ, Pi.one_apply, smul_eq_mul, m̵u̵l̵_̵o̵n̵e̵,̵ ̵MeasurableSet.univ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:86:54: This simp argument is unused:
+  MeasurableSet.univ
+
+Hint: Omit it from the simp argument list.
+  simp only [bernoulliMeasure, Measure.add_apply, Measure.smul_apply, Measure.dirac_apply,
+      Set.mem_univ, Pi.one_apply, smul_eq_mul, mul_one,̵ ̵M̵e̵a̵s̵u̵r̵a̵b̵l̵e̵S̵e̵t̵.̵u̵n̵i̵v̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:87:63: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Set.indicator_of_mem, Set.mem_univ, Pi.one_apply, s̵mul_e̵q̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:93:34: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:122:53: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:171:0: automatically included section variable(s) unused in theorem `HDP.sampleMean_eq`:
+  [MeasurableSpace Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8055/8063] Built HDP.OpenStatements (9.1s)
+warning: HDP/OpenStatements.lean:54:5: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/OpenStatements.lean:54:18: unused variable `hp0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/OpenStatements.lean:54:32: unused variable `hp1`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/OpenStatements.lean:68:23: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8056/8063] Built HDP.PoissonCharFun (10s)
+⚠ [8057/8063] Built HDP.CharFunTaylor (11s)
+warning: HDP/CharFunTaylor.lean:59:20: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵Complex.norm_I, Real.norm_eq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/CharFunTaylor.lean:100:12: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵Complex.norm_I, Real.norm_eq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/CharFunTaylor.lean:126:46: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [hexp, n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵Complex.norm_I, Real.norm_eq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8058/8063] Built HDP.PoissonProduct (9.3s)
+warning: HDP/PoissonProduct.lean:186:5: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8059/8063] Built HDP.CLT (9.3s)
+warning: HDP/CLT.lean:101:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: HDP/CLT.lean:87:56: unused variable `hσ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/CLT.lean:223:56: unused variable `hσ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/CLT.lean:268:15: This simp argument is unused:
+  Measure.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵m̵e̵a̵s̵u̵r̵e̵_̵u̵n̵i̵v̵,̵[̲m̲e̲a̲s̲u̲r̲e̲_̲u̲n̲i̲v̲,̲ one_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8060/8063] Built HDP.DeMoivreLaplace (4.3s)
+⚠ [8061/8063] Built HDP.PoissonLimit (4.8s)
+warning: HDP/PoissonLimit.lean:71:2: 'change
+  ∫ ω, (∑ i ∈ (Finset.univ : Finset (Fin N)), X N i ω) ∂μ =
+    ∑ i ∈ (Finset.univ : Finset (Fin N)), (p N i : ℝ)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HDP/PoissonLimit.lean:146:10: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: HDP/PoissonLimit.lean:188:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [8062/8063] Built HDP (3.1s)
+Build completed successfully (8063 jobs).

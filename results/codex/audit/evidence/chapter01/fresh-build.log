@@ -1,0 +1,161 @@
+⚠ [8049/8055] Built HDP.Basic (194s)
+warning: HDP/Basic.lean:113:0: automatically included section variable(s) unused in theorem `HDP.covariance_formula`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Basic.lean:158:0: automatically included section variable(s) unused in theorem `HDP.minkowski`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Basic.lean:162:0: automatically included section variable(s) unused in theorem `HDP.cauchy_schwarz`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Basic.lean:167:0: automatically included section variable(s) unused in theorem `HDP.holder`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Basic.lean:199:0: automatically included section variable(s) unused in theorem `HDP.signedExtendedIntegral_eq_integral`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Basic.lean:215:0: automatically included section variable(s) unused in theorem `HDP.signed_natural_moment_undefined`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8050/8055] Built HDP.Tails (194s)
+warning: HDP/Tails.lean:35:48: unused variable `t`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:124:27: unused variable `a`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:124:29: unused variable `b`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:124:56: unused variable `ω`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:209:5: unused variable `hfinite`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/Tails.lean:246:40: unused variable `h0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8051/8055] Built HDP.PoissonLimit (195s)
+⚠ [8052/8055] Built HDP.Moments (76s)
+warning: HDP/Moments.lean:27:0: automatically included section variable(s) unused in theorem `HDP.nonnegative_raw_moment_finite_iff`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Moments.lean:38:0: automatically included section variable(s) unused in theorem `HDP.nonnegative_raw_moment_finite_bridge`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Moments.lean:52:0: automatically included section variable(s) unused in theorem `HDP.absolute_moment_finite_iff`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Moments.lean:62:0: automatically included section variable(s) unused in theorem `HDP.absolute_moment_finite_bridge`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/Moments.lean:76:0: automatically included section variable(s) unused in theorem `HDP.nonnegative_integer_moment_agreement`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8053/8055] Built HDP.LimitTheorems (77s)
+warning: HDP/LimitTheorems.lean:82:39: unused variable `i`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:82:43: unused variable `j`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:127:0: automatically included section variable(s) unused in theorem `HDP.Limits.strong_law`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:133:0: automatically included section variable(s) unused in theorem `HDP.Limits.iid_integral_sampleMean`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:142:0: automatically included section variable(s) unused in theorem `HDP.Limits.iid_charFun_sampleSum`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:160:0: automatically included section variable(s) unused in theorem `HDP.Limits.charFun_map_eq_weightedCharacteristic`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:163:48: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [weightedCharacteristic, one_mul, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵ ̵Complex.ofReal_mul, mul_comm (t : ℂ)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDP/LimitTheorems.lean:205:0: automatically included section variable(s) unused in theorem `HDP.Limits.normalizedSum_eq_centered`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:205:35: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:205:49: unused variable `hX`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDP/LimitTheorems.lean:456:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HDP/LimitTheorems.lean:456:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HDP/LimitTheorems.lean:456:8: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HDP/LimitTheorems.lean:561:0: automatically included section variable(s) unused in theorem `HDP.Limits.iid_standardizedVariable`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HDP/LimitTheorems.lean:568:0: automatically included section variable(s) unused in theorem `HDP.Limits.standardizedVariable_zero_eq`:
+  [IsProbabilityMeasure P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8054/8055] Built HDP (36s)
+Build completed successfully (8055 jobs).
